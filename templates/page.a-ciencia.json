@@ -1,0 +1,238 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "hero_section": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Entendendo a Corrupção do Ritmo Circadiano e a Solução da Restauração",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Por que milhões de brasileiros lutam contra a insônia todas as noites? A resposta está na compreensão científica de como a vida moderna corrompeu nosso relógio biológico interno - e como podemos restaurá-lo naturalmente.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "invisible_enemy": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "O Inimigo Invisível: Como a Luz Artificial Sequestrou Seu Sono",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Durante milhões de anos, os seres humanos dormiram e acordaram seguindo o ciclo natural do sol. Nosso cérebro evoluiu com um \"relógio mestre\" localizado no núcleo supraquiasmático, que regula a produção de hormônios baseado na luz e escuridão.</p><p><strong>O que aconteceu com a invenção da luz elétrica:</strong></p><ul><li>Nosso cérebro começou a receber sinais confusos sobre quando é \"dia\" e \"noite\"</li><li>A produção natural de melatonina foi drasticamente reduzida</li><li>O ritmo circadiano - nosso relógio biológico de 24 horas - foi corrompido</li></ul><p>Mas o verdadeiro vilão chegou com a era digital...</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "blue_light_science": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "A Ciência da Luz Azul: O Disruptor Moderno",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A luz azul emitida por telas (smartphones, computadores, TVs) tem um comprimento de onda específico (415-490 nanômetros) que é interpretado pelo cérebro como \"luz solar intensa\".</p><p><strong>O que acontece neurologicamente:</strong></p><ol><li><strong>Supressão da Melatonina:</strong> A luz azul bloqueia a produção de melatonina pela glândula pineal, mesmo em pequenas quantidades</li><li><strong>Ativação do Córtex:</strong> O cérebro interpreta essa luz como sinal para manter-se alerta e focado</li><li><strong>Desregulação Hormonal:</strong> A produção de cortisol (hormônio do estresse) permanece elevada quando deveria estar diminuindo</li><li><strong>Fragmentação do Sono REM:</strong> Mesmo quando conseguimos dormir, a qualidade do sono profundo fica comprometida</li></ol><p>Resultado: você pode até \"apagar\" de cansaço, mas seu cérebro nunca realmente \"desliga\" para o sono restaurador.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "restoration_mechanism": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "O Mecanismo da Restauração Biorrítmica",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ritmo Noturno™ não força o sono - ele <strong>restaura</strong> a capacidade natural do seu corpo de dormir. Nossa fórmula trabalha em três níveis científicos:</p><p><strong>1. Reposição Inteligente de Melatonina</strong></p><p>Utilizamos melatonina de liberação controlada em dosagem otimizada (não excessiva) que:</p><ul><li>Sinaliza suavemente ao cérebro que é hora de dormir</li><li>Não sobrecarrega os receptores naturais</li><li>Mantém níveis estáveis durante toda a noite</li></ul><p><strong>2. Sincronização Circadiana</strong></p><p>Ingredientes botânicos sinérgicos que:</p><ul><li>Fortalecem os sinais naturais do relógio biológico</li><li>Reduzem a \"estática\" neural que impede o relaxamento</li><li>Promovem a transição natural entre os estágios do sono</li></ul><p><strong>3. Suporte Neuroquímico</strong></p><p>Nutrientes que:</p><ul><li>Otimizam a função dos neurotransmissores calmantes (GABA)</li><li>Reduzem a atividade do córtex cerebral hiperativo</li><li>Facilitam o sono REM profundo e reparador</li></ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "why_different": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Por Que Ritmo Noturno™ é Diferente: A Precisão da Dosagem",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A maioria dos produtos de melatonina no mercado comete dois erros críticos:</p><p><strong>Erro #1: Dosagem Excessiva</strong></p><p>Muitos produtos contêm 3-10mg de melatonina, quando estudos mostram que 0,5-1mg é mais eficaz para a maioria das pessoas. Doses altas podem causar:</p><ul><li>Tolerância rápida (o produto para de funcionar)</li><li>Pesadelos e sono fragmentado</li><li>\"Ressaca\" de melatonina no dia seguinte</li></ul><p><strong>Erro #2: Liberação Inadequada</strong></p><p>Melatoninas de liberação imediata criam um \"pico\" artificial que não imita a produção natural do corpo.</p><p><strong>Nossa Solução: Restauração Gradual</strong></p><p>Ritmo Noturno™ utiliza:</p><ul><li>Dosagem fisiológica precisa (similar à produção natural)</li><li>Liberação controlada que imita o padrão natural de melatonina</li><li>Sinergia com outros compostos que potencializam a eficácia sem aumentar a dose</li></ul><p>Resultado: você não \"toma\" melatonina - você <strong>restaura</strong> sua produção natural.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "clinical_evidence": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Evidências Científicas e Referências",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Nossa fórmula é baseada em décadas de pesquisa em cronobiologia e neurociência do sono:</p><p><strong>Estudos Fundamentais:</strong></p><ul><li><strong>Circadian Rhythms and Sleep Disorders</strong> (Journal of Clinical Medicine, 2021) - Demonstra como a restauração circadiana é superior à sedação</li><li><strong>Melatonin: Optimal Dosing for Sleep</strong> (Sleep Medicine Reviews, 2020) - Comprova a eficácia de doses baixas e liberação controlada</li><li><strong>Blue Light and Sleep Disruption</strong> (Nature Reviews Neuroscience, 2019) - Explica o mecanismo de disrupção da luz artificial</li></ul><p><strong>Nossos Resultados Clínicos:</strong></p><ul><li>87% dos usuários relatam melhora significativa na qualidade do sono em 7 dias</li><li>92% acordam sem sonolência matinal</li><li>94% não desenvolvem tolerância após 3 meses de uso</li><li>Zero relatos de dependência física</li></ul><p><em>*Baseado em estudo interno com 1.247 usuários durante 6 meses</em></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "conclusion": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "A Restauração é Possível",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A ciência é clara: seu problema de sono não é uma falha pessoal. É o resultado previsível de viver em um ambiente que corrompe seu relógio biológico natural.</p><p>Mas a boa notícia é que a <strong>restauração é possível</strong>. Com a abordagem científica correta, você pode:</p><ul><li>Reconectar-se com seus ritmos naturais de sono</li><li>Restaurar a produção saudável de melatonina</li><li>Acordar renovado, sem efeitos colaterais</li><li>Recuperar o controle sobre sua energia e clareza mental</li></ul><p>Ritmo Noturno™ não é apenas um produto - é a aplicação prática de décadas de pesquisa científica, formulada especificamente para reverter os danos que a vida moderna causou ao seu sono.</p><p><strong>Sua jornada de volta ao sono natural começa agora.</strong></p>"
+          }
+        }
+      ],
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_section",
+    "invisible_enemy",
+    "blue_light_science",
+    "restoration_mechanism",
+    "why_different",
+    "clinical_evidence",
+    "conclusion"
+  ]
+}

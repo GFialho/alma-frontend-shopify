@@ -1,0 +1,330 @@
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+{{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .alma-faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .alma-faq-item {
+    border: 1px solid rgba(26, 58, 109, 0.15);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .alma-faq-item:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .alma-faq-question {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--alma-deep-night-blue, #1A3A6D);
+    transition: background-color 0.3s ease;
+    border: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .alma-faq-question:hover {
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+  }
+
+  .alma-faq-question[aria-expanded="true"] {
+    background: linear-gradient(135deg, var(--alma-blue-tint, #EEF2F7) 0%, #dae3f0 100%);
+  }
+
+  .alma-faq-icon {
+    font-size: 1.2rem;
+    color: var(--alma-passion-fruit-gold, #FFC300);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    margin-left: 1rem;
+  }
+
+  .alma-faq-question[aria-expanded="true"] .alma-faq-icon {
+    transform: rotate(180deg);
+  }
+
+  .alma-faq-answer {
+    padding: 0 2rem 1.5rem 2rem;
+    color: var(--alma-dark-charcoal, #2D2D2D);
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+
+  .alma-faq-answer p {
+    margin-bottom: 1rem;
+  }
+
+  .alma-faq-answer p:last-child {
+    margin-bottom: 0;
+  }
+
+  .alma-faq-answer strong {
+    color: var(--alma-deep-night-blue, #1A3A6D);
+    font-weight: 700;
+  }
+
+  .alma-faq-answer ul,
+  .alma-faq-answer ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .alma-faq-answer li {
+    margin-bottom: 0.5rem;
+  }
+
+  @media screen and (max-width: 749px) {
+    .alma-faq-question {
+      padding: 1.2rem 1.5rem;
+      font-size: 1rem;
+    }
+
+    .alma-faq-answer {
+      padding: 0 1.5rem 1.2rem 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .alma-faq-icon {
+      margin-left: 0.5rem;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width">
+    {%- unless section.settings.caption == blank -%}
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
+        <p class="caption-with-letter-spacing">
+          {{ section.settings.caption | escape }}
+        </p>
+      </div>
+    {%- endunless -%}
+    {%- unless section.settings.heading == blank -%}
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {{ section.settings.heading }}
+        </h2>
+      </div>
+    {%- endunless -%}
+
+    <div class="alma-faq-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'faq_item' -%}
+            <div class="alma-faq-item" {{ block.shopify_attributes }}>
+              <button
+                class="alma-faq-question"
+                type="button"
+                aria-expanded="false"
+                aria-controls="FAQ-{{ block.id }}"
+              >
+                <span>{{ block.settings.question | escape }}</span>
+                <span class="alma-faq-icon">▼</span>
+              </button>
+              <div
+                class="alma-faq-answer"
+                id="FAQ-{{ block.id }}"
+                style="display: none;"
+              >
+                {{ block.settings.answer }}
+              </div>
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const faqQuestions = document.querySelectorAll('.alma-faq-question');
+    
+    faqQuestions.forEach(function(question) {
+      question.addEventListener('click', function() {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        const answer = this.nextElementSibling;
+        
+        // Close all other FAQs
+        faqQuestions.forEach(function(otherQuestion) {
+          if (otherQuestion !== question) {
+            otherQuestion.setAttribute('aria-expanded', 'false');
+            otherQuestion.nextElementSibling.style.display = 'none';
+          }
+        });
+        
+        // Toggle current FAQ
+        if (isExpanded) {
+          this.setAttribute('aria-expanded', 'false');
+          answer.style.display = 'none';
+        } else {
+          this.setAttribute('aria-expanded', 'true');
+          answer.style.display = 'block';
+        }
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Alma - FAQ",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "t:sections.collapsible_content.settings.caption.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.collapsible_content.settings.heading.label",
+      "default": "Perguntas Frequentes"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "default": "Pergunta frequente",
+          "label": "Question",
+          "info": "Include a helpful question for your customers"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "default": "<p>Escreva uma resposta detalhada e útil para a pergunta do cliente.</p>",
+          "label": "Answer",
+          "info": "Provide a detailed answer to help your customers"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Alma - FAQ",
+      "blocks": [
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "Eu já tentei melatonina antes e não funcionou. Por que Ritmo Noturno é diferente?",
+            "answer": "<p>Nossa fórmula utiliza melatonina de liberação controlada em dosagem otimizada, combinada com ingredientes sinérgicos que potencializam a eficácia sem os efeitos colaterais comuns. A diferença está na <strong>Restauração Biorrítmica</strong> - não forçamos o sono, restauramos sua capacidade natural de dormir.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "Melatonina me dá pesadelos. Vou ter isso com Ritmo Noturno?",
+            "answer": "<p>Nossa fórmula foi especificamente desenvolvida para proporcionar sono limpo e restaurador, livre dos efeitos colaterais perturbadores associados a muitos produtos genéricos de melatonina. Utilizamos dosagem fisiológica precisa e liberação controlada que imita a produção natural do seu corpo.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "Este produto vai criar dependência?",
+            "answer": "<p>Não. Ritmo Noturno não é um sedativo. Ele trabalha para <strong>restaurar a capacidade natural do seu corpo de dormir</strong>, para que você dependa menos de qualquer ajuda ao longo do tempo. Nossa abordagem fortalece seus ritmos circadianos naturais ao invés de suprimi-los.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "Quanto tempo leva para começar a funcionar?",
+            "answer": "<p>A maioria dos nossos clientes relata melhora significativa na qualidade do sono dentro de <strong>3-7 dias</strong>. Diferente de sedativos que funcionam imediatamente mas causam dependência, Ritmo Noturno trabalha gradualmente para restaurar seus padrões naturais de sono.</p>"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "Posso tomar junto com outros medicamentos?",
+            "answer": "<p>Embora Ritmo Noturno seja feito com ingredientes naturais, sempre recomendamos consultar seu médico antes de combinar com outros medicamentos, especialmente se você já toma medicamentos para dormir, ansiedade ou depressão.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

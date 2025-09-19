@@ -13,10 +13,10 @@
         "title": {
           "type": "title"
         },
-        "caption": {
+        "subtitle": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text": "Recupere seu sono natural sem a 'ressaca' do dia seguinte. Ritmo Noturno™ é a fórmula científica que reajusta seu relógio biológico para que você acorde renovado, com energia e clareza mental.",
             "text_style": "subtitle"
           }
         },
@@ -36,7 +36,14 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badges": {
+          "type": "text",
+          "settings": {
+            "text": "<div class=\"trust-badges\">\n<span class=\"badge\">✓ Fórmula Segura e Natural</span>\n<span class=\"badge\">✓ Sem Dependência</span>\n<span class=\"badge\">✓ Garantia de 60 Dias</span>\n<span class=\"badge\">✓ Produzido no Brasil</span>\n</div>",
+            "text_style": "body"
           }
         },
         "description": {
@@ -45,54 +52,55 @@
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
+            "heading": "Como Funciona",
+            "icon": "lightbulb",
+            "content": "<p>Ritmo Noturno™ utiliza a tecnologia de Restauração Biorrítmica para reajustar suavemente seu relógio biológico interno. Ao contrário de outros produtos que forçam o sono através de sedação, nossa fórmula trabalha em harmonia com os processos naturais do seu corpo.</p><p>A diferença está na dosagem precisa e na combinação sinérgica de ingredientes que proporcionam:</p><ul><li>Adormecer naturalmente sem forçar</li><li>Sono profundo e reparador durante toda a noite</li><li>Despertar renovado, sem sonolência matinal</li></ul>",
             "page": ""
           }
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
+            "heading": "Ingredientes e Dosagem",
+            "icon": "leaf",
+            "content": "<p><strong>Fórmula Premium com Sabor Natural de Maracujá</strong></p><p>Cada goma contém uma dosagem cientificamente calibrada de:</p><ul><li>Melatonina de liberação controlada</li><li>Extratos botânicos calmantes</li><li>Vitaminas do complexo B para suporte neurológico</li><li>Magnésio quelado para relaxamento muscular</li></ul><p><strong>Modo de Uso:</strong> Tome 1 goma 30-60 minutos antes de dormir. Não exceda 1 goma por dia.</p>",
             "page": ""
           }
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
+            "heading": "Perguntas Frequentes",
+            "icon": "question_mark",
+            "content": "<p><strong>P: Eu já tentei melatonina antes e não funcionou. Por que Ritmo Noturno é diferente?</strong><br>R: Nossa fórmula utiliza melatonina de liberação controlada em dosagem otimizada, combinada com ingredientes sinérgicos que potencializam a eficácia sem os efeitos colaterais comuns.</p><p><strong>P: Melatonina me dá pesadelos. Vou ter isso com Ritmo Noturno?</strong><br>R: Nossa fórmula foi especificamente desenvolvida para proporcionar sono limpo e restaurador, livre dos efeitos colaterais perturbadores associados a muitos produtos genéricos de melatonina.</p><p><strong>P: Este produto vai criar dependência?</strong><br>R: Não. Ritmo Noturno não é um sedativo. Ele trabalha para restaurar a capacidade natural do seu corpo de dormir, para que você dependa menos de qualquer ajuda ao longo do tempo.</p>",
             "page": ""
           }
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
+            "heading": "Garantia e Envio",
+            "icon": "truck",
+            "content": "<p><strong>Garantia de 60 Dias:</strong> Experimente sem riscos. Se não ficar 100% satisfeito, devolvemos seu dinheiro.</p><p><strong>Envio:</strong></p><ul><li>Frete GRÁTIS para todo o Brasil em pedidos acima de R$99</li><li>Entrega expressa disponível</li><li>Embalagem discreta e segura</li><li>Rastreamento completo</li></ul><p><strong>Pagamento Seguro:</strong> Aceitamos cartão, PIX, boleto e parcelamento sem juros.</p>",
             "page": ""
           }
         },
         "share": {
           "type": "share",
           "settings": {
-            "share_label": "Share"
+            "share_label": "Compartilhar"
           }
         }
       },
       "block_order": [
         "vendor",
         "title",
-        "caption",
+        "subtitle",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "trust_badges",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
@@ -106,39 +114,39 @@
         "media_size": "large",
         "constrain_to_viewport": true,
         "mobile_thumbnails": "hide",
-        "hide_variants": true,
+        "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
       }
     },
-    "image-with-text": {
+    "product_problem_agitation": {
       "type": "image-with-text",
       "blocks": {
-        "image-with-text-0": {
+        "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Para quem está cansado de acordar cansado",
             "heading_size": "h1"
           }
         },
-        "image-with-text-1": {
+        "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Se você já experimentou a frustração de remédios que deixam você \"de ressaca\" no dia seguinte, ou melatoninas que param de funcionar depois de algumas semanas, você não está sozinho.</p><p>A diferença entre <em>sedação</em> e <em>restauração</em> é fundamental. Enquanto outros produtos forçam seu corpo a \"desligar\", Ritmo Noturno™ trabalha para <strong>restaurar seu ritmo natural de sono</strong>.</p><p>O resultado? Você não apenas dorme melhor - você acorda sendo você mesmo novamente.</p>",
             "text_style": "body"
           }
         }
-      },
+      ],
       "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
+        "heading",
+        "text"
       ],
       "settings": {
-        "height": "small",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "scheme-2",
@@ -147,39 +155,49 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn": {
+    "product_benefits": {
       "type": "multicolumn",
       "blocks": {
-        "column-0": {
+        "benefit_1": {
           "type": "column",
           "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Adormeça Suavemente",
+            "text": "<p>Nossa fórmula trabalha com os sinais naturais do seu corpo, proporcionando uma transição suave para o sono sem a sensação de \"nocaute\" dos sedativos tradicionais.</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column-1": {
+        "benefit_2": {
           "type": "column",
           "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Durma a Noite Toda",
+            "text": "<p>Acabe com o pânico de acordar às 3h da manhã com a mente acelerada. Ritmo Noturno™ mantém você em sono profundo e reparador durante toda a noite.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "benefit_3": {
+          "type": "column",
+          "settings": {
+            "title": "Acorde Renovado",
+            "text": "<p>Sem névoa mental, sem sonolência matinal. Desperte com a clareza mental e energia que você precisa para ter um dia produtivo e presente.</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column-0",
-        "column-1"
+        "benefit_1",
+        "benefit_2",
+        "benefit_3"
       ],
       "settings": {
-        "title": "",
+        "title": "A Diferença Ritmo Noturno™",
         "heading_size": "h1",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
+        "columns_desktop": 3,
+        "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
         "button_link": "",
@@ -190,10 +208,98 @@
         "padding_bottom": 36
       }
     },
+    "science_explanation": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Como Funciona: A Ciência da Restauração",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Seu corpo possui um relógio biológico natural - o ritmo circadiano - que regula quando você deve dormir e acordar. A vida moderna, com suas luzes artificiais e telas, corrompe esse relógio interno.</p><p>Ritmo Noturno™ utiliza a <strong>Restauração Biorrítmica</strong> - uma abordagem científica que:</p><ul><li>Reajusta suavemente seu relógio interno</li><li>Restaura a produção natural de melatonina</li><li>Sincroniza seus ciclos de sono com seu ritmo natural</li><li>Fortalece a qualidade do sono REM e profundo</li></ul><p>Não é sedação forçada. É a restauração do seu \"eu\" natural.</p>",
+            "text_style": "body"
+          }
+        }
+      ],
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product_testimonials": {
+      "type": "multicolumn",
+      "blocks": {
+        "testimonial_1": {
+          "type": "column",
+          "settings": {
+            "title": "\"Finalmente, um produto que funciona\"",
+            "text": "<p>⭐⭐⭐⭐⭐</p><p>\"Depois de anos lutando com insônia e tentando tudo no mercado, Ritmo Noturno foi a única coisa que realmente funcionou. O sabor de maracujá é delicioso e eu durmo a noite toda sem efeitos colaterais.\"</p><p><em>- Roberto S., Brasília</em></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_2": {
+          "type": "column", 
+          "settings": {
+            "title": "\"Minha produtividade voltou\"",
+            "text": "<p>⭐⭐⭐⭐⭐</p><p>\"Como executiva, preciso estar sempre no meu melhor. Ritmo Noturno me devolveu a clareza mental que eu havia perdido. Acordo descansada e focada todos os dias.\"</p><p><em>- Patricia L., São Paulo</em></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_3": {
+          "type": "column",
+          "settings": {
+            "title": "\"Sem mais 3h da manhã acordado\"",
+            "text": "<p>⭐⭐⭐⭐⭐</p><p>\"O pior era acordar no meio da noite com a mente acelerada. Com Ritmo Noturno, durmo profundamente das 22h às 6h. É libertador ter controle sobre meu sono novamente.\"</p><p><em>- João M., Recife</em></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_1",
+        "testimonial_2",
+        "testimonial_3"
+      ],
+      "settings": {
+        "title": "O Que Nossos Clientes Estão Dizendo",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true,
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Você também pode gostar",
         "heading_size": "h2",
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
@@ -209,8 +315,10 @@
   },
   "order": [
     "main",
-    "image-with-text",
-    "multicolumn",
+    "product_problem_agitation",
+    "product_benefits",
+    "science_explanation",
+    "product_testimonials",
     "related-products"
   ]
 }

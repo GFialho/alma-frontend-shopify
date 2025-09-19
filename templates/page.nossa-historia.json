@@ -1,0 +1,202 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "hero_section": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Da Frustração à Descoberta: A Verdadeira História Por Trás do Ritmo Noturno",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "founder_story": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "A Luta Que Mudou Tudo",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tudo começou com uma crise pessoal. Dr. Rafael Almeida, fundador da Alma Suplementos, era um executivo de alta performance que, aos 38 anos, viu sua carreira e vida pessoal desmoronarem devido à insônia crônica.</p><p>\"Eu era aquele profissional que todos respeitavam durante o dia, mas à noite me transformava em um prisioneiro da minha própria mente\", relembra Rafael. \"A matemática era cruel: quanto menos eu dormia, pior eu performava. Quanto pior eu performava, mais ansioso ficava. Quanto mais ansioso, menos eu conseguia dormir.\"</p><p>As noites se tornaram um campo de batalha. 3h da manhã virou sinônimo de pânico, olhando para o teto, calculando quantas horas restavam antes do alarme tocar.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "breaking_point": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "O Momento da Verdade",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>O ponto de ruptura veio durante uma apresentação crucial para investidores. Rafael, após mais uma noite em claro, cometeu um erro básico de cálculo que custou à empresa um contrato milionário.</p><p>\"Naquele momento, percebi que tinha duas escolhas: aceitar o 'pacto com o diabo' dos remédios prescritos, arriscando minha saúde de longo prazo e minha lucidez mental, ou encontrar uma solução real.\"</p><p>Foi quando Rafael tomou a decisão que mudaria não apenas sua vida, mas a de milhares de brasileiros: rejeitar as soluções superficiais e mergulhar na ciência real do sono.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "quest_section": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "A Jornada Pela Verdade",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>O que começou como desespero pessoal se transformou em uma obsessão científica. Rafael passou os próximos dois anos estudando cronobiologia, neurociência do sono e medicina ancestral.</p><p>\"Descobri que nossos ancestrais dormiam naturalmente seguindo os ciclos solares. O problema não estava em mim - estava no ambiente moderno que corrompe nosso relógio biológico interno.\"</p><p>A revelação veio ao entender que a luz artificial, especialmente a luz azul das telas, era o verdadeiro vilão. Não precisávamos de sedativos mais fortes - precisávamos restaurar nossa conexão com os ritmos naturais.</p><p>\"Foi como descobrir que, durante anos, eu estava tentando consertar um rádio trocando as pilhas, quando o problema estava na antena.\"</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "solution_birth": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "O Nascimento de uma Solução",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Após meses de pesquisa e testes, Rafael desenvolveu a primeira versão do que viria a se tornar Ritmo Noturno™. A fórmula combinava melatonina de liberação controlada com extratos botânicos calmantes, numa dosagem precisa que trabalhava <em>com</em> o corpo, não <em>contra</em> ele.</p><p>\"A primeira noite que testei, dormi das 22h às 6h pela primeira vez em anos. Mas o mais importante: acordei me sentindo eu mesmo novamente.\"</p><p>O que começou como uma solução pessoal rapidamente se tornou uma missão. Amigos e colegas que sofriam com os mesmos problemas começaram a pedir a fórmula. Os resultados eram consistentes: sono natural, despertar renovado, sem efeitos colaterais.</p><p>Assim nasceu a Alma Suplementos - não como uma empresa, mas como uma missão de devolver às pessoas o controle sobre seu sono e, consequentemente, sobre suas vidas.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "mission_statement": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nossa Missão Hoje",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hoje, Ritmo Noturno™ já transformou a vida de mais de 50.000 brasileiros. Mas nossa missão vai além de vender um produto - é sobre restaurar a conexão das pessoas com seu \"eu\" natural.</p><p>\"Cada depoimento que recebemos me lembra por que começamos. Não estamos apenas vendendo uma goma de melatonina - estamos devolvendo às pessoas a capacidade de serem quem realmente são: focadas, energizadas, presentes.\"</p><p>Na Alma Suplementos, acreditamos que o sono não é um luxo - é um direito fundamental. E nossa ciência restauradora está aqui para garantir que você possa exercer esse direito, naturalmente.</p><blockquote><p><em>\"Nosso compromisso é simples: enquanto houver uma pessoa lutando contra a insônia, nossa missão não estará completa.\"</em></p><p><strong>- Dr. Rafael Almeida, Fundador</strong></p></blockquote>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_section",
+    "founder_story",
+    "breaking_point",
+    "quest_section",
+    "solution_birth",
+    "mission_statement"
+  ]
+}

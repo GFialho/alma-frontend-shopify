@@ -1,28 +1,28 @@
 {
   "sections": {
-    "image_banner": {
+    "hero_banner": {
       "type": "image-banner",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Se você luta para dormir à noite, a culpa não é sua.",
             "heading_size": "h0"
           }
         },
-        "text": {
+        "subheading": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "A ciência acaba de descobrir o verdadeiro culpado... e ele está em todos os cômodos da sua casa.",
+            "text_style": "subtitle"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_label_1": "DESCUBRA O CULPADO",
+            "button_link_1": "#problem-section",
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -31,158 +31,59 @@
       },
       "block_order": [
         "heading",
-        "text",
+        "subheading", 
         "button"
       ],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
+    "problem_section": {
       "type": "multicolumn",
       "blocks": {
-        "column1": {
+        "column_1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "A Invenção da Luz Artificial",
+            "text": "<p>A invenção da lâmpada foi o \"pecado original\" contra o sono natural, destruindo a conexão da humanidade com o ciclo solar de 24 horas e introduzindo o conceito de \"Corrupção do Ritmo Circadiano\".</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column2": {
+        "column_2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "O Cérebro Que Não Desliga",
+            "text": "<p>A luz azul das telas suprime a produção de melatonina e engana o cérebro em um estado de dia perpétuo. O resultado: o cérebro que simplesmente não desliga.</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column3": {
+        "column_3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "A Tortura Noturna",
+            "text": "<p>A dor psicológica profunda da ansiedade do sono. A \"matemática triste do sono\", o pânico de acordar às 3h da manhã com a mente acelerada, e o pavor que se constrói quando a hora de dormir se aproxima.</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "column_1",
+        "column_2", 
+        "column_3"
       ],
       "settings": {
-        "title": "",
+        "title": "O Ladrão Moderno do Sono: Como a Luz Artificial Corrompeu seu Ritmo Natural",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
@@ -197,14 +98,288 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "disqualification_intro": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "A Batalha das Promessas Quebradas: Por Que Nada Funcionou Até Agora",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Você já tentou de tudo. Os remédios prescritos que deixam você em uma \"ressaca\" terrível no dia seguinte, comprometendo sua performance cognitiva. As melatoninas comuns que prometem muito e entregam pesadelos ou param de funcionar depois de algumas semanas. É o \"pacto com o diabo\" - escolher entre drogas perigosamente poderosas ou remédios naturais frustrantemente fracos que não conseguem resolver um problema biológico profundo.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "comparison_table": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.comparison-table { \n  width: 100%; \n  border-collapse: collapse; \n  margin: 2rem 0; \n  font-family: var(--font-body-family); \n  background: #fff;\n  border-radius: 8px;\n  overflow: hidden;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n}\n.comparison-table th,\n.comparison-table td { \n  border: 1px solid rgba(0,0,0,0.1); \n  padding: 15px 20px; \n  text-align: center; \n  vertical-align: middle;\n}\n.comparison-table th { \n  background-color: #f8f9fa; \n  font-weight: bold; \n  font-size: 14px;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n.comparison-table .highlight-col { \n  background-color: #eef2f7; \n  position: relative;\n}\n.comparison-table .highlight-col strong { \n  color: #1A3A6D; \n}\n.comparison-table .highlight-col::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: linear-gradient(90deg, #1A3A6D, #FFC300);\n}\n@media (max-width: 768px) {\n  .comparison-table {\n    font-size: 12px;\n  }\n  .comparison-table th,\n  .comparison-table td {\n    padding: 10px 8px;\n  }\n}\n</style>\n<div class=\"comparison-table-container\">\n  <table class=\"comparison-table\">\n    <thead>\n      <tr>\n        <th>Característica</th>\n        <th>Remédios Prescritos<br><small>(Ex: Ambien)</small></th>\n        <th>Melatoninas Comuns</th>\n        <th class=\"highlight-col\"><strong>Ritmo Noturno™</strong></th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td><strong>Mecanismo</strong></td>\n        <td>Sedação por Força Bruta</td>\n        <td>Sinal Inconsistente</td>\n        <td class=\"highlight-col\"><strong>Restauração Biorrítmica</strong></td>\n      </tr>\n      <tr>\n        <td><strong>Sensação Matinal</strong></td>\n        <td>\"Ressaca\", Confusão Mental</td>\n        <td>Sonolência, Neblina</td>\n        <td class=\"highlight-col\"><strong>Clareza, Energia Renovada</strong></td>\n      </tr>\n      <tr>\n        <td><strong>Efeitos Colaterais</strong></td>\n        <td>Dependência, Amnésia</td>\n        <td>Pesadelos, Tolerância</td>\n        <td class=\"highlight-col\"><strong>Nenhum. Apenas Sono Natural.</strong></td>\n      </tr>\n      <tr>\n        <td><strong>Objetivo Final</strong></td>\n        <td>Apagar o Cérebro</td>\n        <td>Induzir o Sono</td>\n        <td class=\"highlight-col\"><strong>Restaurar o Seu \"Eu\" Verdadeiro</strong></td>\n      </tr>\n    </tbody>\n  </table>\n</div>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "solution_section": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Não é Sedação, é Restauração: O Segredo da \"Restauração Biorrítmica\"",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>O objetivo não é usar força bruta para nocautear o corpo, mas sim \"re-afinar a frequência natural de sono do seu cérebro\". Como um rádio sendo cuidadosamente sintonizado para sair da estática zunindo e encontrar um sinal claro e silencioso, restaurando a capacidade inata do corpo de dormir profundamente e acordar renovado.</p><p>Esta é a diferença fundamental: não forçamos o sono - <strong>restauramos sua capacidade natural de dormir</strong>.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product": {
+      "type": "featured-product",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Ritmo Noturno™: A Chave para a Restauração do Seu Sono",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title"
+        },
+        "price": {
+          "type": "price"
+        },
+        "description": {
+          "type": "description"
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "title",
+        "price", 
+        "description",
+        "buy_buttons"
+      ],
+      "settings": {
+        "product": "",
+        "color_scheme": "scheme-1",
+        "secondary_background": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials": {
+      "type": "multicolumn",
+      "blocks": {
+        "testimonial_1": {
+          "type": "column",
+          "settings": {
+            "title": "Ana P., São Paulo ⭐⭐⭐⭐⭐",
+            "text": "<p>\"Eu era um zumbi ambulante com outros remédios. Acordava mais cansado do que quando fui dormir. Com Ritmo Noturno, eu finalmente acordo me sentindo... eu de novo. A diferença é noite e dia.\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_2": {
+          "type": "column",
+          "settings": {
+            "title": "Carlos M., Rio de Janeiro ⭐⭐⭐⭐⭐",
+            "text": "<p>\"Minha clareza mental no trabalho voltou. Eu não estava mais com medo de cometer um erro crítico por pura exaustão. Este produto não me deu apenas o sono de volta, ele me deu minha carreira de volta.\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "testimonial_3": {
+          "type": "column",
+          "settings": {
+            "title": "Marina L., Belo Horizonte ⭐⭐⭐⭐⭐",
+            "text": "<p>\"Eu já tinha tentado todas as melatoninas do mercado e estava cético. A maioria me dava pesadelos ou parava de funcionar. Ritmo Noturno é diferente. É suave, eficaz e, o mais importante, sem efeitos colaterais. Durmo a noite toda e acordo bem.\"</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_1",
+        "testimonial_2",
+        "testimonial_3"
+      ],
+      "settings": {
+        "title": "Recupere o Controle. Recupere Sua Vida. Veja o Que Nossos Clientes Dizem.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true,
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "transformation": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Imagine Acordar Sentindo-se Assim Todos os Dias...",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<div class=\"transformation-benefits\">\n<p>✓ <strong>Clareza Mental Afiada:</strong> Performar no seu máximo no trabalho, tomar decisões com confiança e eliminar a névoa cerebral.</p>\n\n<p>✓ <strong>Energia Renovada:</strong> Ter a disposição e a vitalidade para seus hobbies e para estar verdadeiramente presente com sua família.</p>\n\n<p>✓ <strong>Calma e Paciência:</strong> Ser o pai, a mãe, o parceiro e o profissional paciente e equilibrado que você deseja ser.</p>\n\n<p>✓ <strong>Controle Restaurado:</strong> Sentir-se novamente no comando da sua saúde e bem-estar, livre da ansiedade e da frustração do sono.</p>\n</div>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "pricing_offer": {
+      "type": "multicolumn",
+      "blocks": {
+        "option_1": {
+          "type": "column",
+          "settings": {
+            "title": "1 Frasco - Experimente",
+            "text": "<p><strong>30 Doses</strong><br>Suprimento para 1 mês</p><p class=\"price-large\"><strong>R$79,90</strong></p>",
+            "link_label": "COMPRAR AGORA",
+            "link": "/products/ritmo-noturno-1-frasco"
+          }
+        },
+        "option_2": {
+          "type": "column",
+          "settings": {
+            "title": "🏆 3 Frascos - Restauração Completa",
+            "text": "<p><span class=\"popular-badge\">MAIS POPULAR</span></p><p><strong>90 Doses</strong><br>Suprimento para 3 meses</p><p class=\"price-large\"><strong>R$69,90/frasco</strong><br><span class=\"total-price\">Total: R$209,70</span></p><p class=\"savings\">Economize R$30,00!</p>",
+            "link_label": "COMPRAR AGORA",
+            "link": "/products/ritmo-noturno-3-frascos"
+          }
+        },
+        "option_3": {
+          "type": "column",
+          "settings": {
+            "title": "6 Frascos - Melhor Custo-Benefício",
+            "text": "<p><strong>180 Doses</strong><br>Suprimento para 6 meses</p><p class=\"price-large\"><strong>R$59,90/frasco</strong><br><span class=\"total-price\">Total: R$359,40</span></p><p class=\"savings\">Economize R$120,00!</p>",
+            "link_label": "COMPRAR AGORA", 
+            "link": "/products/ritmo-noturno-6-frascos"
+          }
+        }
+      },
+      "block_order": [
+        "option_1",
+        "option_2",
+        "option_3"
+      ],
+      "settings": {
+        "title": "Escolha o Seu Plano de Restauração e Comece Hoje",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt", 
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 20
+      }
+    },
+    "guarantee": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<div class=\"guarantee-section\">\n<div class=\"guarantee-seal\">🛡️</div>\n<h3><strong>Nossa Garantia Incondicional de 100% de Satisfação</strong></h3>\n<p>Experimente Ritmo Noturno por 60 dias. Se você não sentir que está tendo o sono mais restaurador da sua vida e acordando com mais clareza e energia, simplesmente entre em contato e nós devolveremos seu dinheiro. <strong>Sem perguntas.</strong></p>\n</div>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "hero_banner",
+    "problem_section", 
+    "disqualification_intro",
+    "comparison_table",
+    "solution_section",
+    "featured_product",
+    "testimonials",
+    "transformation",
+    "pricing_offer",
+    "guarantee"
   ]
 }

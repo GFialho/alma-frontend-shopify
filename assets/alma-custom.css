@@ -1,0 +1,506 @@
+/* ==========================================================================
+   ALMA SUPLEMENTOS - CUSTOM STYLES
+   Ritmo Noturno Brand Customization
+   ========================================================================== */
+
+/* Brand Color Variables */
+:root {
+  --alma-deep-night-blue: #1a3a6d;
+  --alma-passion-fruit-gold: #ffc300;
+  --alma-white: #ffffff;
+  --alma-dark-charcoal: #2d2d2d;
+  --alma-light-gray: #f8f9fa;
+  --alma-blue-tint: #eef2f7;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY ENHANCEMENTS
+   ========================================================================== */
+
+/* Enhance readability for long-form content */
+.rich-text__text p,
+.rte p {
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.rich-text__text ul,
+.rich-text__text ol,
+.rte ul,
+.rte ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.rich-text__text li,
+.rte li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Blockquote styling */
+blockquote {
+  border-left: 4px solid var(--alma-deep-night-blue);
+  padding-left: 2rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: var(--alma-dark-charcoal);
+  background: var(--alma-light-gray);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+}
+
+/* ==========================================================================
+   COMPARISON TABLE STYLING
+   ========================================================================== */
+
+.comparison-table-container {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body-family);
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 20px 24px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.comparison-table th {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--alma-dark-charcoal);
+  border-bottom: 2px solid var(--alma-deep-night-blue);
+}
+
+.comparison-table .highlight-col {
+  background: linear-gradient(135deg, var(--alma-blue-tint) 0%, #f0f4f8 100%);
+  position: relative;
+  font-weight: 600;
+}
+
+.comparison-table .highlight-col strong {
+  color: var(--alma-deep-night-blue);
+  font-weight: 700;
+}
+
+.comparison-table .highlight-col::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--alma-deep-night-blue), var(--alma-passion-fruit-gold));
+}
+
+/* Mobile responsiveness for comparison table */
+@media (max-width: 768px) {
+  .comparison-table {
+    font-size: 13px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 12px 10px;
+  }
+
+  .comparison-table th {
+    font-size: 11px;
+  }
+}
+
+/* ==========================================================================
+   TRUST BADGES
+   ========================================================================== */
+
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.trust-badges .badge {
+  background: var(--alma-blue-tint);
+  color: var(--alma-deep-night-blue);
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid rgba(26, 58, 109, 0.2);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .trust-badges {
+    justify-content: center;
+  }
+
+  .trust-badges .badge {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+/* ==========================================================================
+   TRANSFORMATION BENEFITS STYLING
+   ========================================================================== */
+
+.transformation-benefits p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  padding: 0.8rem 0;
+}
+
+.transformation-benefits strong {
+  color: var(--alma-deep-night-blue);
+  font-weight: 700;
+}
+
+/* Checkmark styling */
+.transformation-benefits p::before {
+  content: '✓';
+  color: var(--alma-passion-fruit-gold);
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+/* ==========================================================================
+   GUARANTEE SECTION
+   ========================================================================== */
+
+.guarantee-section {
+  text-align: center;
+  padding: 2rem;
+  border: 2px solid var(--alma-passion-fruit-gold);
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff 0%, var(--alma-blue-tint) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.guarantee-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--alma-deep-night-blue), var(--alma-passion-fruit-gold));
+}
+
+.guarantee-seal {
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+.guarantee-section h3 {
+  color: var(--alma-deep-night-blue);
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+.guarantee-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--alma-dark-charcoal);
+}
+
+/* ==========================================================================
+   PRICING CARDS ENHANCEMENT
+   ========================================================================== */
+
+.price-large {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--alma-deep-night-blue);
+  margin: 1rem 0;
+}
+
+.total-price {
+  font-size: 16px;
+  color: var(--alma-dark-charcoal);
+  font-weight: 500;
+}
+
+.savings {
+  color: var(--alma-passion-fruit-gold);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.popular-badge {
+  background: linear-gradient(135deg, var(--alma-passion-fruit-gold) 0%, #ffb700 100%);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(255, 195, 0, 0.3);
+}
+
+/* ==========================================================================
+   TESTIMONIALS ENHANCEMENT
+   ========================================================================== */
+
+.multicolumn .multicolumn__item {
+  position: relative;
+}
+
+/* Add subtle styling to testimonial cards */
+.multicolumn[data-testimonials] .multicolumn__item {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(26, 58, 109, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.multicolumn[data-testimonials] .multicolumn__item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ==========================================================================
+   BUTTON ENHANCEMENTS
+   ========================================================================== */
+
+.btn,
+.button,
+.shopify-payment-button__button--unbranded {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover,
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26, 58, 109, 0.3);
+}
+
+/* Primary button styling */
+.btn--primary,
+.button--primary {
+  background: linear-gradient(135deg, var(--alma-deep-night-blue) 0%, #2a4f84 100%);
+  border: none;
+}
+
+.btn--primary:hover,
+.button--primary:hover {
+  background: linear-gradient(135deg, #2a4f84 0%, var(--alma-deep-night-blue) 100%);
+}
+
+/* ==========================================================================
+   HERO SECTION ENHANCEMENTS
+   ========================================================================== */
+
+.banner__content {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.banner__heading {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.banner__text {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* ==========================================================================
+   SECTION SPACING IMPROVEMENTS
+   ========================================================================== */
+
+.section-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+/* ==========================================================================
+   PRODUCT PAGE ENHANCEMENTS
+   ========================================================================== */
+
+.product__info-wrapper {
+  position: sticky;
+  top: 2rem;
+}
+
+.product__title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--alma-deep-night-blue);
+}
+
+.product__text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--alma-dark-charcoal);
+  margin-bottom: 1.5rem;
+}
+
+/* Product form enhancements */
+.product-form__cart-submit {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   COLLAPSIBLE CONTENT STYLING
+   ========================================================================== */
+
+.collapsible-content__wrapper {
+  border: 1px solid rgba(26, 58, 109, 0.15);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.collapsible-content__header {
+  background: var(--alma-light-gray);
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.collapsible-content__header:hover {
+  background: var(--alma-blue-tint);
+}
+
+.collapsible-content__content {
+  padding: 1.5rem;
+  background: #fff;
+}
+
+/* ==========================================================================
+   RESPONSIVE IMPROVEMENTS
+   ========================================================================== */
+
+@media (max-width: 990px) {
+  .banner__heading {
+    font-size: 2.5rem;
+  }
+
+  .product__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .banner__heading {
+    font-size: 2rem;
+  }
+
+  .product__title {
+    font-size: 1.8rem;
+  }
+
+  .guarantee-section {
+    padding: 1.5rem;
+  }
+
+  .guarantee-seal {
+    font-size: 36px;
+  }
+
+  .price-large {
+    font-size: 24px;
+  }
+}
+
+/* ==========================================================================
+   ACCESSIBILITY IMPROVEMENTS
+   ========================================================================== */
+
+/* Focus states */
+.btn:focus,
+.button:focus,
+.collapsible-content__header:focus {
+  outline: 2px solid var(--alma-passion-fruit-gold);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .comparison-table .highlight-col {
+    background: #fff;
+    border: 2px solid var(--alma-deep-night-blue);
+  }
+
+  .trust-badges .badge {
+    border: 2px solid var(--alma-deep-night-blue);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .button,
+  .multicolumn__item {
+    transition: none;
+  }
+
+  .multicolumn[data-testimonials] .multicolumn__item:hover {
+    transform: none;
+  }
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+
+@media print {
+  .guarantee-section::before,
+  .comparison-table .highlight-col::before {
+    display: none;
+  }
+
+  .comparison-table,
+  .guarantee-section {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+}
