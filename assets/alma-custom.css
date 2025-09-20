@@ -231,28 +231,16 @@ blockquote {
    PRICING CARDS ENHANCEMENT
    ========================================================================== */
 
-.price-large {
-  font-size: 28px;
+/* Style pricing cards by targeting multicolumn items in pricing section */
+.multicolumn .multicolumn__item p:has(strong) {
+  font-size: 18px;
   font-weight: 700;
   color: var(--alma-deep-night-blue);
   margin: 1rem 0;
 }
 
-.total-price {
-  font-size: 16px;
-  color: var(--alma-dark-charcoal);
-  font-weight: 500;
-}
-
-.savings {
-  color: var(--alma-passion-fruit-gold);
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.popular-badge {
+/* Style the "MAIS POPULAR" text */
+.multicolumn .multicolumn__item p:first-child strong {
   background: linear-gradient(135deg, var(--alma-passion-fruit-gold) 0%, #ffb700 100%);
   color: white;
   padding: 6px 16px;
@@ -264,6 +252,15 @@ blockquote {
   display: inline-block;
   margin-bottom: 1rem;
   box-shadow: 0 4px 12px rgba(255, 195, 0, 0.3);
+}
+
+/* Style savings text (last paragraph in pricing items) */
+.multicolumn .multicolumn__item p:last-child {
+  color: var(--alma-passion-fruit-gold);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* ==========================================================================

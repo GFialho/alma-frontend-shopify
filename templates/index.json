@@ -187,9 +187,6 @@
         "price": {
           "type": "price"
         },
-        "description": {
-          "type": "description"
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -202,7 +199,6 @@
         "text",
         "title",
         "price", 
-        "description",
         "buy_buttons"
       ],
       "settings": {
@@ -281,7 +277,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<div class=\"transformation-benefits\">\n<p>✓ <strong>Clareza Mental Afiada:</strong> Performar no seu máximo no trabalho, tomar decisões com confiança e eliminar a névoa cerebral.</p>\n\n<p>✓ <strong>Energia Renovada:</strong> Ter a disposição e a vitalidade para seus hobbies e para estar verdadeiramente presente com sua família.</p>\n\n<p>✓ <strong>Calma e Paciência:</strong> Ser o pai, a mãe, o parceiro e o profissional paciente e equilibrado que você deseja ser.</p>\n\n<p>✓ <strong>Controle Restaurado:</strong> Sentir-se novamente no comando da sua saúde e bem-estar, livre da ansiedade e da frustração do sono.</p>\n</div>"
+            "text": "<p>✓ <strong>Clareza Mental Afiada:</strong> Performar no seu máximo no trabalho, tomar decisões com confiança e eliminar a névoa cerebral.</p><p>✓ <strong>Energia Renovada:</strong> Ter a disposição e a vitalidade para seus hobbies e para estar verdadeiramente presente com sua família.</p><p>✓ <strong>Calma e Paciência:</strong> Ser o pai, a mãe, o parceiro e o profissional paciente e equilibrado que você deseja ser.</p><p>✓ <strong>Controle Restaurado:</strong> Sentir-se novamente no comando da sua saúde e bem-estar, livre da ansiedade e da frustração do sono.</p>"
           }
         }
       },
@@ -303,7 +299,7 @@
           "type": "column",
           "settings": {
             "title": "1 Frasco - Experimente",
-            "text": "<p><strong>30 Doses</strong><br>Suprimento para 1 mês</p><p class=\"price-large\"><strong>R$79,90</strong></p>",
+            "text": "<p><strong>30 Doses</strong><br>Suprimento para 1 mês</p><p><strong>R$79,90</strong></p>",
             "link_label": "COMPRAR AGORA",
             "link": "/products/ritmo-noturno-1-frasco"
           }
@@ -312,7 +308,7 @@
           "type": "column",
           "settings": {
             "title": "🏆 3 Frascos - Restauração Completa",
-            "text": "<p><span class=\"popular-badge\">MAIS POPULAR</span></p><p><strong>90 Doses</strong><br>Suprimento para 3 meses</p><p class=\"price-large\"><strong>R$69,90/frasco</strong><br><span class=\"total-price\">Total: R$209,70</span></p><p class=\"savings\">Economize R$30,00!</p>",
+            "text": "<p><strong>MAIS POPULAR</strong></p><p><strong>90 Doses</strong><br>Suprimento para 3 meses</p><p><strong>R$69,90/frasco</strong><br>Total: R$209,70</p><p>Economize R$30,00!</p>",
             "link_label": "COMPRAR AGORA",
             "link": "/products/ritmo-noturno-3-frascos"
           }
@@ -321,7 +317,7 @@
           "type": "column",
           "settings": {
             "title": "6 Frascos - Melhor Custo-Benefício",
-            "text": "<p><strong>180 Doses</strong><br>Suprimento para 6 meses</p><p class=\"price-large\"><strong>R$59,90/frasco</strong><br><span class=\"total-price\">Total: R$359,40</span></p><p class=\"savings\">Economize R$120,00!</p>",
+            "text": "<p><strong>180 Doses</strong><br>Suprimento para 6 meses</p><p><strong>R$59,90/frasco</strong><br>Total: R$359,40</p><p>Economize R$120,00!</p>",
             "link_label": "COMPRAR AGORA", 
             "link": "/products/ritmo-noturno-6-frascos"
           }
@@ -355,7 +351,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<div class=\"guarantee-section\">\n<div class=\"guarantee-seal\">🛡️</div>\n<h3><strong>Nossa Garantia Incondicional de 100% de Satisfação</strong></h3>\n<p>Experimente Ritmo Noturno por 60 dias. Se você não sentir que está tendo o sono mais restaurador da sua vida e acordando com mais clareza e energia, simplesmente entre em contato e nós devolveremos seu dinheiro. <strong>Sem perguntas.</strong></p>\n</div>"
+            "text": "<p>🛡️</p><h3><strong>Nossa Garantia Incondicional de 100% de Satisfação</strong></h3><p>Experimente Ritmo Noturno por 60 dias. Se você não sentir que está tendo o sono mais restaurador da sua vida e acordando com mais clareza e energia, simplesmente entre em contato e nós devolveremos seu dinheiro. <strong>Sem perguntas.</strong></p>"
           }
         }
       },
