@@ -31,7 +31,7 @@
           "settings": {
             "button_label_1": "DESCUBRA O CULPADO",
             "button_link_1": "#problem-section",
-            "button_style_secondary_1": false,
+            "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -48,7 +48,7 @@
         "image_overlay_opacity": 40,
         "image_height": "large",
         "image_behavior": "none",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
         "color_scheme": "scheme-3",
