@@ -65,8 +65,8 @@
           "text": "#ffffff",
           "button": "#d2691e",
           "button_label": "#ffffff",
-          "secondary_button_label": "#8b4513",
-          "shadow": "#8b4513"
+          "secondary_button_label": "#d2691e",
+          "shadow": "#121212"
         }
       }
     }
