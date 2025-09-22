@@ -10,6 +10,53 @@
 {
   "current": {
     "logo": "shopify://shop_images/logo_horizontal.png",
+    "color_schemes": {
+      "scheme-1": {
+        "background": "#FFFFFF",
+        "background_gradient": "",
+        "text": "#121212",
+        "button": "#121212",
+        "button_label": "#FFFFFF",
+        "secondary_button_label": "#121212",
+        "shadow": "#121212"
+      },
+      "scheme-2": {
+        "background": "#F3F3F3",
+        "background_gradient": "",
+        "text": "#121212",
+        "button": "#121212",
+        "button_label": "#FFFFFF",
+        "secondary_button_label": "#121212",
+        "shadow": "#121212"
+      },
+      "scheme-3": {
+        "background": "#121212",
+        "background_gradient": "",
+        "text": "#FFFFFF",
+        "button": "#FFFFFF",
+        "button_label": "#121212",
+        "secondary_button_label": "#FFFFFF",
+        "shadow": "#121212"
+      },
+      "scheme-4": {
+        "background": "#F0F0F0",
+        "background_gradient": "",
+        "text": "#2C2C2C",
+        "button": "#2C2C2C",
+        "button_label": "#FFFFFF",
+        "secondary_button_label": "#2C2C2C",
+        "shadow": "#2C2C2C"
+      },
+      "scheme-5": {
+        "background": "#FFF8F0",
+        "background_gradient": "",
+        "text": "#8B4513",
+        "button": "#D2691E",
+        "button_label": "#FFFFFF",
+        "secondary_button_label": "#8B4513",
+        "shadow": "#8B4513"
+      }
+    },
     "content_for_index": []
   }
 }
