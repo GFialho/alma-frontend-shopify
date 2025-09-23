@@ -15,21 +15,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Se você luta para dormir à noite, a culpa não é sua.",
+            "heading": "Desperte com a Alma Renovada",
             "heading_size": "h0"
           }
         },
         "subheading": {
           "type": "text",
           "settings": {
-            "text": "A ciência acaba de descobrir o verdadeiro culpado... e ele está em todos os cômodos da sua casa.",
+            "text": "O sono reparador não é um luxo, é uma necessidade. Ritmo Noturno é o seu guia natural para noites de descanso profundo, revitalizando corpo e mente para um dia extraordinário.",
             "text_style": "subtitle"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "DESCUBRA O CULPADO",
+            "button_label_1": "Comece a Dormir Melhor Hoje",
             "button_link_1": "#problem-section",
             "button_style_secondary_1": false,
             "button_label_2": "",
