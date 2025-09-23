@@ -45,7 +45,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Gemini_Generated_Image_i2swvyi2swvyi2sw.png",
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "none",
         "desktop_content_position": "middle-left",
