@@ -57,6 +57,53 @@
         "show_text_below": false
       }
     },
+    "multirow_bz3R6a": {
+      "type": "multirow",
+      "blocks": {
+        "row_TxAnd3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_uukfezuukfezuukf.png",
+            "caption": "",
+            "heading": "Sua mente não desliga? A culpa não é sua.",
+            "text": "<p>A vida moderna, com suas telas e estresse constante, desafina o seu relógio biológico natural. Ritmo Noturno usa uma fórmula precisa para gentilmente \"reafinar\" seu cérebro, restaurando o sinal de sono que seu corpo perdeu. É a ciência que você precisa, com a gentileza que você merece<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_4FRQFB": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_uukfeyuukfeyuukf.png",
+            "caption": "",
+            "heading": "Transforme a ansiedade da noite em um ritual de paz",
+            "text": "<p>Chega de ver sua cama como um campo de batalha. Crie um momento de tranquilidade com uma deliciosa goma de maracujá. É o sinal para o seu corpo e mente de que o dia de luta acabou. Prepare-se para acordar com a clareza e energia que você precisa para vencer o dia seguinte, sem a \"ressaca\" de outros métodos.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_TxAnd3",
+        "row_4FRQFB"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "problem_section": {
       "type": "multicolumn",
       "blocks": {
@@ -138,15 +185,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 20
-      }
-    },
-    "comparison_table": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<style>\n.comparison-table { \n  width: 100%; \n  border-collapse: collapse; \n  margin: 2rem 0; \n  font-family: var(--font-body-family); \n  background: #fff;\n  border-radius: 8px;\n  overflow: hidden;\n  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n}\n.comparison-table th,\n.comparison-table td { \n  border: 1px solid rgba(0,0,0,0.1); \n  padding: 15px 20px; \n  text-align: center; \n  vertical-align: middle;\n}\n.comparison-table th { \n  background-color: #f8f9fa; \n  font-weight: bold; \n  font-size: 14px;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n}\n.comparison-table .highlight-col { \n  background-color: #eef2f7; \n  position: relative;\n}\n.comparison-table .highlight-col strong { \n  color: #1A3A6D; \n}\n.comparison-table .highlight-col::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: 3px;\n  background: linear-gradient(90deg, #1A3A6D, #FFC300);\n}\n@media (max-width: 768px) {\n  .comparison-table {\n    font-size: 12px;\n  }\n  .comparison-table th,\n  .comparison-table td {\n    padding: 10px 8px;\n  }\n}\n</style>\n<div class=\"comparison-table-container\">\n  <table class=\"comparison-table\">\n    <thead>\n      <tr>\n        <th>Característica</th>\n        <th>Remédios Prescritos<br><small>(Ex: Ambien)</small></th>\n        <th>Melatoninas Comuns</th>\n        <th class=\"highlight-col\"><strong>Ritmo Noturno™</strong></th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td><strong>Mecanismo</strong></td>\n        <td>Sedação por Força Bruta</td>\n        <td>Sinal Inconsistente</td>\n        <td class=\"highlight-col\"><strong>Restauração Biorrítmica</strong></td>\n      </tr>\n      <tr>\n        <td><strong>Sensação Matinal</strong></td>\n        <td>\"Ressaca\", Confusão Mental</td>\n        <td>Sonolência, Neblina</td>\n        <td class=\"highlight-col\"><strong>Clareza, Energia Renovada</strong></td>\n      </tr>\n      <tr>\n        <td><strong>Efeitos Colaterais</strong></td>\n        <td>Dependência, Amnésia</td>\n        <td>Pesadelos, Tolerância</td>\n        <td class=\"highlight-col\"><strong>Nenhum. Apenas Sono Natural.</strong></td>\n      </tr>\n      <tr>\n        <td><strong>Objetivo Final</strong></td>\n        <td>Apagar o Cérebro</td>\n        <td>Induzir o Sono</td>\n        <td class=\"highlight-col\"><strong>Restaurar o Seu \"Eu\" Verdadeiro</strong></td>\n      </tr>\n    </tbody>\n  </table>\n</div>",
-        "color_scheme": "scheme-1",
-        "padding_top": 0,
-        "padding_bottom": 36
       }
     },
     "solution_section": {
@@ -396,9 +434,9 @@
   },
   "order": [
     "hero_banner",
+    "multirow_bz3R6a",
     "problem_section",
     "disqualification_intro",
-    "comparison_table",
     "solution_section",
     "featured_product",
     "testimonials",
