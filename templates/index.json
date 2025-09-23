@@ -104,55 +104,6 @@
         "padding_bottom": 36
       }
     },
-    "featured_product": {
-      "type": "featured-product",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Ritmo Noturno™: A Chave para a Restauração do Seu Sono",
-            "text_style": "uppercase"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": false
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "title",
-        "price",
-        "buy_buttons"
-      ],
-      "settings": {
-        "product": "ritmo-noturno-3-frascos",
-        "color_scheme": "scheme-1",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "problem_section": {
       "type": "multicolumn",
       "blocks": {
@@ -363,8 +314,9 @@
         "option_1": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/socialsight-ai-b669925f-71d5-438c-8c65-14be19b662b0.png",
             "title": "1 Frasco - Experimente",
-            "text": "<p><strong>30 Doses</strong><br>Suprimento para 1 mês</p><p><strong>R$79,90</strong></p>",
+            "text": "<p><strong>30 Doses</strong><br/>Suprimento para 1 mês</p><p><strong>R$79,90</strong></p>",
             "link_label": "COMPRAR AGORA",
             "link": "/products/ritmo-noturno-1-frasco"
           }
@@ -372,8 +324,9 @@
         "option_2": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_f7xlwuf7xlwuf7xl.png",
             "title": "🏆 3 Frascos - Restauração Completa",
-            "text": "<p><strong>MAIS POPULAR</strong></p><p><strong>90 Doses</strong><br>Suprimento para 3 meses</p><p><strong>R$69,90/frasco</strong><br>Total: R$209,70</p><p>Economize R$30,00!</p>",
+            "text": "<p><strong>MAIS POPULAR</strong></p><p><strong>90 Doses</strong><br/>Suprimento para 3 meses</p><p><strong>R$69,90/frasco</strong><br/>Total: R$209,70</p><p>Economize R$30,00!</p>",
             "link_label": "COMPRAR AGORA",
             "link": "/products/ritmo-noturno-3-frascos"
           }
@@ -381,8 +334,9 @@
         "option_3": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_f7xlwuf7xlwuf7xl_1.png",
             "title": "6 Frascos - Melhor Custo-Benefício",
-            "text": "<p><strong>180 Doses</strong><br>Suprimento para 6 meses</p><p><strong>R$59,90/frasco</strong><br>Total: R$359,40</p><p>Economize R$120,00!</p>",
+            "text": "<p><strong>180 Doses</strong><br/>Suprimento para 6 meses</p><p><strong>R$59,90/frasco</strong><br/>Total: R$359,40</p><p>Economize R$120,00!</p>",
             "link_label": "COMPRAR AGORA",
             "link": "/products/ritmo-noturno-6-frascos"
           }
@@ -436,7 +390,6 @@
   "order": [
     "hero_banner",
     "multirow_bz3R6a",
-    "featured_product",
     "problem_section",
     "disqualification_intro",
     "solution_section",
