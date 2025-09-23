@@ -44,11 +44,11 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/socialsight-ai-f60ff70e-d6c5-42bd-ab3f-d029a5e2f5ac.png",
+        "image": "shopify://shop_images/Gemini_Generated_Image_i2swvyi2swvyi2sw.png",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "image_behavior": "none",
-        "desktop_content_position": "bottom-left",
+        "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
         "color_scheme": "scheme-5",
