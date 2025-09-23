@@ -187,43 +187,6 @@
         "padding_bottom": 20
       }
     },
-    "solution_section": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Não é Sedação, é Restauração: O Segredo da \"Restauração Biorrítmica\"",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>O objetivo não é usar força bruta para nocautear o corpo, mas sim \"re-afinar a frequência natural de sono do seu cérebro\". Como um rádio sendo cuidadosamente sintonizado para sair da estática zunindo e encontrar um sinal claro e silencioso, restaurando a capacidade inata do corpo de dormir profundamente e acordar renovado.</p><p>Esta é a diferença fundamental: não forçamos o sono - <strong>restauramos sua capacidade natural de dormir</strong>.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "featured_product": {
       "type": "featured-product",
       "blocks": {
@@ -269,6 +232,43 @@
         "image_zoom": "lightbox",
         "hide_variants": false,
         "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "solution_section": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Não é Sedação, é Restauração: O Segredo da \"Restauração Biorrítmica\"",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>O objetivo não é usar força bruta para nocautear o corpo, mas sim \"re-afinar a frequência natural de sono do seu cérebro\". Como um rádio sendo cuidadosamente sintonizado para sair da estática zunindo e encontrar um sinal claro e silencioso, restaurando a capacidade inata do corpo de dormir profundamente e acordar renovado.</p><p>Esta é a diferença fundamental: não forçamos o sono - <strong>restauramos sua capacidade natural de dormir</strong>.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -435,10 +435,10 @@
   "order": [
     "hero_banner",
     "multirow_bz3R6a",
+    "featured_product",
     "problem_section",
     "disqualification_intro",
     "solution_section",
-    "featured_product",
     "testimonials",
     "transformation",
     "pricing_offer",
