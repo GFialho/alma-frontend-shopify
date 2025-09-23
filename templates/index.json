@@ -63,7 +63,7 @@
         "row_TxAnd3": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Gemini_Generated_Image_uukfezuukfezuukf.png",
+            "image": "shopify://shop_images/Gemini_Generated_Image_8p3jyi8p3jyi8p3j.png",
             "caption": "",
             "heading": "Sua mente não desliga? A culpa não é sua.",
             "text": "<p>A vida moderna, com suas telas e estresse constante, desafina o seu relógio biológico natural. Ritmo Noturno usa uma fórmula precisa para gentilmente \"reafinar\" seu cérebro, restaurando o sinal de sono que seu corpo perdeu. É a ciência que você precisa, com a gentileza que você merece<br/><br/></p>",
@@ -100,6 +100,55 @@
         "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product": {
+      "type": "featured-product",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Ritmo Noturno™: A Chave para a Restauração do Seu Sono",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "title",
+        "price",
+        "buy_buttons"
+      ],
+      "settings": {
+        "product": "ritmo-noturno-3-frascos",
+        "color_scheme": "scheme-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -187,55 +236,6 @@
         "padding_bottom": 20
       }
     },
-    "featured_product": {
-      "type": "featured-product",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Ritmo Noturno™: A Chave para a Restauração do Seu Sono",
-            "text_style": "uppercase"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": false
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "title",
-        "price",
-        "buy_buttons"
-      ],
-      "settings": {
-        "product": "ritmo-noturno-3-frascos",
-        "color_scheme": "scheme-1",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "solution_section": {
       "type": "image-with-text",
       "blocks": {
@@ -259,6 +259,7 @@
         "text"
       ],
       "settings": {
+        "image": "shopify://shop_images/Gemini_Generated_Image_uukfezuukfezuukf.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
