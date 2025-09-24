@@ -157,59 +157,6 @@
         "padding_bottom": 36
       }
     },
-    "problem_section": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_1": {
-          "type": "column",
-          "settings": {
-            "title": "A Invenção da Luz Artificial",
-            "text": "<p>A invenção da lâmpada foi o \"pecado original\" contra o sono natural, destruindo a conexão da humanidade com o ciclo solar de 24 horas e introduzindo o conceito de \"Corrupção do Ritmo Circadiano\".</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_2": {
-          "type": "column",
-          "settings": {
-            "title": "O Cérebro Que Não Desliga",
-            "text": "<p>A luz azul das telas suprime a produção de melatonina e engana o cérebro em um estado de dia perpétuo. O resultado: o cérebro que simplesmente não desliga.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_3": {
-          "type": "column",
-          "settings": {
-            "title": "A Tortura Noturna",
-            "text": "<p>A dor psicológica profunda da ansiedade do sono. A \"matemática triste do sono\", o pânico de acordar às 3h da manhã com a mente acelerada, e o pavor que se constrói quando a hora de dormir se aproxima.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_1",
-        "column_2",
-        "column_3"
-      ],
-      "settings": {
-        "title": "O Ladrão Moderno do Sono: Como a Luz Artificial Corrompeu seu Ritmo Natural",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "scheme-3",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "solution_section": {
       "type": "image-with-text",
       "blocks": {
@@ -246,36 +193,6 @@
         "color_scheme": "scheme-2",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "transformation": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Imagine Acordar Sentindo-se Assim Todos os Dias...",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>✓ <strong>Clareza Mental Afiada:</strong> Performar no seu máximo no trabalho, tomar decisões com confiança e eliminar a névoa cerebral.</p><p>✓ <strong>Energia Renovada:</strong> Ter a disposição e a vitalidade para seus hobbies e para estar verdadeiramente presente com sua família.</p><p>✓ <strong>Calma e Paciência:</strong> Ser o pai, a mãe, o parceiro e o profissional paciente e equilibrado que você deseja ser.</p><p>✓ <strong>Controle Restaurado:</strong> Sentir-se novamente no comando da sua saúde e bem-estar, livre da ansiedade e da frustração do sono.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
       }
     },
     "pricing_offer": {
@@ -360,10 +277,8 @@
   "order": [
     "hero_banner",
     "multirow_bz3R6a",
-    "testimonials",
-    "problem_section",
     "solution_section",
-    "transformation",
+    "testimonials",
     "pricing_offer",
     "guarantee"
   ]
