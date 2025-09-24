@@ -157,36 +157,6 @@
         "padding_bottom": 36
       }
     },
-    "disqualification_intro": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "A Batalha das Promessas Quebradas: Por Que Nada Funcionou Até Agora",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Você já tentou de tudo. Os remédios prescritos que deixam você em uma \"ressaca\" terrível no dia seguinte, comprometendo sua performance cognitiva. As melatoninas comuns que prometem muito e entregam pesadelos ou param de funcionar depois de algumas semanas. É o \"pacto com o diabo\" - escolher entre drogas perigosamente poderosas ou remédios naturais frustrantemente fracos que não conseguem resolver um problema biológico profundo.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 20
-      }
-    },
     "solution_section": {
       "type": "image-with-text",
       "blocks": {
@@ -391,7 +361,6 @@
     "hero_banner",
     "multirow_bz3R6a",
     "problem_section",
-    "disqualification_intro",
     "solution_section",
     "testimonials",
     "transformation",
