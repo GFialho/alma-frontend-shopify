@@ -192,8 +192,8 @@
         "heading_size": "h1",
         "image_width": "half",
         "image_ratio": "circle",
-        "button_label": "Button label",
-        "button_link": "",
+        "button_label": "COMPRAR AGORA",
+        "button_link": "shopify://collections/all",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
@@ -248,7 +248,7 @@
         "testimonial_1": {
           "type": "column",
           "settings": {
-            "title": "Ana P., São Paulo ⭐⭐⭐⭐⭐",
+            "title": "Ana P., São Paulo  ⭐⭐⭐⭐⭐",
             "text": "<p>\"Eu era um zumbi ambulante com outros remédios. Acordava mais cansada do que quando fui dormir. Com Ritmo Noturno, eu finalmente acordo me sentindo... eu de novo. A diferença é noite e dia.\"</p>",
             "link_label": "",
             "link": ""
