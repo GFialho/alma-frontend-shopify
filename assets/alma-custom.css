@@ -388,17 +388,7 @@ blockquote {
   box-shadow: 0 6px 20px rgba(126, 146, 120, 0.3);
 }
 
-/* Primary button styling */
-.btn--primary,
-.button--primary {
-  background: linear-gradient(135deg, #7e9278 0%, #6a7f6a 100%);
-  border: none;
-}
-
-.btn--primary:hover,
-.button--primary:hover {
-  background: linear-gradient(135deg, #6a7f6a 0%, #5d6f5d 100%);
-}
+/* Primary button styling - removed hardcoded colors to allow Shopify theme customization */
 
 /* ==========================================================================
    HERO SECTION ENHANCEMENTS
@@ -481,7 +471,6 @@ blockquote {
 .button {
   font-family: 'Lora', serif !important;
   font-weight: 500;
-  color: var(--alma-white) !important;
 }
 
 /* Card text styling */
