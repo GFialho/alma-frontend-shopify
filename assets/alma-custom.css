@@ -14,7 +14,7 @@
   --alma-dark-charcoal: #2d2d2d;
   --alma-light-gray: #f8f9fa;
   --alma-blue-tint: #eef2f7;
-  
+
   /* Green Color Scheme */
   --alma-primary-green: #7e9278;
   --alma-dark-green: #6a7f6a;
@@ -39,8 +39,18 @@ p,
 }
 
 /* All headings use Lora with appropriate weights and dark green color */
-h1, h2, h3, h4, h5, h6,
-.h0, .h1, .h2, .h3, .h4, .h5,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h0,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
 .banner__heading,
 .multicolumn__title,
 .multirow__heading,
@@ -386,7 +396,6 @@ blockquote {
   line-height: 1.2;
   margin-bottom: 1.5rem;
   font-weight: 600;
-  color: var(--alma-white) !important;
 }
 
 .banner__text {
@@ -395,7 +404,6 @@ blockquote {
   line-height: 1.5;
   margin-bottom: 2rem;
   font-weight: 400;
-  color: var(--alma-white) !important;
 }
 
 /* ==========================================================================
@@ -607,7 +615,7 @@ select,
     font-size: 2rem;
     font-family: 'Lora', serif !important;
   }
-  
+
   /* Adjust body text size for tablets */
   body,
   p,
@@ -647,7 +655,7 @@ select,
     font-size: 24px;
     font-family: 'Lora', serif !important;
   }
-  
+
   /* Adjust body text size for mobile */
   body,
   p,
@@ -659,21 +667,24 @@ select,
     line-height: 1.6;
     color: var(--alma-primary-green) !important;
   }
-  
+
   /* Ensure headings maintain proper hierarchy on mobile */
-  h1, .h1 {
+  h1,
+  .h1 {
     font-size: 1.8rem;
     font-family: 'Lora', serif !important;
     color: var(--alma-dark-green) !important;
   }
-  
-  h2, .h2 {
+
+  h2,
+  .h2 {
     font-size: 1.5rem;
     font-family: 'Lora', serif !important;
     color: var(--alma-dark-green) !important;
   }
-  
-  h3, .h3 {
+
+  h3,
+  .h3 {
     font-size: 1.3rem;
     font-family: 'Lora', serif !important;
     color: var(--alma-dark-green) !important;
