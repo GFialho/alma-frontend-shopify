@@ -35,6 +35,30 @@
         "color_scheme": "scheme-1"
       }
     },
+    "rich_text_RAfijf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ctx4Pd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Produtos",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ctx4Pd"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -59,6 +83,7 @@
   "order": [
     "image_banner_BUKpwX",
     "banner",
+    "rich_text_RAfijf",
     "product-grid"
   ]
 }
