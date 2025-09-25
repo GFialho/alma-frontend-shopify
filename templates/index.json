@@ -195,7 +195,7 @@
         "button_label": "COMPRAR AGORA",
         "button_link": "shopify://collections/all",
         "columns_desktop": 3,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
