@@ -341,7 +341,6 @@ blockquote {
 
 /* Style the "MAIS POPULAR" text */
 .multicolumn .multicolumn__item p:first-child strong {
-  background: linear-gradient(135deg, var(--alma-passion-fruit-gold) 0%, #ffb700 100%);
   color: white;
   padding: 6px 16px;
   border-radius: 20px;
