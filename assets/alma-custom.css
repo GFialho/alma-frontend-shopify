@@ -67,7 +67,16 @@ h6,
 .banner .subtitle,
 .banner .text-subtitle,
 .banner__content .subtitle,
-.banner__content .text-subtitle {
+.banner__content .text-subtitle,
+.banner__box .subtitle,
+.banner__box .text-subtitle,
+.image-banner .subtitle,
+.image-banner .text-subtitle,
+.image-banner .banner__content .subtitle,
+.image-banner .banner__content .text-subtitle,
+.banner__content p,
+.banner__box p,
+.image-banner p {
   font-family: 'Lora', serif !important;
   color: inherit !important; /* Use theme's original colors */
 }
