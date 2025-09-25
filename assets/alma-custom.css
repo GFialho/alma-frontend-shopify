@@ -312,6 +312,25 @@ blockquote {
    PRICING CARDS ENHANCEMENT
    ========================================================================== */
 
+/* Make pricing cards flex containers with buttons at bottom */
+.multicolumn .multicolumn__item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.multicolumn .multicolumn__item .multicolumn__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Push buttons to bottom of pricing cards */
+.multicolumn .multicolumn__item .button {
+  margin-top: auto;
+  align-self: stretch;
+}
+
 /* Style pricing cards by targeting multicolumn items in pricing section */
 .multicolumn .multicolumn__item p:has(strong) {
   font-family: 'Lora', serif !important;
