@@ -64,6 +64,10 @@ h6,
 /* Banner text - keep original colors for readability against background */
 .banner__heading,
 .banner__text,
+.banner__text.rte.subtitle,
+.banner__text.rte.subtitle p,
+.banner__text.subtitle,
+.banner__text.subtitle p,
 .banner .subtitle,
 .banner .text-subtitle,
 .banner__content .subtitle,
@@ -81,14 +85,21 @@ h6,
   color: inherit !important; /* Use theme's original colors */
 }
 
-/* Enhance readability for long-form content */
+/* Enhance readability for long-form content - exclude banner areas */
 .rich-text__text p,
-.rte p {
+.rte p:not(.banner__text p):not(.banner__content p):not(.banner__box p) {
   font-family: 'Lora', serif !important;
   line-height: 1.7;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
   color: var(--alma-primary-green) !important;
+}
+
+/* Override for banner RTE text - higher specificity */
+.banner__box .banner__text.rte p,
+.banner__content .banner__text.rte p,
+.banner .banner__text.rte p {
+  color: inherit !important;
 }
 
 .rich-text__text ul,
