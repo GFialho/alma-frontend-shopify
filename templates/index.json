@@ -104,49 +104,6 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_iaxAid": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_tc8fA3": {
-          "type": "heading",
-          "settings": {
-            "heading": "POR QUE ESCOLHER A NOSSA MELATONINA?",
-            "heading_size": "h1"
-          }
-        },
-        "text_Lt3TdQ": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A escolha clara para noites de sono tranquilas e reparadoras</p>"
-          }
-        },
-        "button_6DnMdn": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_tc8fA3",
-        "text_Lt3TdQ",
-        "button_6DnMdn"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 20
-      }
-    },
     "multicolumn_AFWPTc": {
       "type": "multicolumn",
       "blocks": {
@@ -201,7 +158,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 12
       }
     },
     "solution_section": {
@@ -248,9 +205,8 @@
         "testimonial_1": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ana-profile.jpg",
-            "title": "⭐⭐⭐⭐⭐",
-            "text": "<p>\"Eu era um zumbi ambulante com outros remédios. Acordava mais cansada do que quando fui dormir. Com Ritmo Noturno, eu finalmente acordo me sentindo... eu de novo. A diferença é noite e dia.\"</p><div class=\"testimonial-author\">Ana P., São Paulo</div>",
+            "title": "Ana P., São Paulo  ⭐⭐⭐⭐⭐",
+            "text": "<p>\"Eu era um zumbi ambulante com outros remédios. Acordava mais cansada do que quando fui dormir. Com Ritmo Noturno, eu finalmente acordo me sentindo... eu de novo. A diferença é noite e dia.\"</p>",
             "link_label": "",
             "link": ""
           }
@@ -258,9 +214,8 @@
         "testimonial_2": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/carlos-profile.jpg",
-            "title": "⭐⭐⭐⭐⭐",
-            "text": "<p>\"Minha clareza mental no trabalho voltou. Eu não estava mais com medo de cometer um erro crítico por pura exaustão. Este produto não me deu apenas o sono de volta, ele me deu minha carreira de volta.\"</p><div class=\"testimonial-author\">Carlos M., Rio de Janeiro</div>",
+            "title": "Carlos M., Rio de Janeiro ⭐⭐⭐⭐⭐",
+            "text": "<p>\"Minha clareza mental no trabalho voltou. Eu não estava mais com medo de cometer um erro crítico por pura exaustão. Este produto não me deu apenas o sono de volta, ele me deu minha carreira de volta.\"</p>",
             "link_label": "",
             "link": ""
           }
@@ -268,9 +223,8 @@
         "testimonial_3": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/marina-profile.jpg",
-            "title": "⭐⭐⭐⭐⭐",
-            "text": "<p>\"Eu já tinha tentado todas as melatoninas do mercado e estava cético. A maioria me dava pesadelos ou parava de funcionar. Ritmo Noturno é diferente. É suave, eficaz e, o mais importante, sem efeitos colaterais. Durmo a noite toda e acordo bem.\"</p><div class=\"testimonial-author\">Marina L., Belo Horizonte</div>",
+            "title": "Marina L., Belo Horizonte ⭐⭐⭐⭐⭐",
+            "text": "<p>\"Eu já tinha tentado todas as melatoninas do mercado e estava cético. A maioria me dava pesadelos ou parava de funcionar. Ritmo Noturno é diferente. É suave, eficaz e, o mais importante, sem efeitos colaterais. Durmo a noite toda e acordo bem.\"</p>",
             "link_label": "",
             "link": ""
           }
@@ -284,12 +238,12 @@
       "settings": {
         "title": "A transformação que você pode sentir",
         "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "circle",
+        "image_width": "full",
+        "image_ratio": "adapt",
         "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
-        "column_alignment": "center",
+        "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
@@ -358,7 +312,6 @@
   "order": [
     "hero_banner",
     "multirow_bz3R6a",
-    "rich_text_iaxAid",
     "multicolumn_AFWPTc",
     "solution_section",
     "testimonials",
