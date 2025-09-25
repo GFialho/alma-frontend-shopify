@@ -350,28 +350,6 @@
         "padding_top": 36,
         "padding_bottom": 20
       }
-    },
-    "guarantee": {
-      "type": "rich-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>🛡️</p><h3><strong>Nossa Garantia Incondicional de 100% de Satisfação</strong></h3><p>Experimente Ritmo Noturno por 60 dias. Se você não sentir que está tendo o sono mais restaurador da sua vida e acordando com mais clareza e energia, simplesmente entre em contato e nós devolveremos seu dinheiro. <strong>Sem perguntas.</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-2",
-        "full_width": true,
-        "padding_top": 20,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
@@ -381,7 +359,6 @@
     "multicolumn_AFWPTc",
     "solution_section",
     "testimonials",
-    "pricing_offer",
-    "guarantee"
+    "pricing_offer"
   ]
 }

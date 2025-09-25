@@ -13,18 +13,6 @@
   "sections": {
     "footer": {
       "type": "footer",
-      "blocks": {
-        "footer-2": {
-          "type": "text",
-          "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "footer-2"
-      ],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
