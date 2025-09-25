@@ -248,8 +248,9 @@
         "testimonial_1": {
           "type": "column",
           "settings": {
-            "title": "Ana P., São Paulo  ⭐⭐⭐⭐⭐",
-            "text": "<p>\"Eu era um zumbi ambulante com outros remédios. Acordava mais cansada do que quando fui dormir. Com Ritmo Noturno, eu finalmente acordo me sentindo... eu de novo. A diferença é noite e dia.\"</p>",
+            "image": "shopify://shop_images/ana-profile.jpg",
+            "title": "⭐⭐⭐⭐⭐",
+            "text": "<p>\"Eu era um zumbi ambulante com outros remédios. Acordava mais cansada do que quando fui dormir. Com Ritmo Noturno, eu finalmente acordo me sentindo... eu de novo. A diferença é noite e dia.\"</p><div class=\"testimonial-author\">Ana P., São Paulo</div>",
             "link_label": "",
             "link": ""
           }
@@ -257,8 +258,9 @@
         "testimonial_2": {
           "type": "column",
           "settings": {
-            "title": "Carlos M., Rio de Janeiro ⭐⭐⭐⭐⭐",
-            "text": "<p>\"Minha clareza mental no trabalho voltou. Eu não estava mais com medo de cometer um erro crítico por pura exaustão. Este produto não me deu apenas o sono de volta, ele me deu minha carreira de volta.\"</p>",
+            "image": "shopify://shop_images/carlos-profile.jpg",
+            "title": "⭐⭐⭐⭐⭐",
+            "text": "<p>\"Minha clareza mental no trabalho voltou. Eu não estava mais com medo de cometer um erro crítico por pura exaustão. Este produto não me deu apenas o sono de volta, ele me deu minha carreira de volta.\"</p><div class=\"testimonial-author\">Carlos M., Rio de Janeiro</div>",
             "link_label": "",
             "link": ""
           }
@@ -266,8 +268,9 @@
         "testimonial_3": {
           "type": "column",
           "settings": {
-            "title": "Marina L., Belo Horizonte ⭐⭐⭐⭐⭐",
-            "text": "<p>\"Eu já tinha tentado todas as melatoninas do mercado e estava cético. A maioria me dava pesadelos ou parava de funcionar. Ritmo Noturno é diferente. É suave, eficaz e, o mais importante, sem efeitos colaterais. Durmo a noite toda e acordo bem.\"</p>",
+            "image": "shopify://shop_images/marina-profile.jpg",
+            "title": "⭐⭐⭐⭐⭐",
+            "text": "<p>\"Eu já tinha tentado todas as melatoninas do mercado e estava cético. A maioria me dava pesadelos ou parava de funcionar. Ritmo Noturno é diferente. É suave, eficaz e, o mais importante, sem efeitos colaterais. Durmo a noite toda e acordo bem.\"</p><div class=\"testimonial-author\">Marina L., Belo Horizonte</div>",
             "link_label": "",
             "link": ""
           }
@@ -281,12 +284,12 @@
       "settings": {
         "title": "A transformação que você pode sentir",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
+        "image_width": "third",
+        "image_ratio": "circle",
         "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
