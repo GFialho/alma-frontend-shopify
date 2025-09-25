@@ -366,69 +366,76 @@ blockquote {
    TESTIMONIALS ENHANCEMENT
    ========================================================================== */
 
-/* Target alma testimonials section by correct ID */
-#shopify-section-alma_testimonials_9bniPC .alma-testimonial-card {
+/* OVERRIDE Alma Testimonials - Remove all styling and backgrounds */
+.alma-testimonials {
   background: transparent !important;
-  padding: 2rem;
   border-radius: 0 !important;
-  box-shadow: none !important;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  transition: none;
-  border: none !important;
+  overflow: visible !important;
+  position: static !important;
 }
 
-/* Remove hover effects */
-#shopify-section-alma_testimonials_9bniPC .alma-testimonial-card:hover {
-  transform: none !important;
-  box-shadow: none !important;
-}
-
-/* Remove section background and gradient */
-#shopify-section-alma_testimonials_9bniPC .alma-testimonials {
-  background: transparent !important;
-}
-
-#shopify-section-alma_testimonials_9bniPC .alma-testimonials::before {
+.alma-testimonials::before {
   display: none !important;
 }
 
-/* Stars styling */
-#shopify-section-alma_testimonials_9bniPC .alma-testimonial-stars {
-  font-size: 1.5rem !important;
-  color: #ffc300 !important;
-  margin-bottom: 1.5rem !important;
-  order: 1;
+.alma-testimonial-card {
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 1rem !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+  transition: none !important;
+  height: auto !important;
+  display: block !important;
+  flex-direction: column !important;
+  text-align: center !important;
 }
 
-/* Testimonial text styling */
-#shopify-section-alma_testimonials_9bniPC .alma-testimonial-text {
-  font-style: italic !important;
+.alma-testimonial-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.alma-testimonial-stars {
+  color: #ffc300 !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem !important;
+  display: block !important;
+}
+
+.alma-testimonial-text {
+  font-size: 1rem !important;
   line-height: 1.6 !important;
   color: var(--alma-primary-green) !important;
   margin-bottom: 1.5rem !important;
+  flex-grow: 1 !important;
   font-family: 'Lora', serif !important;
-  order: 2;
-  flex-grow: 1;
+  font-style: italic !important;
 }
 
-/* Author name styling */
-#shopify-section-alma_testimonials_9bniPC .alma-testimonial-author {
+.alma-testimonial-text p {
+  color: var(--alma-primary-green) !important;
+  font-family: 'Lora', serif !important;
+  font-style: italic !important;
+  margin-bottom: 0 !important;
+}
+
+.alma-testimonial-author {
   font-weight: 600 !important;
-  font-size: 0.9rem !important;
   color: var(--alma-dark-green) !important;
+  font-size: 0.9rem !important;
   margin-top: auto !important;
   font-family: 'Lora', serif !important;
-  order: 3;
 }
 
-#shopify-section-alma_testimonials_9bniPC .alma-testimonial-location {
+.alma-testimonial-location {
   font-size: 0.8rem !important;
   color: var(--alma-light-green) !important;
   font-style: normal !important;
   margin-top: 0.2rem !important;
+  font-family: 'Lora', serif !important;
 }
 
 /* ==========================================================================
