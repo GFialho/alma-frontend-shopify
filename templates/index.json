@@ -199,55 +199,49 @@
         "padding_bottom": 36
       }
     },
-    "testimonials": {
-      "type": "multicolumn",
+    "alma_testimonials_9bniPC": {
+      "type": "alma-testimonials",
       "blocks": {
-        "testimonial_1": {
-          "type": "column",
+        "testimonial_XdnH7W": {
+          "type": "testimonial",
           "settings": {
-            "title": "Ana P., São Paulo  ⭐⭐⭐⭐⭐",
-            "text": "<p>\"Eu era um zumbi ambulante com outros remédios. Acordava mais cansada do que quando fui dormir. Com Ritmo Noturno, eu finalmente acordo me sentindo... eu de novo. A diferença é noite e dia.\"</p>",
-            "link_label": "",
-            "link": ""
+            "title": "Ana P.",
+            "location": "São Paulo, SP",
+            "text": "<p>\"Eu era um zumbi ambulante com outros remédios. Acordava mais cansado do que quando fui dormir. Com Ritmo Noturno, eu finalmente acordo me sentindo... eu de novo. A diferença é noite e dia.\"</p>"
           }
         },
-        "testimonial_2": {
-          "type": "column",
+        "testimonial_iCWmTM": {
+          "type": "testimonial",
           "settings": {
-            "title": "Carlos M., Rio de Janeiro ⭐⭐⭐⭐⭐",
-            "text": "<p>\"Minha clareza mental no trabalho voltou. Eu não estava mais com medo de cometer um erro crítico por pura exaustão. Este produto não me deu apenas o sono de volta, ele me deu minha carreira de volta.\"</p>",
-            "link_label": "",
-            "link": ""
+            "title": "Carlos M.",
+            "location": "Rio de Janeiro, RJ",
+            "text": "<p>\"Minha clareza mental no trabalho voltou. Eu não estava mais com medo de cometer um erro crítico por pura exaustão. Este produto não me deu apenas o sono de volta, ele me deu minha carreira de volta.\"</p>"
           }
         },
-        "testimonial_3": {
-          "type": "column",
+        "testimonial_wHXVde": {
+          "type": "testimonial",
           "settings": {
-            "title": "Marina L., Belo Horizonte ⭐⭐⭐⭐⭐",
-            "text": "<p>\"Eu já tinha tentado todas as melatoninas do mercado e estava cético. A maioria me dava pesadelos ou parava de funcionar. Ritmo Noturno é diferente. É suave, eficaz e, o mais importante, sem efeitos colaterais. Durmo a noite toda e acordo bem.\"</p>",
-            "link_label": "",
-            "link": ""
+            "title": "Marina L.",
+            "location": "Belo Horizonte, MG",
+            "text": "<p>\"Eu já tinha tentado todas as melatoninas do mercado e estava cético. A maioria me dava pesadelos ou parava de funcionar. Ritmo Noturno é diferente. É suave, eficaz e, o mais importante, sem efeitos colaterais.\"</p>"
           }
         }
       },
       "block_order": [
-        "testimonial_1",
-        "testimonial_2",
-        "testimonial_3"
+        "testimonial_XdnH7W",
+        "testimonial_iCWmTM",
+        "testimonial_wHXVde"
       ],
+      "name": "Alma - Testimonials",
       "settings": {
-        "title": "A transformação que você pode sentir",
+        "title": "Depoimentos de Clientes",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "color_scheme": "scheme-2",
+        "swipe_on_mobile": false,
+        "color_scheme": "",
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -314,7 +308,7 @@
     "multirow_bz3R6a",
     "multicolumn_AFWPTc",
     "solution_section",
-    "testimonials",
+    "alma_testimonials_9bniPC",
     "pricing_offer"
   ]
 }
