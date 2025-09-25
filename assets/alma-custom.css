@@ -312,41 +312,21 @@ blockquote {
    PRICING CARDS ENHANCEMENT
    ========================================================================== */
 
-/* FORCE pricing cards to have equal heights with buttons at bottom */
-.multicolumn-list__item {
-  display: flex !important;
-  flex-direction: column !important;
-  height: 100% !important;
-}
-
+/* Simple approach to align buttons at bottom of pricing cards */
 .multicolumn-card {
-  display: flex !important;
-  flex-direction: column !important;
-  height: 100% !important;
-  flex-grow: 1 !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .multicolumn-card__info {
-  display: flex !important;
-  flex-direction: column !important;
-  flex-grow: 1 !important;
-  justify-content: space-between !important;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-/* FORCE buttons to bottom - override default margin */
-.multicolumn-card__info .link,
-.multicolumn-card__info .button {
-  margin-top: auto !important;
-  align-self: stretch !important;
-  text-align: center !important;
-  display: block !important;
-  width: 100% !important;
-}
-
-/* Ensure equal height cards in grid */
-.multicolumn-list {
-  display: grid !important;
-  align-items: stretch !important;
+.multicolumn-card__info .link {
+  margin-top: auto;
 }
 
 /* Style pricing cards by targeting multicolumn items in pricing section */
