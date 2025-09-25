@@ -367,8 +367,8 @@ blockquote {
    TESTIMONIALS ENHANCEMENT
    ========================================================================== */
 
-/* Testimonials section styling */
-.testimonials .multicolumn-card {
+/* Target testimonials section by ID */
+#shopify-section-testimonials .multicolumn-card {
   background: #fff;
   padding: 2rem;
   border-radius: 16px;
@@ -380,62 +380,67 @@ blockquote {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.testimonials .multicolumn-card:hover {
+#shopify-section-testimonials .multicolumn-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Stars at the top */
-.testimonials .multicolumn-card h3 {
+/* Reorder the elements in testimonials */
+#shopify-section-testimonials .multicolumn-card__info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Stars at the top (title field) */
+#shopify-section-testimonials .multicolumn-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   order: 1;
   color: #ffc300 !important;
+  font-family: 'Lora', serif !important;
 }
 
 /* Testimonial text in the middle */
-.testimonials .multicolumn-card .rte {
+#shopify-section-testimonials .multicolumn-card .rte {
   flex-grow: 1;
   order: 2;
   margin-bottom: 1.5rem;
 }
 
-.testimonials .multicolumn-card .rte p {
+#shopify-section-testimonials .multicolumn-card .rte p {
   font-style: italic;
   line-height: 1.6;
   color: var(--alma-primary-green) !important;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
+  font-family: 'Lora', serif !important;
 }
 
 /* Profile image at the bottom */
-.testimonials .multicolumn-card__image-wrapper {
+#shopify-section-testimonials .multicolumn-card__image-wrapper {
   order: 3;
   margin-top: auto;
   margin-bottom: 1rem;
+  align-self: center;
 }
 
-.testimonials .multicolumn-card__image {
+#shopify-section-testimonials .multicolumn-card__image {
   width: 60px !important;
   height: 60px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
   margin: 0 auto !important;
+  display: block !important;
 }
 
 /* Author name styling */
-.testimonial-author {
+#shopify-section-testimonials .testimonial-author {
   font-weight: 600;
   font-size: 0.9rem;
   color: var(--alma-dark-green) !important;
   margin-top: 0.5rem;
   order: 4;
-}
-
-/* Reorder the elements */
-.testimonials .multicolumn-card__info {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  font-family: 'Lora', serif !important;
 }
 
 /* ==========================================================================
