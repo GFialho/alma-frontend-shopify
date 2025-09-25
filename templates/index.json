@@ -104,6 +104,144 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_iaxAid": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tc8fA3": {
+          "type": "heading",
+          "settings": {
+            "heading": "POR QUE ESCOLHER A NOSSA MELATONINA?",
+            "heading_size": "h1"
+          }
+        },
+        "text_Lt3TdQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A escolha clara para noites de sono tranquilas e reparadoras</p>"
+          }
+        },
+        "button_6DnMdn": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_tc8fA3",
+        "text_Lt3TdQ",
+        "button_6DnMdn"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "multicolumn_AFWPTc": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_FJ7U4p": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_ewo310ewo310ewo3_1.png",
+            "title": "100% VEGANA",
+            "text": "<p>Fórmula pura, à base de plantas, livre de crueldade animal</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_REdtJw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_ylj7kuylj7kuylj7_1.png",
+            "title": "INGREDIENTES DE ALTA PUREZA",
+            "text": "<p>Não OGM, sem glúten ou aditivos desnecessários</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_NnriHi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_otsfotsfotsfotsf_1.png",
+            "title": "SONO REPARADOR GARANTIDO",
+            "text": "<p>Auxilia o relaxamento natural e melhora a qualidade do sono</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_FJ7U4p",
+        "column_REdtJw",
+        "column_NnriHi"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "half",
+        "image_ratio": "circle",
+        "button_label": "Button label",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "solution_section": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Não é Sedação, é Restauração: O Segredo da \"Restauração Biorrítmica\"",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>O objetivo não é usar força bruta para nocautear o corpo, mas sim \"re-afinar a frequência natural de sono do seu cérebro\". Como um rádio sendo cuidadosamente sintonizado para sair da estática zunindo e encontrar um sinal claro e silencioso, restaurando a capacidade inata do corpo de dormir profundamente e acordar renovado.</p><p>Esta é a diferença fundamental: não forçamos o sono - <strong>restauramos sua capacidade natural de dormir</strong>.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Gemini_Generated_Image_uukfezuukfezuukf.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "scheme-2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "testimonials": {
       "type": "multicolumn",
       "blocks": {
@@ -153,44 +291,6 @@
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "solution_section": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Não é Sedação, é Restauração: O Segredo da \"Restauração Biorrítmica\"",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>O objetivo não é usar força bruta para nocautear o corpo, mas sim \"re-afinar a frequência natural de sono do seu cérebro\". Como um rádio sendo cuidadosamente sintonizado para sair da estática zunindo e encontrar um sinal claro e silencioso, restaurando a capacidade inata do corpo de dormir profundamente e acordar renovado.</p><p>Esta é a diferença fundamental: não forçamos o sono - <strong>restauramos sua capacidade natural de dormir</strong>.</p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Gemini_Generated_Image_uukfezuukfezuukf.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "scheme-3",
-        "color_scheme": "scheme-2",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -277,6 +377,8 @@
   "order": [
     "hero_banner",
     "multirow_bz3R6a",
+    "rich_text_iaxAid",
+    "multicolumn_AFWPTc",
     "solution_section",
     "testimonials",
     "pricing_offer",
