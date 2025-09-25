@@ -63,7 +63,11 @@ h6,
 
 /* Banner text - keep original colors for readability against background */
 .banner__heading,
-.banner__text {
+.banner__text,
+.banner .subtitle,
+.banner .text-subtitle,
+.banner__content .subtitle,
+.banner__content .text-subtitle {
   font-family: 'Lora', serif !important;
   color: inherit !important; /* Use theme's original colors */
 }
