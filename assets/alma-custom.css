@@ -367,94 +367,69 @@ blockquote {
    TESTIMONIALS ENHANCEMENT
    ========================================================================== */
 
-/* Target testimonials section by ID */
-#shopify-section-testimonials .multicolumn-card {
-  background: transparent;
+/* Target alma testimonials section by correct ID */
+#shopify-section-alma_testimonials_9bniPC .alma-testimonial-card {
+  background: transparent !important;
   padding: 2rem;
-  border-radius: 0;
-  box-shadow: none;
+  border-radius: 0 !important;
+  box-shadow: none !important;
   text-align: center;
   display: flex;
   flex-direction: column;
   height: 100%;
   transition: none;
+  border: none !important;
 }
 
-/* Remove hover effects for clean look */
-#shopify-section-testimonials .multicolumn-card:hover {
-  transform: none;
-  box-shadow: none;
+/* Remove hover effects */
+#shopify-section-alma_testimonials_9bniPC .alma-testimonial-card:hover {
+  transform: none !important;
+  box-shadow: none !important;
 }
 
 /* Remove section background and gradient */
-#shopify-section-testimonials .multicolumn {
+#shopify-section-alma_testimonials_9bniPC .alma-testimonials {
   background: transparent !important;
 }
 
-#shopify-section-testimonials .multicolumn.gradient {
-  background: transparent !important;
+#shopify-section-alma_testimonials_9bniPC .alma-testimonials::before {
+  display: none !important;
 }
 
-#shopify-section-testimonials .multicolumn.background-primary {
-  background: transparent !important;
-}
-
-/* Reorder the elements in testimonials */
-#shopify-section-testimonials .multicolumn-card__info {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-/* Stars at the top (title field) */
-#shopify-section-testimonials .multicolumn-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  order: 1;
+/* Stars styling */
+#shopify-section-alma_testimonials_9bniPC .alma-testimonial-stars {
+  font-size: 1.5rem !important;
   color: #ffc300 !important;
-  font-family: 'Lora', serif !important;
+  margin-bottom: 1.5rem !important;
+  order: 1;
 }
 
-/* Testimonial text in the middle */
-#shopify-section-testimonials .multicolumn-card .rte {
-  flex-grow: 1;
-  order: 2;
-  margin-bottom: 1.5rem;
-}
-
-#shopify-section-testimonials .multicolumn-card .rte p {
-  font-style: italic;
-  line-height: 1.6;
+/* Testimonial text styling */
+#shopify-section-alma_testimonials_9bniPC .alma-testimonial-text {
+  font-style: italic !important;
+  line-height: 1.6 !important;
   color: var(--alma-primary-green) !important;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem !important;
   font-family: 'Lora', serif !important;
-}
-
-/* Profile image at the bottom */
-#shopify-section-testimonials .multicolumn-card__image-wrapper {
-  order: 3;
-  margin-top: auto;
-  margin-bottom: 1rem;
-  align-self: center;
-}
-
-#shopify-section-testimonials .multicolumn-card__image {
-  width: 60px !important;
-  height: 60px !important;
-  border-radius: 50% !important;
-  object-fit: cover !important;
-  margin: 0 auto !important;
-  display: block !important;
+  order: 2;
+  flex-grow: 1;
 }
 
 /* Author name styling */
-#shopify-section-testimonials .testimonial-author {
-  font-weight: 600;
-  font-size: 0.9rem;
+#shopify-section-alma_testimonials_9bniPC .alma-testimonial-author {
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
   color: var(--alma-dark-green) !important;
-  margin-top: 0.5rem;
-  order: 4;
+  margin-top: auto !important;
   font-family: 'Lora', serif !important;
+  order: 3;
+}
+
+#shopify-section-alma_testimonials_9bniPC .alma-testimonial-location {
+  font-size: 0.8rem !important;
+  color: var(--alma-light-green) !important;
+  font-style: normal !important;
+  margin-top: 0.2rem !important;
 }
 
 /* ==========================================================================
