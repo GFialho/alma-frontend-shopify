@@ -313,22 +313,30 @@ blockquote {
    ========================================================================== */
 
 /* Make pricing cards flex containers with buttons at bottom */
-.multicolumn .multicolumn__item {
+.multicolumn-list__item {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.multicolumn .multicolumn__item .multicolumn__content {
+.multicolumn-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.multicolumn-card__info {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
 /* Push buttons to bottom of pricing cards */
-.multicolumn .multicolumn__item .button {
+.multicolumn-card__info .link,
+.multicolumn-card__info .button {
   margin-top: auto;
   align-self: stretch;
+  text-align: center;
 }
 
 /* Style pricing cards by targeting multicolumn items in pricing section */
