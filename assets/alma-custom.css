@@ -20,11 +20,37 @@
    TYPOGRAPHY ENHANCEMENTS
    ========================================================================== */
 
+/* Global Typography Override - Apply Lora font site-wide */
+body,
+.text-body,
+p,
+.rte,
+.rich-text__text {
+  font-family: 'Lora', serif !important;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* All headings use Lora with appropriate weights */
+h1, h2, h3, h4, h5, h6,
+.h0, .h1, .h2, .h3, .h4, .h5,
+.banner__heading,
+.multicolumn__title,
+.multirow__heading,
+.rich-text__heading {
+  font-family: 'Lora', serif !important;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
 /* Enhance readability for long-form content */
 .rich-text__text p,
 .rte p {
+  font-family: 'Lora', serif !important;
   line-height: 1.7;
   margin-bottom: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .rich-text__text ul,
@@ -39,6 +65,7 @@
 .rte li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
+  font-family: 'Lora', serif !important;
 }
 
 /* Blockquote styling */
@@ -66,7 +93,7 @@ blockquote {
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: var(--font-body-family);
+  font-family: 'Lora', serif !important;
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
@@ -236,6 +263,7 @@ blockquote {
 
 /* Style pricing cards by targeting multicolumn items in pricing section */
 .multicolumn .multicolumn__item p:has(strong) {
+  font-family: 'Lora', serif !important;
   font-size: 18px;
   font-weight: 700;
   color: var(--alma-deep-night-blue);
@@ -350,9 +378,120 @@ blockquote {
 }
 
 .banner__text {
+  font-family: 'Lora', serif !important;
   font-size: clamp(1.1rem, 2.5vw, 1.4rem);
   line-height: 1.5;
   margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+/* ==========================================================================
+   SECTION-SPECIFIC TYPOGRAPHY
+   ========================================================================== */
+
+/* Multirow section text styling */
+.multirow__text,
+.image-with-text__text,
+.image-with-text__text p {
+  font-family: 'Lora', serif !important;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* Multicolumn section styling */
+.multicolumn__text,
+.multicolumn__text p {
+  font-family: 'Lora', serif !important;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.multicolumn__title {
+  font-family: 'Lora', serif !important;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Rich text section styling */
+.rich-text__text,
+.rich-text__text p,
+.rich-text__heading {
+  font-family: 'Lora', serif !important;
+}
+
+/* Button text styling */
+.btn,
+.button {
+  font-family: 'Lora', serif !important;
+  font-weight: 500;
+}
+
+/* Card text styling */
+.card__information,
+.card__heading,
+.card__text {
+  font-family: 'Lora', serif !important;
+}
+
+/* Product information styling */
+.product__text,
+.product__title,
+.product-form__text {
+  font-family: 'Lora', serif !important;
+}
+
+/* Testimonials specific styling */
+.multicolumn .multicolumn__item p {
+  font-family: 'Lora', serif !important;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.multicolumn .multicolumn__item .multicolumn__title {
+  font-family: 'Lora', serif !important;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Additional typography coverage for edge cases */
+.subtitle,
+.text-subtitle,
+.caption,
+.text-caption,
+.label,
+.text-label,
+.collection__title,
+.page-title,
+.section-header,
+.section-title,
+.announcement-bar__message,
+.footer__content,
+.footer__heading,
+.modal__content,
+.drawer__content,
+.cart__contents,
+.price,
+.price__regular,
+.price__sale {
+  font-family: 'Lora', serif !important;
+}
+
+/* Form elements */
+input,
+textarea,
+select,
+.field__input,
+.field__label {
+  font-family: 'Lora', serif !important;
+}
+
+/* Navigation elements */
+.header__menu-item,
+.navigation__link,
+.menu-drawer__menu-item {
+  font-family: 'Lora', serif !important;
 }
 
 /* ==========================================================================
@@ -436,16 +575,27 @@ blockquote {
 @media (max-width: 990px) {
   .banner__heading {
     font-size: 2.5rem;
+    font-family: 'Lora', serif !important;
   }
 
   .product__title {
     font-size: 2rem;
+    font-family: 'Lora', serif !important;
+  }
+  
+  /* Adjust body text size for tablets */
+  body,
+  p,
+  .text-body {
+    font-size: 1rem;
+    font-family: 'Lora', serif !important;
   }
 }
 
 @media (max-width: 750px) {
   .banner__heading {
     font-size: 2rem;
+    font-family: 'Lora', serif !important;
   }
 
   /* Ensure banner text width is responsive on mobile */
@@ -456,6 +606,7 @@ blockquote {
 
   .product__title {
     font-size: 1.8rem;
+    font-family: 'Lora', serif !important;
   }
 
   .guarantee-section {
@@ -468,6 +619,34 @@ blockquote {
 
   .price-large {
     font-size: 24px;
+    font-family: 'Lora', serif !important;
+  }
+  
+  /* Adjust body text size for mobile */
+  body,
+  p,
+  .text-body,
+  .multirow__text,
+  .multicolumn__text {
+    font-size: 0.95rem;
+    font-family: 'Lora', serif !important;
+    line-height: 1.6;
+  }
+  
+  /* Ensure headings maintain proper hierarchy on mobile */
+  h1, .h1 {
+    font-size: 1.8rem;
+    font-family: 'Lora', serif !important;
+  }
+  
+  h2, .h2 {
+    font-size: 1.5rem;
+    font-family: 'Lora', serif !important;
+  }
+  
+  h3, .h3 {
+    font-size: 1.3rem;
+    font-family: 'Lora', serif !important;
   }
 }
 
