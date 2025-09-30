@@ -48,19 +48,6 @@
         {%- endfor -%}
       </div>
       
-      {%- if section.settings.show_navigation -%}
-        <div class="alma-reviews-navigation">
-          <button class="alma-review-nav alma-review-prev" aria-label="Previous review">‹</button>
-          <div class="alma-review-dots">
-            {%- for block in section.blocks -%}
-              <button class="alma-review-dot" 
-                      data-index="{{ forloop.index0 }}" 
-                      aria-label="Go to review {{ forloop.index }}"></button>
-            {%- endfor -%}
-          </div>
-          <button class="alma-review-nav alma-review-next" aria-label="Next review">›</button>
-        </div>
-      {%- endif -%}
     </div>
   </div>
 </div>
@@ -87,25 +74,26 @@
 }
 
 .alma-review-card {
-  flex: 0 0 300px;
+  flex: 0 0 280px;
   background: white;
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border: 2px solid transparent;
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0.7;
-  transform: scale(0.9);
+  opacity: 0.5;
+  transform: scale(0.8);
   position: relative;
 }
 
 .alma-review-card.active {
-  flex: 0 0 400px;
+  flex: 0 0 450px;
   opacity: 1;
   transform: scale(1);
   border-color: var(--alma-primary-green);
-  box-shadow: 0 8px 40px rgba(126, 146, 120, 0.2);
+  box-shadow: 0 12px 50px rgba(126, 146, 120, 0.3);
   z-index: 2;
+  padding: 2.5rem;
 }
 
 .alma-review-stars {
@@ -152,52 +140,6 @@
   opacity: 0.8;
 }
 
-.alma-reviews-navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.alma-review-nav {
-  background: var(--alma-primary-green);
-  color: white;
-  border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.alma-review-nav:hover {
-  background: var(--alma-dark-green);
-  transform: scale(1.1);
-}
-
-.alma-review-dots {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.alma-review-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid var(--alma-primary-green);
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.alma-review-dot.active {
-  background: var(--alma-primary-green);
-}
 
 /* Mobile Styles */
 @media screen and (max-width: 749px) {
@@ -244,37 +186,36 @@ document.addEventListener('DOMContentLoaded', function() {
   containers.forEach(container => {
     const track = container.querySelector('.alma-reviews-track');
     const cards = container.querySelectorAll('.alma-review-card');
-    const dots = container.querySelectorAll('.alma-review-dot');
-    const prevBtn = container.querySelector('.alma-review-prev');
-    const nextBtn = container.querySelector('.alma-review-next');
     
     if (cards.length === 0) return;
     
-    let currentIndex = 0; // Start with first card active
+    let currentIndex = 0;
     let autoRotateInterval;
     
     const autoRotate = container.dataset.autoRotate === 'true';
     const rotationSpeed = parseInt(container.dataset.rotationSpeed) || 4000;
     
-    // Create a circular array by cloning cards
-    function setupCircularDisplay() {
+    // Create infinite circular array by cloning cards
+    function setupInfiniteScroll() {
       // Clear existing cards
       track.innerHTML = '';
       
-      // Create circular array with clones for smooth infinite scroll
+      // Create multiple sets of cards for seamless infinite scroll
       const totalCards = cards.length;
-      const cardsToShow = Math.min(3, totalCards); // Show max 3 cards
+      const setsToCreate = 5; // Create 5 sets for smooth infinite scrolling
       
-      // Clone all cards multiple times for infinite effect
-      for (let i = 0; i < totalCards * 3; i++) {
-        const originalIndex = i % totalCards;
-        const cardClone = cards[originalIndex].cloneNode(true);
-        cardClone.setAttribute('data-original-index', originalIndex);
-        track.appendChild(cardClone);
+      // Clone all cards multiple times
+      for (let set = 0; set < setsToCreate; set++) {
+        for (let i = 0; i < totalCards; i++) {
+          const cardClone = cards[i].cloneNode(true);
+          cardClone.setAttribute('data-original-index', i);
+          cardClone.setAttribute('data-set', set);
+          track.appendChild(cardClone);
+        }
       }
       
-      // Start with middle set active
-      currentIndex = totalCards;
+      // Start with middle set active (set 2, first card)
+      currentIndex = totalCards * 2;
       updateDisplay();
     }
     
@@ -282,41 +223,35 @@ document.addEventListener('DOMContentLoaded', function() {
       const allCards = track.querySelectorAll('.alma-review-card');
       const totalCards = cards.length;
       
-      // Remove active class from all cards and dots
+      // Remove active class from all cards
       allCards.forEach(card => card.classList.remove('active'));
-      dots.forEach(dot => dot.classList.remove('active'));
       
-      // Calculate which cards to show (previous, current, next)
-      const centerIndex = currentIndex;
-      const leftIndex = centerIndex - 1;
-      const rightIndex = centerIndex + 1;
-      
-      // Set active states
-      if (allCards[centerIndex]) {
-        allCards[centerIndex].classList.add('active');
-      }
-      
-      // Update dot indicator
-      const originalIndex = currentIndex % totalCards;
-      if (dots[originalIndex]) {
-        dots[originalIndex].classList.add('active');
+      // Set active state for current card
+      if (allCards[currentIndex]) {
+        allCards[currentIndex].classList.add('active');
       }
       
       // Position the track to center the active card
-      const cardWidth = 320; // 300px + 20px gap
-      const offset = -(centerIndex * cardWidth) + (container.offsetWidth / 2) - (cardWidth / 2);
+      const cardWidth = 320; // 280px + 40px gap
+      const containerWidth = container.offsetWidth;
+      const offset = -(currentIndex * cardWidth) + (containerWidth / 2) - (cardWidth / 2);
       track.style.transform = `translateX(${offset}px)`;
     }
     
     function nextReview() {
       const totalCards = cards.length;
+      const totalClonedCards = track.querySelectorAll('.alma-review-card').length;
+      
       currentIndex++;
       
-      // If we've gone too far, reset to beginning of middle set
-      if (currentIndex >= totalCards * 2) {
-        currentIndex = totalCards;
+      // If we've gone past the third set, reset to the second set seamlessly
+      if (currentIndex >= totalCards * 3) {
+        // Move to equivalent position in second set
         track.style.transition = 'none';
+        currentIndex = totalCards; // Reset to beginning of second set
         updateDisplay();
+        
+        // Re-enable transition and move to next card
         setTimeout(() => {
           track.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
           currentIndex++;
@@ -325,31 +260,6 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         updateDisplay();
       }
-    }
-    
-    function prevReview() {
-      const totalCards = cards.length;
-      currentIndex--;
-      
-      // If we've gone too far back, reset to end of middle set
-      if (currentIndex < totalCards) {
-        currentIndex = totalCards * 2 - 1;
-        track.style.transition = 'none';
-        updateDisplay();
-        setTimeout(() => {
-          track.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
-          currentIndex--;
-          updateDisplay();
-        }, 50);
-      } else {
-        updateDisplay();
-      }
-    }
-    
-    function goToReview(index) {
-      const totalCards = cards.length;
-      currentIndex = totalCards + index; // Go to middle set + index
-      updateDisplay();
     }
     
     function startAutoRotate() {
@@ -365,38 +275,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
     
-    // Navigation event listeners
-    if (nextBtn) {
-      nextBtn.addEventListener('click', () => {
-        stopAutoRotate();
-        nextReview();
-        setTimeout(startAutoRotate, 2000);
-      });
-    }
-    
-    if (prevBtn) {
-      prevBtn.addEventListener('click', () => {
-        stopAutoRotate();
-        prevReview();
-        setTimeout(startAutoRotate, 2000);
-      });
-    }
-    
-    // Dot navigation
-    dots.forEach((dot, index) => {
-      dot.addEventListener('click', () => {
-        stopAutoRotate();
-        goToReview(index);
-        setTimeout(startAutoRotate, 2000);
-      });
-    });
-    
-    // Pause on hover
-    container.addEventListener('mouseenter', stopAutoRotate);
-    container.addEventListener('mouseleave', startAutoRotate);
-    
-    // Initialize
-    setupCircularDisplay();
+    // Initialize infinite scroll
+    setupInfiniteScroll();
     startAutoRotate();
     
     // Handle window resize
@@ -455,12 +335,6 @@ document.addEventListener('DOMContentLoaded', function() {
       "unit": "ms",
       "default": 4000,
       "label": "Rotation speed"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_navigation",
-      "default": true,
-      "label": "Show navigation"
     },
     {
       "type": "select",
