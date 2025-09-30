@@ -1,17 +1,20 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {}
         },
         "benefit_headline": {
           "type": "text",
@@ -28,7 +31,8 @@
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {}
         },
         "savings_badge": {
           "type": "text",
@@ -45,7 +49,8 @@
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -113,8 +118,7 @@
         }
       },
       "block_order": [
-        "vendor",
-        "title", 
+        "title",
         "benefit_headline",
         "reviews_summary",
         "price",
@@ -126,7 +130,7 @@
         "urgency_timer",
         "key_benefits",
         "collapsible-ingredients",
-        "collapsible-usage", 
+        "collapsible-usage",
         "collapsible-science",
         "collapsible-guarantee"
       ],
@@ -137,9 +141,9 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "stacked",
+        "mobile_thumbnails": "show",
         "media_position": "left",
         "image_zoom": "lightbox",
-        "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 36,
@@ -159,7 +163,7 @@
           }
         },
         "faq_2": {
-          "type": "collapsible_row", 
+          "type": "collapsible_row",
           "settings": {
             "heading": "⏰ Em quanto tempo vou ver resultados?",
             "icon": "none",
@@ -171,7 +175,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "🤔 Posso tomar com outros medicamentos?",
-            "icon": "none", 
+            "icon": "none",
             "row_content": "<p>O Ritmo Noturno™ é um suplemento natural, mas sempre recomendamos <strong>consultar seu médico</strong> antes de combinar com outros medicamentos, especialmente se você já toma remédios para dormir, ansiedade ou depressão. Nosso suporte também pode te orientar - entre em contato conosco!</p>",
             "page": ""
           }
@@ -206,7 +210,7 @@
       },
       "block_order": [
         "faq_1",
-        "faq_2", 
+        "faq_2",
         "faq_3",
         "faq_4",
         "faq_5",
@@ -218,8 +222,8 @@
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
-        "color_scheme": "background-2",
         "container_color_scheme": "background-2",
+        "color_scheme": "background-2",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
@@ -240,7 +244,7 @@
           }
         },
         "testimonial_2": {
-          "type": "column", 
+          "type": "column",
           "settings": {
             "title": "⭐⭐⭐⭐⭐ \"Sem ressaca matinal!\"",
             "text": "<p>\"O que mais me impressionou foi acordar sem aquela sensação de 'ressaca' que outros remédios causavam. Com o Ritmo Noturno durmo profundamente e acordo disposto para o dia. Recomendo para todos!\"</p><p><strong>- João Santos, 42 anos, Rio de Janeiro</strong></p>",
@@ -260,7 +264,7 @@
       },
       "block_order": [
         "testimonial_1",
-        "testimonial_2", 
+        "testimonial_2",
         "testimonial_3"
       ],
       "settings": {
@@ -268,11 +272,11 @@
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
+        "button_label": "Ver mais depoimentos",
+        "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Ver mais depoimentos",
-        "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -283,25 +287,25 @@
     "upsell_section": {
       "type": "featured-collection",
       "settings": {
+        "collection": "sono-e-relaxamento",
+        "products_to_show": 3,
         "title": "🎁 Complete seu kit do sono perfeito",
         "heading_size": "h2",
         "description": "<p>Clientes que compraram Ritmo Noturno também levaram:</p>",
         "show_description": true,
         "description_style": "body",
-        "collection": "sono-e-relaxamento",
-        "products_to_show": 3,
         "columns_desktop": 3,
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": false,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
         "color_scheme": "background-2",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": true,
-        "enable_quick_add": true,
+        "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -338,7 +342,7 @@
       },
       "block_order": [
         "heading",
-        "text", 
+        "text",
         "button"
       ],
       "settings": {
@@ -353,7 +357,7 @@
   },
   "order": [
     "main",
-    "faq_section", 
+    "faq_section",
     "testimonials",
     "upsell_section",
     "final_cta"
