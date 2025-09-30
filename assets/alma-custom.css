@@ -1123,7 +1123,18 @@ select,
    RITMO NOTURNO PRODUCT PAGE ENHANCEMENTS
    ========================================================================== */
 
-/* Reviews Stars Styling */
+/* Reviews Summary Styling - for the product page rating */
+.product__text:contains('⭐⭐⭐⭐⭐') {
+  background: var(--alma-green-tint);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  text-align: center;
+  border-left: 4px solid var(--alma-primary-green);
+  font-weight: 500;
+  white-space: pre-line;
+  line-height: 1.6;
+}
 
 /* Savings Badge - Applied to text containing savings info */
 .product__text:contains('💰 ECONOMIZE'),

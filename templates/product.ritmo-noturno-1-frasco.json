@@ -183,49 +183,64 @@
         "padding_bottom": 36
       }
     },
-    "alma_testimonials_EbwiyL": {
-      "type": "alma-testimonials",
+    "alma_reviews": {
+      "type": "alma-reviews",
       "blocks": {
-        "testimonial_qLiRGJ": {
-          "type": "testimonial",
+        "review_1": {
+          "type": "review",
           "settings": {
-            "title": "Ana P.",
+            "name": "Ana P.",
             "location": "São Paulo, SP",
             "text": "<p>\"Eu era um zumbi ambulante com outros remédios. Acordava mais cansado do que quando fui dormir. Com Ritmo Noturno, eu finalmente acordo me sentindo... eu de novo. A diferença é noite e dia.\"</p>"
           }
         },
-        "testimonial_L9dFyx": {
-          "type": "testimonial",
+        "review_2": {
+          "type": "review",
           "settings": {
-            "title": "Carlos M.",
+            "name": "Carlos M.",
             "location": "Rio de Janeiro, RJ",
             "text": "<p>\"Minha clareza mental no trabalho voltou. Eu não estava mais com medo de cometer um erro crítico por pura exaustão. Este produto não me deu apenas o sono de volta, ele me deu minha carreira de volta.\"</p>"
           }
         },
-        "testimonial_YiGcAw": {
-          "type": "testimonial",
+        "review_3": {
+          "type": "review",
           "settings": {
-            "title": "Marina L.",
+            "name": "Marina L.",
             "location": "Belo Horizonte, MG",
             "text": "<p>\"Eu já tinha tentado todas as melatoninas do mercado e estava cético. A maioria me dava pesadelos ou parava de funcionar. Ritmo Noturno é diferente. É suave, eficaz e, o mais importante, sem efeitos colaterais.\"</p>"
+          }
+        },
+        "review_4": {
+          "type": "review",
+          "settings": {
+            "name": "Roberto S.",
+            "location": "Brasília, DF",
+            "text": "<p>\"Depois de 3 meses usando, posso dizer que minha vida mudou completamente. Durmo profundamente e acordo renovado todos os dias. Minha família notou a diferença no meu humor e disposição.\"</p>"
+          }
+        },
+        "review_5": {
+          "type": "review",
+          "settings": {
+            "name": "Fernanda T.",
+            "location": "Porto Alegre, RS",
+            "text": "<p>\"Trabalho em turnos e sempre tive dificuldade para dormir durante o dia. O Ritmo Noturno me ajudou a regular meu sono independente do horário. Produto incrível!\"</p>"
           }
         }
       },
       "block_order": [
-        "testimonial_qLiRGJ",
-        "testimonial_L9dFyx",
-        "testimonial_YiGcAw"
+        "review_1",
+        "review_2",
+        "review_3",
+        "review_4",
+        "review_5"
       ],
-      "name": "Alma - Testimonials",
       "settings": {
-        "title": "Avaliações",
+        "title": "💬 O que nossos clientes dizem",
         "heading_size": "h1",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "swipe_on_mobile": false,
-        "color_scheme": "",
-        "columns_mobile": "1",
+        "auto_rotate": true,
+        "rotation_speed": 4000,
+        "show_navigation": true,
+        "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -234,6 +249,6 @@
   "order": [
     "main",
     "faq_section",
-    "alma_testimonials_EbwiyL"
+    "alma_reviews"
   ]
 }
