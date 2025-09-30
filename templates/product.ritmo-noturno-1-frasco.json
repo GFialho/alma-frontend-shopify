@@ -26,14 +26,14 @@
         "reviews_stars": {
           "type": "text",
           "settings": {
-            "text": "⭐⭐⭐⭐⭐",
+            "text": "⭐⭐⭐⭐⭐ 4.8/5 (2768 avaliações)",
             "text_style": "body"
           }
         },
         "reviews_text": {
           "type": "text",
           "settings": {
-            "text": "4.8/5 (2768 avaliações)",
+            "text": "",
             "text_style": "body"
           }
         },
@@ -83,19 +83,19 @@
           }
         }
       },
-        "block_order": [
-          "title",
-          "benefit_headline",
-          "reviews_stars",
-          "reviews_text",
-          "price",
-          "variant_picker",
-          "quantity_selector",
-          "buy_buttons",
-          "trust_badges",
-          "key_benefits",
-          "collapsible-usage"
-        ],
+      "block_order": [
+        "title",
+        "benefit_headline",
+        "reviews_stars",
+        "reviews_text",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "trust_badges",
+        "key_benefits",
+        "collapsible-usage"
+      ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "background-1",
@@ -183,55 +183,49 @@
         "padding_bottom": 36
       }
     },
-    "testimonials": {
-      "type": "multicolumn",
+    "alma_testimonials_EbwiyL": {
+      "type": "alma-testimonials",
       "blocks": {
-        "testimonial_1": {
-          "type": "column",
+        "testimonial_qLiRGJ": {
+          "type": "testimonial",
           "settings": {
-            "title": "⭐⭐⭐⭐⭐ \"Vida transformada!\"",
-            "text": "<p>\"Sofria com insônia há 5 anos. Testei de tudo! O Ritmo Noturno foi a única coisa que realmente funcionou. Agora durmo 8h por noite e acordo renovada. Minha produtividade no trabalho melhorou 100%!\"</p><p><strong>- Maria Silva, 34 anos, São Paulo</strong></p>",
-            "link_label": "",
-            "link": ""
+            "title": "Ana P.",
+            "location": "São Paulo, SP",
+            "text": "<p>\"Eu era um zumbi ambulante com outros remédios. Acordava mais cansado do que quando fui dormir. Com Ritmo Noturno, eu finalmente acordo me sentindo... eu de novo. A diferença é noite e dia.\"</p>"
           }
         },
-        "testimonial_2": {
-          "type": "column",
+        "testimonial_L9dFyx": {
+          "type": "testimonial",
           "settings": {
-            "title": "⭐⭐⭐⭐⭐ \"Sem ressaca matinal!\"",
-            "text": "<p>\"O que mais me impressionou foi acordar sem aquela sensação de 'ressaca' que outros remédios causavam. Com o Ritmo Noturno durmo profundamente e acordo disposto para o dia. Recomendo para todos!\"</p><p><strong>- João Santos, 42 anos, Rio de Janeiro</strong></p>",
-            "link_label": "",
-            "link": ""
+            "title": "Carlos M.",
+            "location": "Rio de Janeiro, RJ",
+            "text": "<p>\"Minha clareza mental no trabalho voltou. Eu não estava mais com medo de cometer um erro crítico por pura exaustão. Este produto não me deu apenas o sono de volta, ele me deu minha carreira de volta.\"</p>"
           }
         },
-        "testimonial_3": {
-          "type": "column",
+        "testimonial_YiGcAw": {
+          "type": "testimonial",
           "settings": {
-            "title": "⭐⭐⭐⭐⭐ \"Resultado em 3 dias!\"",
-            "text": "<p>\"Não acreditava que fosse funcionar tão rápido. Em 3 dias já estava dormindo a noite toda. Minha ansiedade diminuiu muito e meu humor melhorou. Produto excelente, entrega rápida!\"</p><p><strong>- Ana Costa, 28 anos, Belo Horizonte</strong></p>",
-            "link_label": "",
-            "link": ""
+            "title": "Marina L.",
+            "location": "Belo Horizonte, MG",
+            "text": "<p>\"Eu já tinha tentado todas as melatoninas do mercado e estava cético. A maioria me dava pesadelos ou parava de funcionar. Ritmo Noturno é diferente. É suave, eficaz e, o mais importante, sem efeitos colaterais.\"</p>"
           }
         }
       },
       "block_order": [
-        "testimonial_1",
-        "testimonial_2",
-        "testimonial_3"
+        "testimonial_qLiRGJ",
+        "testimonial_L9dFyx",
+        "testimonial_YiGcAw"
       ],
+      "name": "Alma - Testimonials",
       "settings": {
-        "title": "💬 O que nossos clientes dizem",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
+        "title": "Avaliações",
+        "heading_size": "h1",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "color_scheme": "",
+        "columns_mobile": "1",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -240,6 +234,6 @@
   "order": [
     "main",
     "faq_section",
-    "testimonials"
+    "alma_testimonials_EbwiyL"
   ]
 }
