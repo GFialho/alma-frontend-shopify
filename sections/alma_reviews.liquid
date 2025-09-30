@@ -84,16 +84,19 @@
   opacity: 0.5;
   transform: scale(0.8);
   position: relative;
+  height: auto;
+  min-height: 300px;
 }
 
 .alma-review-card.active {
-  flex: 0 0 450px;
-  opacity: 1;
-  transform: scale(1);
-  border-color: var(--alma-primary-green);
-  box-shadow: 0 12px 50px rgba(126, 146, 120, 0.3);
-  z-index: 2;
-  padding: 2.5rem;
+  flex: 0 0 450px !important;
+  opacity: 1 !important;
+  transform: scale(1.1) !important;
+  border-color: var(--alma-primary-green) !important;
+  box-shadow: 0 12px 50px rgba(126, 146, 120, 0.3) !important;
+  z-index: 10 !important;
+  padding: 2.5rem !important;
+  min-height: 350px !important;
 }
 
 .alma-review-stars {
@@ -105,7 +108,7 @@
 
 .alma-review-content {
   font-family: 'Lora', serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: var(--alma-primary-green);
   margin-bottom: 1.5rem;
@@ -114,6 +117,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: font-size 0.6s ease;
+}
+
+.alma-review-card.active .alma-review-content {
+  font-size: 1.3rem !important;
+  line-height: 1.7 !important;
+}
+
+.alma-review-card.active .alma-review-stars {
+  font-size: 2rem !important;
+}
+
+.alma-review-card.active .alma-review-author strong {
+  font-size: 1.3rem !important;
 }
 
 .alma-review-content p {
@@ -229,12 +246,21 @@ document.addEventListener('DOMContentLoaded', function() {
       // Set active state for current card
       if (allCards[currentIndex]) {
         allCards[currentIndex].classList.add('active');
+        console.log('Active card set:', currentIndex, allCards[currentIndex]);
       }
       
       // Position the track to center the active card
-      const cardWidth = 320; // 280px + 40px gap
+      // Use average card width for positioning (accounting for active card being larger)
+      const baseCardWidth = 280;
+      const activeCardWidth = 450;
+      const gap = 32;
+      
+      // Calculate average width per card position
+      const avgCardWidth = baseCardWidth + gap;
       const containerWidth = container.offsetWidth;
-      const offset = -(currentIndex * cardWidth) + (containerWidth / 2) - (cardWidth / 2);
+      
+      // Simple offset calculation
+      const offset = -(currentIndex * avgCardWidth) + (containerWidth / 2) - (avgCardWidth / 2);
       track.style.transform = `translateX(${offset}px)`;
     }
     
