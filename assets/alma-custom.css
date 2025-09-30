@@ -1143,6 +1143,8 @@ select,
   margin: 1rem 0;
   text-align: center;
   border-left: 4px solid var(--alma-primary-green);
+  white-space: pre-line; /* This will respect line breaks */
+  line-height: 1.6;
 }
 
 /* Savings Badge - Applied to text containing savings info */
