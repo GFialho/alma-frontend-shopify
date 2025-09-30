@@ -4,7 +4,10 @@
  */
 
 document.addEventListener('DOMContentLoaded', function () {
-  const countdownElement = document.getElementById('countdown-timer');
+  // Find countdown element by looking for text containing countdown pattern
+  const countdownElement = Array.from(document.querySelectorAll('.product__text')).find(
+    (el) => el.textContent.includes('⏰ Oferta expira') || el.textContent.includes('23:59:45')
+  );
 
   if (!countdownElement) return;
 
@@ -46,7 +49,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const formattedTime =
       String(hours).padStart(2, '0') + ':' + String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0');
 
-    countdownElement.textContent = formattedTime;
+    // Update the countdown in the text content
+    const originalText = countdownElement.textContent;
+    const updatedText = originalText.replace(/\d{2}:\d{2}:\d{2}/, formattedTime);
+    countdownElement.textContent = updatedText;
   }
 
   // Update countdown immediately and then every second

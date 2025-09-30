@@ -1,13 +1,5 @@
 {
   "sections": {
-    "announcement-bar": {
-      "type": "announcement-bar",
-      "settings": {
-        "message": "🌙 <strong>OFERTA LIMITADA:</strong> Economize 30% no Ritmo Noturno™ - Use código: <strong>SONO30</strong>",
-        "link": "",
-        "color_scheme": "accent-1"
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -24,14 +16,14 @@
         "benefit_headline": {
           "type": "text",
           "settings": {
-            "text": "🌙 <strong>Nunca mais perca uma noite de sono reparador</strong> - Desperte renovado sem ressaca matinal",
+            "text": "🌙 Nunca mais perca uma noite de sono reparador - Desperte renovado sem ressaca matinal",
             "text_style": "subtitle"
           }
         },
         "reviews_summary": {
           "type": "text",
           "settings": {
-            "text": "<div class=\"reviews-summary\">\n⭐⭐⭐⭐⭐ <strong>4.8/5</strong> (2.847 clientes satisfeitos)\n<br><small>\"Finalmente consigo dormir a noite toda!\" - Maria S.</small>\n</div>",
+            "text": "⭐⭐⭐⭐⭐ 4.8/5 (2.847 clientes satisfeitos) - \"Finalmente consigo dormir a noite toda!\" - Maria S.",
             "text_style": "body"
           }
         },
@@ -41,7 +33,7 @@
         "savings_badge": {
           "type": "text",
           "settings": {
-            "text": "<div class=\"savings-badge\">💰 <strong>ECONOMIZE 30%</strong> - Oferta por tempo limitado</div>",
+            "text": "💰 ECONOMIZE 30% - Oferta por tempo limitado",
             "text_style": "body"
           }
         },
@@ -65,21 +57,21 @@
         "trust_badges": {
           "type": "text",
           "settings": {
-            "text": "<div class=\"trust-badges-enhanced\">\n<div class=\"trust-row\">\n<span class=\"badge\">🔒 Pagamento 100% Seguro</span>\n<span class=\"badge\">🚚 Frete Grátis Brasil</span>\n</div>\n<div class=\"trust-row\">\n<span class=\"badge\">✅ 60 Dias de Garantia</span>\n<span class=\"badge\">🇧🇷 Produzido no Brasil</span>\n</div>\n<div class=\"trust-row\">\n<span class=\"badge\">🧪 Fórmula Cientificamente Testada</span>\n<span class=\"badge\">🌿 100% Natural</span>\n</div>\n</div>",
+            "text": "🔒 Pagamento 100% Seguro | 🚚 Frete Grátis Brasil | ✅ 60 Dias de Garantia | 🇧🇷 Produzido no Brasil | 🧪 Fórmula Cientificamente Testada | 🌿 100% Natural",
             "text_style": "body"
           }
         },
         "urgency_timer": {
           "type": "text",
           "settings": {
-            "text": "<div class=\"urgency-section\">\n⏰ <strong>Oferta expira em:</strong> <span id=\"countdown-timer\">23:59:45</span>\n<br><small>Apenas 47 unidades restantes em estoque</small>\n</div>",
+            "text": "⏰ Oferta expira em: 23:59:45 - Apenas 47 unidades restantes em estoque",
             "text_style": "body"
           }
         },
         "key_benefits": {
           "type": "text",
           "settings": {
-            "text": "<div class=\"key-benefits\">\n<h3>✨ O que você vai conquistar:</h3>\n<ul class=\"benefits-list\">\n<li>🌙 <strong>Adormeça em até 15 minutos</strong> - Sem ficar rolando na cama</li>\n<li>😴 <strong>Sono profundo e reparador</strong> - Acorde descansado de verdade</li>\n<li>☀️ <strong>Zero ressaca matinal</strong> - Desperte com energia e clareza mental</li>\n<li>🧠 <strong>Melhore sua concentração</strong> - Mais produtividade no dia seguinte</li>\n<li>💪 <strong>Fortaleça sua imunidade</strong> - Sono de qualidade = saúde em dia</li>\n</ul>\n</div>",
+            "text": "✨ O que você vai conquistar: 🌙 Adormeça em até 15 minutos - Sem ficar rolando na cama | 😴 Sono profundo e reparador - Acorde descansado de verdade | ☀️ Zero ressaca matinal - Desperte com energia e clareza mental | 🧠 Melhore sua concentração - Mais produtividade no dia seguinte | 💪 Fortaleça sua imunidade - Sono de qualidade = saúde em dia",
             "text_style": "body"
           }
         },
@@ -88,7 +80,7 @@
           "settings": {
             "heading": "🧪 Ingredientes e Composição",
             "icon": "none",
-            "content": "<div class=\"ingredients-section\">\n<h4>Fórmula Cientificamente Desenvolvida:</h4>\n<ul>\n<li><strong>Melatonina 3mg</strong> - Regula o ciclo circadiano naturalmente</li>\n<li><strong>L-Teanina 200mg</strong> - Promove relaxamento sem sonolência</li>\n<li><strong>Magnésio Bisglicinato 400mg</strong> - Relaxa músculos e sistema nervoso</li>\n<li><strong>Extrato de Valeriana 300mg</strong> - Reduz ansiedade e melhora qualidade do sono</li>\n<li><strong>GABA 250mg</strong> - Neurotransmissor calmante natural</li>\n<li><strong>Extrato de Camomila 150mg</strong> - Propriedades relaxantes e anti-inflamatórias</li>\n</ul>\n<p><strong>Livre de:</strong> Glúten, Lactose, Açúcar, Corantes Artificiais</p>\n</div>",
+            "content": "<h4>Fórmula Cientificamente Desenvolvida:</h4>\n<ul>\n<li>Melatonina 3mg - Regula o ciclo circadiano naturalmente</li>\n<li>L-Teanina 200mg - Promove relaxamento sem sonolência</li>\n<li>Magnésio Bisglicinato 400mg - Relaxa músculos e sistema nervoso</li>\n<li>Extrato de Valeriana 300mg - Reduz ansiedade e melhora qualidade do sono</li>\n<li>GABA 250mg - Neurotransmissor calmante natural</li>\n<li>Extrato de Camomila 150mg - Propriedades relaxantes e anti-inflamatórias</li>\n</ul>\n<p>Livre de: Glúten, Lactose, Açúcar, Corantes Artificiais</p>",
             "page": ""
           }
         },
@@ -97,7 +89,7 @@
           "settings": {
             "heading": "📋 Como Usar",
             "icon": "none",
-            "content": "<div class=\"usage-guide\">\n<h4>Modo de Uso Simples:</h4>\n<ol>\n<li><strong>Tome 1 cápsula</strong> 30-60 minutos antes de dormir</li>\n<li><strong>Com água</strong> - Não é necessário estar em jejum</li>\n<li><strong>Crie uma rotina</strong> - Use sempre no mesmo horário</li>\n<li><strong>Ambiente propício</strong> - Quarto escuro e temperatura amena</li>\n</ol>\n<div class=\"dosage-info\">\n<p><strong>Dosagem:</strong> 1 frasco = 30 cápsulas (1 mês de tratamento)</p>\n<p><strong>Resultados:</strong> Primeiros efeitos em 30 minutos, melhora completa em 7-14 dias</p>\n</div>\n</div>",
+            "content": "<h4>Modo de Uso Simples:</h4>\n<ol>\n<li>Tome 1 cápsula 30-60 minutos antes de dormir</li>\n<li>Com água - Não é necessário estar em jejum</li>\n<li>Crie uma rotina - Use sempre no mesmo horário</li>\n<li>Ambiente propício - Quarto escuro e temperatura amena</li>\n</ol>\n<p>Dosagem: 1 frasco = 30 cápsulas (1 mês de tratamento)</p>\n<p>Resultados: Primeiros efeitos em 30 minutos, melhora completa em 7-14 dias</p>",
             "page": ""
           }
         },
@@ -106,7 +98,7 @@
           "settings": {
             "heading": "🔬 Base Científica",
             "icon": "none",
-            "content": "<div class=\"science-section\">\n<h4>Respaldado pela Ciência:</h4>\n<ul>\n<li>✅ <strong>Estudos clínicos</strong> comprovam eficácia da melatonina para insônia</li>\n<li>✅ <strong>Pesquisas internacionais</strong> validam benefícios do magnésio para o sono</li>\n<li>✅ <strong>Aprovado pela ANVISA</strong> - Registro sanitário em dia</li>\n<li>✅ <strong>Desenvolvido por especialistas</strong> em medicina do sono</li>\n</ul>\n<p><em>\"A combinação destes ingredientes cria uma sinergia única que otimiza tanto o adormecer quanto a qualidade do sono REM\"</em> - Dr. Carlos Medicina do Sono, CRM 12345</p>\n</div>",
+            "content": "<h4>Respaldado pela Ciência:</h4>\n<ul>\n<li>✅ Estudos clínicos comprovam eficácia da melatonina para insônia</li>\n<li>✅ Pesquisas internacionais validam benefícios do magnésio para o sono</li>\n<li>✅ Aprovado pela ANVISA - Registro sanitário em dia</li>\n<li>✅ Desenvolvido por especialistas em medicina do sono</li>\n</ul>\n<p>\"A combinação destes ingredientes cria uma sinergia única que otimiza tanto o adormecer quanto a qualidade do sono REM\" - Dr. Carlos Medicina do Sono, CRM 12345</p>",
             "page": ""
           }
         },
@@ -115,7 +107,7 @@
           "settings": {
             "heading": "🛡️ Garantia e Segurança",
             "icon": "none",
-            "content": "<div class=\"guarantee-section\">\n<h4>Sua Satisfação é Garantida:</h4>\n<div class=\"guarantee-box\">\n<h5>🛡️ GARANTIA INCONDICIONAL DE 60 DIAS</h5>\n<p>Se você não sentir melhora significativa na qualidade do seu sono em 60 dias, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>\n</div>\n<h4>Certificações de Segurança:</h4>\n<ul>\n<li>🔒 <strong>SSL 256-bit</strong> - Seus dados protegidos</li>\n<li>💳 <strong>PCI Compliant</strong> - Pagamentos seguros</li>\n<li>🏭 <strong>Boas Práticas de Fabricação</strong> - Laboratório certificado</li>\n<li>📋 <strong>Registro ANVISA</strong> - Produto regularizado</li>\n</ul>\n</div>",
+            "content": "<h4>Sua Satisfação é Garantida:</h4>\n<h5>🛡️ GARANTIA INCONDICIONAL DE 60 DIAS</h5>\n<p>Se você não sentir melhora significativa na qualidade do seu sono em 60 dias, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>\n<h4>Certificações de Segurança:</h4>\n<ul>\n<li>🔒 SSL 256-bit - Seus dados protegidos</li>\n<li>💳 PCI Compliant - Pagamentos seguros</li>\n<li>🏭 Boas Práticas de Fabricação - Laboratório certificado</li>\n<li>📋 Registro ANVISA - Produto regularizado</li>\n</ul>",
             "page": ""
           }
         }
@@ -360,7 +352,6 @@
     }
   },
   "order": [
-    "announcement-bar",
     "main",
     "faq_section", 
     "testimonials",
