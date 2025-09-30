@@ -66,39 +66,12 @@
             "text_style": "body"
           }
         },
-        "collapsible-ingredients": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "🧪 Ingredientes e Composição",
-            "icon": "none",
-            "content": "<h4>Fórmula Cientificamente Desenvolvida:</h4>\n<ul>\n<li>Melatonina 3mg - Regula o ciclo circadiano naturalmente</li>\n<li>L-Teanina 200mg - Promove relaxamento sem sonolência</li>\n<li>Magnésio Bisglicinato 400mg - Relaxa músculos e sistema nervoso</li>\n<li>Extrato de Valeriana 300mg - Reduz ansiedade e melhora qualidade do sono</li>\n<li>GABA 250mg - Neurotransmissor calmante natural</li>\n<li>Extrato de Camomila 150mg - Propriedades relaxantes e anti-inflamatórias</li>\n</ul>\n<p>Livre de: Glúten, Lactose, Açúcar, Corantes Artificiais</p>",
-            "page": ""
-          }
-        },
         "collapsible-usage": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "📋 Como Usar",
             "icon": "none",
-            "content": "<h4>Modo de Uso Simples:</h4>\n<ol>\n<li>Tome 1 cápsula 30-60 minutos antes de dormir</li>\n<li>Com água - Não é necessário estar em jejum</li>\n<li>Crie uma rotina - Use sempre no mesmo horário</li>\n<li>Ambiente propício - Quarto escuro e temperatura amena</li>\n</ol>\n<p>Dosagem: 1 frasco = 30 cápsulas (1 mês de tratamento)</p>\n<p>Resultados: Primeiros efeitos em 30 minutos, melhora completa em 7-14 dias</p>",
-            "page": ""
-          }
-        },
-        "collapsible-science": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "🔬 Base Científica",
-            "icon": "none",
-            "content": "<h4>Respaldado pela Ciência:</h4>\n<ul>\n<li>✅ Estudos clínicos comprovam eficácia da melatonina para insônia</li>\n<li>✅ Pesquisas internacionais validam benefícios do magnésio para o sono</li>\n<li>✅ Aprovado pela ANVISA - Registro sanitário em dia</li>\n<li>✅ Desenvolvido por especialistas em medicina do sono</li>\n</ul>\n<p>\"A combinação destes ingredientes cria uma sinergia única que otimiza tanto o adormecer quanto a qualidade do sono REM\" - Dr. Carlos Medicina do Sono, CRM 12345</p>",
-            "page": ""
-          }
-        },
-        "collapsible-guarantee": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "🛡️ Garantia e Segurança",
-            "icon": "none",
-            "content": "<h4>Sua Satisfação é Garantida:</h4>\n<h5>🛡️ GARANTIA INCONDICIONAL DE 60 DIAS</h5>\n<p>Se você não sentir melhora significativa na qualidade do seu sono em 60 dias, devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>\n<h4>Certificações de Segurança:</h4>\n<ul>\n<li>🔒 SSL 256-bit - Seus dados protegidos</li>\n<li>💳 PCI Compliant - Pagamentos seguros</li>\n<li>🏭 Boas Práticas de Fabricação - Laboratório certificado</li>\n<li>📋 Registro ANVISA - Produto regularizado</li>\n</ul>",
+            "content": "<h4>Modo de Uso:</h4><p>Tome 1 goma 30-60 minutos antes de dormir</p><p>Crie uma rotina - Use sempre no mesmo horário</p><p>Ambiente propício - Quarto escuro e temperatura amena</p><p>Dosagem: 1 frasco = 30 gomas (1 mês de tratamento)</p><p>Resultados: Primeiros efeitos em 30 minutos, melhora completa em 7-14 dias</p>",
             "page": ""
           }
         }
@@ -113,10 +86,7 @@
         "buy_buttons",
         "trust_badges",
         "key_benefits",
-        "collapsible-ingredients",
-        "collapsible-usage",
-        "collapsible-science",
-        "collapsible-guarantee"
+        "collapsible-usage"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -267,83 +237,11 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "upsell_section": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "sono-e-relaxamento",
-        "products_to_show": 3,
-        "title": "🎁 Complete seu kit do sono perfeito",
-        "heading_size": "h2",
-        "description": "<p>Clientes que compraram Ritmo Noturno também levaram:</p>",
-        "show_description": true,
-        "description_style": "body",
-        "columns_desktop": 3,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "color_scheme": "background-2",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": true,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "final_cta": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "🌙 Transforme suas noites HOJE mesmo",
-            "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Não deixe mais uma noite passar em claro. Milhares de brasileiros já descobriram o segredo para um sono reparador e acordar renovado todos os dias.</p><p><strong>✅ Frete Grátis<br>✅ 60 Dias de Garantia<br>✅ Pagamento Seguro<br>✅ Entrega Rápida</strong></p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "🛒 QUERO DORMIR MELHOR HOJE",
-            "button_link": "#MainProduct",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "accent-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
     "main",
     "faq_section",
-    "testimonials",
-    "upsell_section",
-    "final_cta"
+    "testimonials"
   ]
 }
