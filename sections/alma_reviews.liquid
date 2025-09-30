@@ -25,7 +25,7 @@
     <div class="alma-reviews-container" data-auto-rotate="{{ section.settings.auto_rotate }}" data-rotation-speed="{{ section.settings.rotation_speed }}">
       <div class="alma-reviews-track">
         {%- for block in section.blocks -%}
-          <div class="alma-review-card{% if forloop.index == 2 %} active{% endif %}" 
+          <div class="alma-review-card" 
                data-index="{{ forloop.index0 }}" 
                {{ block.shopify_attributes }}>
             <div class="alma-review-stars">
@@ -53,7 +53,7 @@
           <button class="alma-review-nav alma-review-prev" aria-label="Previous review">‹</button>
           <div class="alma-review-dots">
             {%- for block in section.blocks -%}
-              <button class="alma-review-dot{% if forloop.index == 2 %} active{% endif %}" 
+              <button class="alma-review-dot" 
                       data-index="{{ forloop.index0 }}" 
                       aria-label="Go to review {{ forloop.index }}"></button>
             {%- endfor -%}
@@ -74,6 +74,7 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .alma-reviews-track {
@@ -82,6 +83,7 @@
   gap: 2rem;
   padding: 2rem 0;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: center;
 }
 
 .alma-review-card {
@@ -248,36 +250,106 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (cards.length === 0) return;
     
-    let currentIndex = 1; // Start with middle card active
+    let currentIndex = 0; // Start with first card active
     let autoRotateInterval;
     
     const autoRotate = container.dataset.autoRotate === 'true';
     const rotationSpeed = parseInt(container.dataset.rotationSpeed) || 4000;
     
-    function updateActiveCard(index) {
+    // Create a circular array by cloning cards
+    function setupCircularDisplay() {
+      // Clear existing cards
+      track.innerHTML = '';
+      
+      // Create circular array with clones for smooth infinite scroll
+      const totalCards = cards.length;
+      const cardsToShow = Math.min(3, totalCards); // Show max 3 cards
+      
+      // Clone all cards multiple times for infinite effect
+      for (let i = 0; i < totalCards * 3; i++) {
+        const originalIndex = i % totalCards;
+        const cardClone = cards[originalIndex].cloneNode(true);
+        cardClone.setAttribute('data-original-index', originalIndex);
+        track.appendChild(cardClone);
+      }
+      
+      // Start with middle set active
+      currentIndex = totalCards;
+      updateDisplay();
+    }
+    
+    function updateDisplay() {
+      const allCards = track.querySelectorAll('.alma-review-card');
+      const totalCards = cards.length;
+      
       // Remove active class from all cards and dots
-      cards.forEach(card => card.classList.remove('active'));
+      allCards.forEach(card => card.classList.remove('active'));
       dots.forEach(dot => dot.classList.remove('active'));
       
-      // Add active class to current card and dot
-      if (cards[index]) {
-        cards[index].classList.add('active');
-      }
-      if (dots[index]) {
-        dots[index].classList.add('active');
+      // Calculate which cards to show (previous, current, next)
+      const centerIndex = currentIndex;
+      const leftIndex = centerIndex - 1;
+      const rightIndex = centerIndex + 1;
+      
+      // Set active states
+      if (allCards[centerIndex]) {
+        allCards[centerIndex].classList.add('active');
       }
       
-      currentIndex = index;
+      // Update dot indicator
+      const originalIndex = currentIndex % totalCards;
+      if (dots[originalIndex]) {
+        dots[originalIndex].classList.add('active');
+      }
+      
+      // Position the track to center the active card
+      const cardWidth = 320; // 300px + 20px gap
+      const offset = -(centerIndex * cardWidth) + (container.offsetWidth / 2) - (cardWidth / 2);
+      track.style.transform = `translateX(${offset}px)`;
     }
     
     function nextReview() {
-      const nextIndex = (currentIndex + 1) % cards.length;
-      updateActiveCard(nextIndex);
+      const totalCards = cards.length;
+      currentIndex++;
+      
+      // If we've gone too far, reset to beginning of middle set
+      if (currentIndex >= totalCards * 2) {
+        currentIndex = totalCards;
+        track.style.transition = 'none';
+        updateDisplay();
+        setTimeout(() => {
+          track.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+          currentIndex++;
+          updateDisplay();
+        }, 50);
+      } else {
+        updateDisplay();
+      }
     }
     
     function prevReview() {
-      const prevIndex = (currentIndex - 1 + cards.length) % cards.length;
-      updateActiveCard(prevIndex);
+      const totalCards = cards.length;
+      currentIndex--;
+      
+      // If we've gone too far back, reset to end of middle set
+      if (currentIndex < totalCards) {
+        currentIndex = totalCards * 2 - 1;
+        track.style.transition = 'none';
+        updateDisplay();
+        setTimeout(() => {
+          track.style.transition = 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+          currentIndex--;
+          updateDisplay();
+        }, 50);
+      } else {
+        updateDisplay();
+      }
+    }
+    
+    function goToReview(index) {
+      const totalCards = cards.length;
+      currentIndex = totalCards + index; // Go to middle set + index
+      updateDisplay();
     }
     
     function startAutoRotate() {
@@ -298,7 +370,7 @@ document.addEventListener('DOMContentLoaded', function() {
       nextBtn.addEventListener('click', () => {
         stopAutoRotate();
         nextReview();
-        setTimeout(startAutoRotate, 2000); // Restart after 2 seconds
+        setTimeout(startAutoRotate, 2000);
       });
     }
     
@@ -306,7 +378,7 @@ document.addEventListener('DOMContentLoaded', function() {
       prevBtn.addEventListener('click', () => {
         stopAutoRotate();
         prevReview();
-        setTimeout(startAutoRotate, 2000); // Restart after 2 seconds
+        setTimeout(startAutoRotate, 2000);
       });
     }
     
@@ -314,8 +386,8 @@ document.addEventListener('DOMContentLoaded', function() {
     dots.forEach((dot, index) => {
       dot.addEventListener('click', () => {
         stopAutoRotate();
-        updateActiveCard(index);
-        setTimeout(startAutoRotate, 2000); // Restart after 2 seconds
+        goToReview(index);
+        setTimeout(startAutoRotate, 2000);
       });
     });
     
@@ -323,8 +395,12 @@ document.addEventListener('DOMContentLoaded', function() {
     container.addEventListener('mouseenter', stopAutoRotate);
     container.addEventListener('mouseleave', startAutoRotate);
     
-    // Start auto-rotation
+    // Initialize
+    setupCircularDisplay();
     startAutoRotate();
+    
+    // Handle window resize
+    window.addEventListener('resize', updateDisplay);
   });
 });
 </script>
