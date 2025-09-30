@@ -139,16 +139,7 @@
           "settings": {
             "heading": "📦 Como funciona a entrega?",
             "icon": "none",
-            "row_content": "<p><strong>Frete GRÁTIS</strong> para todo o Brasil! 🚚<br><br>• <strong>Região Sudeste/Sul:</strong> 3-5 dias úteis<br>• <strong>Demais regiões:</strong> 5-8 dias úteis<br>• <strong>Embalagem discreta:</strong> Sua privacidade protegida<br>• <strong>Rastreamento:</strong> Acompanhe seu pedido em tempo real</p>",
-            "page": ""
-          }
-        },
-        "faq_5": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "💰 E se não funcionar para mim?",
-            "icon": "none",
-            "row_content": "<p><strong>Garantia TOTAL de 60 dias!</strong> 🛡️<br><br>Se você não sentir melhora significativa na qualidade do seu sono, devolvemos <strong>100% do seu dinheiro</strong>. Sem perguntas, sem burocracia. Basta entrar em contato conosco pelo WhatsApp ou email dentro de 60 dias da compra.</p>",
+            "row_content": "<p><strong>Frete GRÁTIS</strong> para todo o Brasil! 🚚<br/><br/>• <strong>Região Sudeste/Sul:</strong> 3-5 dias úteis<br/>• <strong>Demais regiões:</strong> 5-8 dias úteis<br/>• <strong>Embalagem discreta:</strong> Sua privacidade protegida<br/>• <strong>Rastreamento:</strong> Acompanhe seu pedido em tempo real</p>",
             "page": ""
           }
         },
@@ -167,7 +158,6 @@
         "faq_2",
         "faq_3",
         "faq_4",
-        "faq_5",
         "faq_6"
       ],
       "settings": {
@@ -226,7 +216,7 @@
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
-        "button_label": "Ver mais depoimentos",
+        "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "left",
