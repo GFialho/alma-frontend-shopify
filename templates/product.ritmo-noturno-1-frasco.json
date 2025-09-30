@@ -23,10 +23,17 @@
             "text_style": "subtitle"
           }
         },
-        "reviews_summary": {
+        "reviews_stars": {
           "type": "text",
           "settings": {
-            "text": "⭐⭐⭐⭐⭐\n4.8/5 (2768 avaliações)",
+            "text": "⭐⭐⭐⭐⭐",
+            "text_style": "body"
+          }
+        },
+        "reviews_text": {
+          "type": "text",
+          "settings": {
+            "text": "4.8/5 (2768 avaliações)",
             "text_style": "body"
           }
         },
@@ -76,18 +83,19 @@
           }
         }
       },
-      "block_order": [
-        "title",
-        "benefit_headline",
-        "reviews_summary",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "trust_badges",
-        "key_benefits",
-        "collapsible-usage"
-      ],
+        "block_order": [
+          "title",
+          "benefit_headline",
+          "reviews_stars",
+          "reviews_text",
+          "price",
+          "variant_picker",
+          "quantity_selector",
+          "buy_buttons",
+          "trust_badges",
+          "key_benefits",
+          "collapsible-usage"
+        ],
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "background-1",
