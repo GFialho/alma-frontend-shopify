@@ -26,20 +26,13 @@
         "reviews_summary": {
           "type": "text",
           "settings": {
-            "text": "⭐⭐⭐⭐⭐ 4.8/5 (2.847 clientes satisfeitos) - \"Finalmente consigo dormir a noite toda!\" - Maria S.",
+            "text": "⭐⭐⭐⭐⭐ 4.8/5 (2768 avaliações)",
             "text_style": "body"
           }
         },
         "price": {
           "type": "price",
           "settings": {}
-        },
-        "savings_badge": {
-          "type": "text",
-          "settings": {
-            "text": "💰 ECONOMIZE 30% - Oferta por tempo limitado",
-            "text_style": "body"
-          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -63,13 +56,6 @@
           "type": "text",
           "settings": {
             "text": "🔒 Pagamento 100% Seguro | 🚚 Frete Grátis Brasil | ✅ 60 Dias de Garantia | 🇧🇷 Produzido no Brasil | 🧪 Fórmula Cientificamente Testada | 🌿 100% Natural",
-            "text_style": "body"
-          }
-        },
-        "urgency_timer": {
-          "type": "text",
-          "settings": {
-            "text": "⏰ Oferta expira em: 23:59:45 - Apenas 47 unidades restantes em estoque",
             "text_style": "body"
           }
         },
@@ -122,12 +108,10 @@
         "benefit_headline",
         "reviews_summary",
         "price",
-        "savings_badge",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "trust_badges",
-        "urgency_timer",
         "key_benefits",
         "collapsible-ingredients",
         "collapsible-usage",
