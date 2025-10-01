@@ -46,10 +46,9 @@
           }
         },
         "trust_badges": {
-          "type": "text",
+          "type": "custom_liquid",
           "settings": {
-            "text": "<div class=\"trust-badges\">\n<span class=\"badge\">✓ Fórmula Segura e Natural</span>\n<span class=\"badge\">✓ Sem Dependência</span>\n<span class=\"badge\">✓ Garantia de 60 Dias</span>\n<span class=\"badge\">✓ Produzido no Brasil</span>\n</div>",
-            "text_style": "body"
+            "custom_liquid": "<div class=\"trust-badges\">\n<span class=\"badge\">✓ Fórmula Segura e Natural</span>\n<span class=\"badge\">✓ Sem Dependência</span>\n<span class=\"badge\">✓ Garantia de 60 Dias</span>\n<span class=\"badge\">✓ Produzido no Brasil</span>\n</div>"
           }
         },
         "description": {
