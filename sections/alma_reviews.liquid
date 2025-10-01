@@ -12,7 +12,7 @@
   }
 {%- endstyle -%}
 
-<div class="alma-reviews section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+<div class="alma-reviews section-{{ section.id }}-padding">
   <div class="page-width">
     {%- if section.settings.title != blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
@@ -103,8 +103,8 @@
   flex: 0 0 450px !important;
   opacity: 1 !important;
   transform: scale(1.1) !important;
-  border-color: var(--alma-primary-green) !important;
-  box-shadow: 0 12px 50px rgba(126, 146, 120, 0.3) !important;
+  border-color: transparent !important;
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.15) !important;
   z-index: 10 !important;
   padding: 2.5rem !important;
   min-height: 350px !important;
@@ -151,7 +151,6 @@
 
 .alma-review-author {
   text-align: center;
-  border-top: 2px solid var(--alma-green-tint);
   padding-top: 1rem;
 }
 
@@ -226,8 +225,8 @@
   }
   
   .alma-review-card.active {
-    border-color: var(--alma-primary-green, #7E9278) !important;
-    box-shadow: 0 8px 40px rgba(126, 146, 120, 0.25) !important;
+    border-color: transparent !important;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15) !important;
   }
   
   .alma-review-content {

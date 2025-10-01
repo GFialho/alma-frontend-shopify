@@ -12,7 +12,7 @@
   }
 {%- endstyle -%}
 
-<div class="alma-reviews section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+<div class="alma-reviews section-{{ section.id }}-padding">
   <div class="page-width">
     {%- if section.settings.title != blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
@@ -99,8 +99,8 @@
   flex: 0 0 400px;
   opacity: 1;
   transform: scale(1);
-  border-color: var(--alma-primary-green);
-  box-shadow: 0 8px 40px rgba(126, 146, 120, 0.2);
+  border-color: transparent;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
   z-index: 2;
 }
 
@@ -131,7 +131,6 @@
 
 .alma-review-author {
   text-align: center;
-  border-top: 2px solid var(--alma-green-tint);
   padding-top: 1rem;
 }
 
