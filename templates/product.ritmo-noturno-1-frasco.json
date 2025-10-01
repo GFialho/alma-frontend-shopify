@@ -193,7 +193,7 @@
       }
     },
     "alma_reviews": {
-      "type": "alma_reviews",
+      "type": "alma-reviews",
       "blocks": {
         "review_1": {
           "type": "review",
