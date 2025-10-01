@@ -13,16 +13,6 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-
-  #title-{{ section.id }} {
-    margin-bottom: {{ section.settings.title_spacing | times: 0.75 | round: 0 }}px !important;
-  }
-
-  @media screen and (min-width: 750px) {
-    #title-{{ section.id }} {
-      margin-bottom: {{ section.settings.title_spacing }}px !important;
-    }
-  }
 {%- endstyle -%}
 
 {%- liquid
@@ -33,7 +23,7 @@
   endif
 -%}
 
-<div class="multicolumn section-{{ section.id }} color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div
     class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
@@ -41,7 +31,7 @@
     {% endif %}
   >
     {%- unless section.settings.title == blank -%}
-      <div id="title-{{ section.id }}" class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
         <h2 class="title inline-richtext {{ section.settings.heading_size }}">
           {{ section.settings.title }}
         </h2>
@@ -242,17 +232,6 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
-    },
-    {
-      "type": "range",
-      "id": "title_spacing",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "Title bottom spacing",
-      "info": "Adjust the space between the title and column content",
-      "default": 48
     },
     {
       "type": "header",
