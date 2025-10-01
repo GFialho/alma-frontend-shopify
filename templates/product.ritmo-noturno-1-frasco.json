@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -67,7 +76,16 @@
         "collapsible-usage": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "📋 Como Usar",
+            "heading": "Descrição",
+            "icon": "none",
+            "content": "<p><strong>Cansado de acordar cansado? A culpa não é sua.</strong></p><p>Pare o ciclo vicioso de noites mal dormidas e manhãs com confusão mental. O problema não é você — é a vida moderna, com sua luz azul e estresse constante, que corrompeu seu ritmo de sono natural.</p><p></p><p>Chega de sedação. É hora da restauração.</p><p></p><p>Ritmo Noturno™ não é um sedativo de força bruta. Cada frasco contém 30 gomas com o delicioso e calmante sabor de maracujá — um ritual noturno projetado para \"reafinar\" gentilmente o relógio biológico do seu corpo e restaurar sua capacidade inata de dormir.</p><p></p><p><strong>Restaure seu Ritmo Natural:</strong> Re-sincronize seu relógio biológico, corrompido pela vida moderna.</p><p><strong>Acorde Renovado, Sem Ressaca:</strong> Desperte com clareza mental, sem a confusão ou o cansaço causados por outros soníferos.</p><p><strong>Sinta-se Como Você de Novo:</strong> Recupere a energia e o foco para performar no seu máximo e aproveitar seu dia.</p><p>Troque a sua ressaca matinal por manhãs cheias de energia. Recupere suas noites para ter seus dias de volta.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_BUFUYi": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Como Usar",
             "icon": "none",
             "content": "<h4>Modo de Uso:</h4><p>Tome 1 goma 30-60 minutos antes de dormir</p><p>Crie uma rotina - Use sempre no mesmo horário</p><p>Ambiente propício - Quarto escuro e temperatura amena</p><p>Dosagem: 1 frasco = 30 gomas (1 mês de tratamento)</p><p>Resultados: Primeiros efeitos em 30 minutos, melhora completa em 7-14 dias</p>",
             "page": ""
@@ -85,7 +103,8 @@
         "buy_buttons",
         "trust_badges",
         "key_benefits",
-        "collapsible-usage"
+        "collapsible-usage",
+        "collapsible_tab_BUFUYi"
       ],
       "settings": {
         "enable_sticky_info": true,
