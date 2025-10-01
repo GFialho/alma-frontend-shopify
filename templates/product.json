@@ -29,6 +29,12 @@
             "picker_type": "button"
           }
         },
+        "subscription_selector": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"subscription-selector\">\n  <style>\n    .subscription-selector {\n      margin: 20px 0;\n    }\n    .subscription-options {\n      display: flex;\n      gap: 12px;\n      margin-bottom: 16px;\n    }\n    .subscription-option {\n      flex: 1;\n      padding: 16px;\n      border: 2px solid #e0e0e0;\n      border-radius: 12px;\n      cursor: pointer;\n      transition: all 0.3s ease;\n      text-align: center;\n      background: white;\n    }\n    .subscription-option:hover {\n      border-color: #c5a99c;\n    }\n    .subscription-option.active {\n      border-color: #c5a99c;\n      background: #faf8f7;\n    }\n    .subscription-option-title {\n      font-weight: 600;\n      font-size: 16px;\n      margin-bottom: 4px;\n    }\n    .subscription-option-price {\n      font-size: 14px;\n      color: #666;\n    }\n    .subscription-option-badge {\n      display: inline-block;\n      background: #7e9278;\n      color: white;\n      padding: 4px 12px;\n      border-radius: 20px;\n      font-size: 12px;\n      margin-top: 8px;\n      font-weight: 600;\n    }\n    .subscription-message {\n      display: none;\n      padding: 12px 16px;\n      background: #f0f8f0;\n      border-left: 4px solid #7e9278;\n      border-radius: 4px;\n      margin-top: 12px;\n    }\n    .subscription-message.active {\n      display: block;\n    }\n    .subscription-message-text {\n      font-size: 14px;\n      color: #2c5f2d;\n      margin: 0;\n    }\n  </style>\n  \n  <div class=\"subscription-options\">\n    <div class=\"subscription-option active\" data-type=\"onetime\" onclick=\"toggleSubscription('onetime')\">\n      <div class=\"subscription-option-title\">Compra Única</div>\n      <div class=\"subscription-option-price\">{{ product.price | money }}</div>\n    </div>\n    <div class=\"subscription-option\" data-type=\"subscription\" onclick=\"toggleSubscription('subscription')\">\n      <div class=\"subscription-option-title\">Assinatura</div>\n      <div class=\"subscription-option-price\">{{ product.price | times: 0.8 | money }}/mês</div>\n      <div class=\"subscription-option-badge\">Economize 20%</div>\n    </div>\n  </div>\n  \n  <div class=\"subscription-message\" id=\"subscription-message\">\n    <p class=\"subscription-message-text\">✓ Você receberá 1 frasco todo mês automaticamente com 20% de desconto</p>\n  </div>\n  \n  <script>\n    function toggleSubscription(type) {\n      // Update active state on options\n      document.querySelectorAll('.subscription-option').forEach(option => {\n        option.classList.remove('active');\n      });\n      document.querySelector(`[data-type=\"${type}\"]`).classList.add('active');\n      \n      // Show/hide subscription message\n      const message = document.getElementById('subscription-message');\n      const quantitySelector = document.querySelector('.quantity');\n      \n      if (type === 'subscription') {\n        message.classList.add('active');\n        if (quantitySelector) {\n          quantitySelector.style.display = 'none';\n          // Set quantity to 1 for subscription\n          const quantityInput = quantitySelector.querySelector('input[name=\"quantity\"]');\n          if (quantityInput) quantityInput.value = 1;\n        }\n      } else {\n        message.classList.remove('active');\n        if (quantitySelector) {\n          quantitySelector.style.display = 'block';\n        }\n      }\n      \n      // Store selection in a hidden input or data attribute\n      let subscriptionInput = document.getElementById('subscription-type');\n      if (!subscriptionInput) {\n        subscriptionInput = document.createElement('input');\n        subscriptionInput.type = 'hidden';\n        subscriptionInput.id = 'subscription-type';\n        subscriptionInput.name = 'properties[_subscription_type]';\n        document.querySelector('form[action*=\"/cart/add\"]').appendChild(subscriptionInput);\n      }\n      subscriptionInput.value = type;\n    }\n    \n    // Initialize on page load\n    document.addEventListener('DOMContentLoaded', function() {\n      toggleSubscription('onetime');\n    });\n  </script>\n</div>"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector"
         },
@@ -37,12 +43,6 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": false
-          }
-        },
-        "subscriptions_app_embed": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<div class=\"subscriptions_app_embed_block\"></div>"
           }
         },
         "trust_badges": {
@@ -103,9 +103,9 @@
         "subtitle",
         "price",
         "variant_picker",
+        "subscription_selector",
         "quantity_selector",
         "buy_buttons",
-        "subscriptions_app_embed",
         "trust_badges",
         "description",
         "collapsible-row-0",
