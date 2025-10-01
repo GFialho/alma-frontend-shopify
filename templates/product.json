@@ -39,6 +39,12 @@
             "show_gift_card_recipient": false
           }
         },
+        "subscriptions_app_embed": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"subscriptions_app_embed_block\"></div>"
+          }
+        },
         "trust_badges": {
           "type": "text",
           "settings": {
@@ -100,6 +106,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "subscriptions_app_embed",
         "trust_badges",
         "description",
         "collapsible-row-0",
@@ -137,7 +144,7 @@
             "text_style": "body"
           }
         }
-      ],
+      },
       "block_order": [
         "heading",
         "text"
@@ -225,7 +232,7 @@
             "text_style": "body"
           }
         }
-      ],
+      },
       "block_order": [
         "heading",
         "text"
