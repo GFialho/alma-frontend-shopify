@@ -206,7 +206,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/socialsight-ai-b669925f-71d5-438c-8c65-14be19b662b0.png",
-            "title": "1 Frasco - Experimente",
+            "title": "1 Frasco",
             "text": "<p><strong>30 Doses</strong><br/>Suprimento para 1 mês</p><p><strong>R$79,90</strong></p>",
             "link_label": "COMPRAR AGORA",
             "link": "/products/ritmo-noturno-1-frasco"
@@ -216,36 +216,25 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Gemini_Generated_Image_f7xlwuf7xlwuf7xl.png",
-            "title": "🏆 3 Frascos - Restauração Completa",
-            "text": "<p><strong>MAIS POPULAR</strong></p><p><strong>90 Doses</strong><br/>Suprimento para 3 meses</p><p><strong>R$69,90/frasco</strong><br/>Total: R$209,70</p><p>Economize R$30,00!</p>",
-            "link_label": "COMPRAR AGORA",
+            "title": "🏆 Assine e Economize 20% (Recomendado)",
+            "text": "<p><strong>MAIS POPULAR</strong></p><p><strong><br/>Receba 1 frasco todo mês<br/></strong></p><p><strong>R$63,90/frasco</strong><br/></p>",
+            "link_label": "ASSINAR AGORA",
             "link": "/products/ritmo-noturno-3-frascos"
-          }
-        },
-        "option_3": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Gemini_Generated_Image_f7xlwuf7xlwuf7xl_1.png",
-            "title": "6 Frascos - Melhor Custo-Benefício",
-            "text": "<p><strong>180 Doses</strong><br/>Suprimento para 6 meses</p><p><strong>R$59,90/frasco</strong><br/>Total: R$359,40</p><p>Economize R$120,00!</p>",
-            "link_label": "COMPRAR AGORA",
-            "link": "/products/ritmo-noturno-6-frascos"
           }
         }
       },
       "block_order": [
         "option_1",
-        "option_2",
-        "option_3"
+        "option_2"
       ],
       "settings": {
         "title": "Escolha o Seu Plano de Restauração e Comece Hoje",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
+        "image_width": "half",
+        "image_ratio": "circle",
         "button_label": "",
         "button_link": "",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "scheme-1",
