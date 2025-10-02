@@ -93,7 +93,7 @@
             </span>
             {%- render 'loading-spinner' -%}
           </button>
-          {%- if show_dynamic_checkout -%}
+          {%- if show_dynamic_checkout and product.selected_or_first_available_variant.available and quantity_rule_soldout == false and product.selected_or_first_available_variant != null -%}
             {{ form | payment_button }}
           {%- endif -%}
         </div>
