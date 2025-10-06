@@ -199,45 +199,34 @@
         "padding_bottom": 36
       }
     },
-    "featured_product_U3TaCq": {
-      "type": "featured-product",
+    "alma_product_Ph6Kyq": {
+      "type": "alma-product",
       "blocks": {
-        "text_WpDiwc": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
+        "vendor_aY9UiF": {
+          "type": "vendor",
+          "settings": {}
         },
-        "title_iGhGLU": {
+        "title_qenXPY": {
           "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
+          "settings": {}
         },
-        "price_tKyFHE": {
+        "price_gV4bUm": {
           "type": "price",
           "settings": {}
         },
-        "variant_picker_Yh6Knb": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
+        "subscription_selector_apFzkG": {
+          "type": "subscription_selector",
+          "settings": {}
         },
-        "quantity_selector_NA98HW": {
+        "quantity_selector_G9D9Yh": {
           "type": "quantity_selector",
           "settings": {}
         },
-        "buy_buttons_RX6wBU": {
+        "buy_buttons_rdx48E": {
           "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
+          "settings": {}
         },
-        "share_V8eXYV": {
+        "share_PriXa7": {
           "type": "share",
           "settings": {
             "share_label": "Compartilhar"
@@ -245,22 +234,25 @@
         }
       },
       "block_order": [
-        "text_WpDiwc",
-        "title_iGhGLU",
-        "price_tKyFHE",
-        "variant_picker_Yh6Knb",
-        "quantity_selector_NA98HW",
-        "buy_buttons_RX6wBU",
-        "share_V8eXYV"
+        "vendor_aY9UiF",
+        "title_qenXPY",
+        "price_gV4bUm",
+        "subscription_selector_apFzkG",
+        "quantity_selector_G9D9Yh",
+        "buy_buttons_rdx48E",
+        "share_PriXa7"
       ],
-      "name": "t:sections.featured-product.presets.name",
+      "name": "Alma Product",
       "settings": {
         "product": "ritmo-noturno™-1-frasco",
         "color_scheme": "",
         "secondary_background": false,
+        "enable_sticky_info": true,
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": false,
@@ -322,7 +314,7 @@
     "multirow_bz3R6a",
     "multicolumn_AFWPTc",
     "solution_section",
-    "featured_product_U3TaCq",
+    "alma_product_Ph6Kyq",
     "alma_testimonials_9bniPC"
   ]
 }
