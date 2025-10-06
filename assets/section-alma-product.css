@@ -1,73 +1,58 @@
-.alma-product-section {
-  padding: 0;
+/* Alma Product Section - Clean Default Style */
+
+.alma-product {
+  background: white;
 }
 
-.alma-product-grid {
+.alma-product__grid {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 3rem;
-  align-items: flex-start;
 }
 
-.alma-product__media-wrapper {
-  position: sticky;
-  top: 2rem;
+@media screen and (min-width: 750px) {
+  .alma-product__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
 }
 
-.alma-product__info-wrapper {
-  padding: 0;
+.alma-product__media {
+  position: relative;
 }
 
-.alma-product__info-container {
+.alma-product__info {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.alma-product__column-sticky {
-  position: sticky;
-  top: 2rem;
+/* Vendor */
+.alma-product__vendor {
+  margin: 0;
+}
+
+.alma-product__vendor .caption-with-letter-spacing {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  color: #6c757d;
+  margin: 0;
 }
 
 /* Title */
 .alma-product__title h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  line-height: 1.2;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.3;
   margin: 0;
-  color: #5a6956;
-}
-
-/* Subtitle */
-.alma-product__subtitle {
-  margin-top: -0.5rem;
-}
-
-.alma-product__subtitle .subtitle {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #666;
-  margin: 0;
-}
-
-/* Rating */
-.alma-product__rating {
-  margin: 0;
-}
-
-.alma-product__rating .rating-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.alma-product__rating .rating-text,
-.alma-product__rating .rating-count {
-  font-size: 0.95rem;
   color: #333;
-  margin: 0;
 }
 
-.alma-product__rating .rating-count {
-  color: #666;
+@media screen and (min-width: 750px) {
+  .alma-product__title h1 {
+    font-size: 2rem;
+  }
 }
 
 /* Price */
@@ -75,349 +60,258 @@
   margin: 0;
 }
 
-.alma-product__price .price-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.alma-product__price .price__container {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.alma-product__price .price-item--regular {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #333;
-}
-
-.alma-product__price .price__badge-sold-out {
-  font-size: 0.875rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: 4px;
-  background-color: #ddd;
-  color: #666;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
 /* Subscription Selector */
-.alma-subscription-selector {
+.alma-subscription-wrapper {
   margin: 1rem 0;
 }
 
-.subscription-options {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.alma-subscription-options {
+  display: flex;
   gap: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
-.subscription-option {
-  padding: 1.25rem;
-  border: 2px solid #e0e0e0;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-align: center;
-  background: white;
+.alma-subscription-option {
+  flex: 1;
   position: relative;
+  cursor: pointer;
+  border: 2px solid #d1d1d1;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.2s ease;
+  background: white;
 }
 
-.subscription-option:hover {
-  border-color: #c5a99c;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+.alma-subscription-option:hover {
+  border-color: #999;
 }
 
-.subscription-option.active {
-  border-color: #7e9278;
-  background: #f8faf8;
-  box-shadow: 0 2px 12px rgba(126, 146, 120, 0.15);
+.alma-subscription-option.active {
+  border-color: #c5b8a5;
+  background: #fafaf8;
 }
 
-.subscription-option-title {
+.alma-subscription-option input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.alma-subscription-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.alma-subscription-title {
   font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
   color: #333;
 }
 
-.subscription-option-price {
-  font-size: 0.95rem;
+.alma-subscription-price {
+  font-size: 0.875rem;
   color: #666;
-  font-weight: 500;
 }
 
-.subscription-option-badge {
+.alma-subscription-badge {
   display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.75rem;
   background: #7e9278;
   color: white;
-  padding: 0.35rem 1rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  margin-top: 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
 }
 
-.subscription-message {
+.alma-subscription-message {
   display: none;
-  padding: 1rem 1.25rem;
-  background: #f0f8f0;
-  border-left: 4px solid #7e9278;
-  border-radius: 4px;
   margin-top: 0.75rem;
-}
-
-.subscription-message.active {
-  display: block;
-}
-
-.subscription-message-text {
-  font-size: 0.9rem;
+  padding: 0.875rem 1rem;
+  background: #f0f8f0;
+  border-left: 3px solid #7e9278;
+  border-radius: 4px;
+  font-size: 0.875rem;
   color: #2c5f2d;
-  margin: 0;
   line-height: 1.5;
 }
 
 /* Quantity Selector */
-.alma-product-form__quantity {
-  margin: 1rem 0;
+.alma-product__quantity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.alma-product-form__quantity.hidden-by-subscription {
-  display: none !important;
-}
-
-.alma-product-form__quantity .quantity__label {
-  display: block;
-  margin-bottom: 0.75rem;
-  font-size: 0.95rem;
-  font-weight: 500;
+.alma-product__quantity label {
+  font-size: 0.875rem;
+  font-weight: 400;
   color: #333;
 }
 
-.alma-product-form__quantity .quantity-selector-wrapper {
+.alma-product__quantity .quantity {
   display: inline-flex;
-}
-
-.alma-product-form__quantity .quantity {
-  display: inline-flex;
-  align-items: center;
   border: 1px solid #d1d1d1;
-  border-radius: 6px;
+  border-radius: 4px;
+  width: fit-content;
   overflow: hidden;
-  background: white;
-  height: 48px;
 }
 
-.alma-product-form__quantity .quantity__button {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.alma-product__quantity .quantity__button {
+  width: 44px;
+  height: 44px;
   border: none;
   background: white;
   cursor: pointer;
-  transition: background 0.2s ease;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
 }
 
-.alma-product-form__quantity .quantity__button:hover {
-  background: #f8f8f8;
+.alma-product__quantity .quantity__button:hover {
+  background: #f5f5f5;
 }
 
-.alma-product-form__quantity .quantity__button svg {
-  width: 16px;
-  height: 16px;
-  fill: #333;
+.alma-product__quantity .quantity__button svg {
+  width: 12px;
+  height: 12px;
 }
 
-.alma-product-form__quantity .quantity__input {
-  width: 70px;
-  height: 48px;
-  text-align: center;
+.alma-product__quantity .quantity__input {
+  width: 60px;
+  height: 44px;
   border: none;
   border-left: 1px solid #d1d1d1;
   border-right: 1px solid #d1d1d1;
+  text-align: center;
   font-size: 1rem;
-  font-weight: 500;
-  background: white;
   -moz-appearance: textfield;
-  appearance: none;
 }
 
-.alma-product-form__quantity .quantity__input::-webkit-outer-spin-button,
-.alma-product-form__quantity .quantity__input::-webkit-inner-spin-button {
+.alma-product__quantity .quantity__input::-webkit-outer-spin-button,
+.alma-product__quantity .quantity__input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.alma-product-form__quantity .quantity__input:focus {
-  outline: none;
-  border-left-color: #7e9278;
-  border-right-color: #7e9278;
-}
-
-/* Buy Buttons */
-.alma-product__buy-buttons {
-  margin: 1.5rem 0;
-}
-
-.alma-add-to-cart-button {
+/* Buy Button */
+.product-form__buttons .button {
   width: 100%;
-  padding: 1.25rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
   text-transform: uppercase;
-  border: none;
-  border-radius: 8px;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
   background: #c5b8a5;
   color: white;
+  border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background 0.2s ease;
 }
 
-.alma-add-to-cart-button:hover:not(:disabled) {
+.product-form__buttons .button:not(:disabled):hover {
   background: #b3a594;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(197, 184, 165, 0.4);
 }
 
-.alma-add-to-cart-button:disabled {
-  background: #ddd;
-  color: #999;
+.product-form__buttons .button:disabled {
+  background: #d1d1d1;
   cursor: not-allowed;
 }
 
-/* Trust Badges */
-.alma-product__trust-badges {
-  margin: 1.5rem 0;
-  padding: 1.5rem 0;
-  border-top: 1px solid #e8e8e8;
-}
-
-.trust-badges-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem 1rem;
-}
-
-.trust-badge {
-  font-size: 0.85rem;
-  color: #666;
-  line-height: 1.5;
-  display: flex;
+/* View Details Link */
+.product__view-details {
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #666;
+  text-decoration: none;
+  margin-top: 0.5rem;
 }
 
-/* Collapsible Tabs */
-.alma-product__accordion {
-  border-top: 1px solid #e8e8e8;
-}
-
-.alma-product__accordion details {
-  border-bottom: 1px solid #e8e8e8;
-}
-
-.alma-product__accordion summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem 0;
-  cursor: pointer;
-  list-style: none;
-  user-select: none;
-}
-
-.alma-product__accordion summary::-webkit-details-marker {
-  display: none;
-}
-
-.alma-product__accordion .summary__title {
-  flex: 1;
-}
-
-.alma-product__accordion .accordion__title {
-  font-size: 1.05rem;
-  font-weight: 500;
-  margin: 0;
+.product__view-details:hover {
   color: #333;
 }
 
-.alma-product__accordion summary svg {
+.product__view-details svg {
   width: 16px;
   height: 16px;
-  transition: transform 0.3s ease;
-  flex-shrink: 0;
 }
 
-.alma-product__accordion details[open] summary svg {
+/* Collapsible Tabs */
+.product__accordion {
+  border-top: 1px solid #e8e8e8;
+}
+
+.product__accordion details {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.product__accordion summary {
+  padding: 1rem 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.product__accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.product__accordion .summary__title span {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.product__accordion summary svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s ease;
+}
+
+.product__accordion details[open] summary svg {
   transform: rotate(180deg);
 }
 
-.alma-product__accordion .accordion__content {
-  padding: 0 0 1.5rem 0;
+.product__accordion .accordion__content {
+  padding: 0 0 1.25rem 0;
   color: #666;
-  line-height: 1.7;
-  font-size: 0.95rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
 }
 
-.alma-product__accordion .accordion__content p {
-  margin-bottom: 1rem;
+.product__accordion .accordion__content p {
+  margin-bottom: 0.75rem;
 }
 
-.alma-product__accordion .accordion__content p:last-child {
+.product__accordion .accordion__content p:last-child {
   margin-bottom: 0;
 }
 
-/* Mobile Responsive */
+/* Mobile Adjustments */
 @media screen and (max-width: 749px) {
-  .alma-product-grid {
+  .alma-product__grid {
     gap: 2rem;
-  }
-
-  .alma-product__media-wrapper {
-    position: relative;
-    top: 0;
   }
 
   .alma-product__title h1 {
     font-size: 1.5rem;
   }
 
-  .alma-product__price .price-item--regular {
-    font-size: 1.5rem;
-  }
-
-  .subscription-options {
-    grid-template-columns: 1fr;
-  }
-
-  .trust-badges-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .alma-product__column-sticky {
-    position: relative;
-    top: 0;
+  .alma-subscription-options {
+    flex-direction: column;
   }
 }
 
-/* Tablet */
-@media screen and (min-width: 750px) and (max-width: 989px) {
-  .alma-product-grid {
-    gap: 2.5rem;
-  }
-}
-
-/* Loading state */
+/* Error Messages */
 .product-form__error-message-wrapper {
   margin-bottom: 1rem;
 }
