@@ -199,49 +199,74 @@
         "padding_bottom": 36
       }
     },
-    "pricing_offer": {
-      "type": "multicolumn",
+    "featured_product_U3TaCq": {
+      "type": "featured-product",
       "blocks": {
-        "option_1": {
-          "type": "column",
+        "text_WpDiwc": {
+          "type": "text",
           "settings": {
-            "image": "shopify://shop_images/socialsight-ai-b669925f-71d5-438c-8c65-14be19b662b0.png",
-            "title": "1 Frasco",
-            "text": "<p><strong>30 Doses</strong><br/>Suprimento para 1 mês</p><p><strong>R$79,90</strong></p>",
-            "link_label": "COMPRAR AGORA",
-            "link": "shopify://products/ritmo-noturno™-1-frasco"
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
           }
         },
-        "option_2": {
-          "type": "column",
+        "title_iGhGLU": {
+          "type": "title",
           "settings": {
-            "image": "shopify://shop_images/Gemini_Generated_Image_f7xlwuf7xlwuf7xl.png",
-            "title": "🏆 Assine e Economize 20% (Recomendado)",
-            "text": "<p><strong>MAIS POPULAR</strong></p><p><strong><br/>Receba 1 frasco todo mês<br/></strong></p><p><strong>R$63,90/frasco</strong><br/></p>",
-            "link_label": "ASSINAR AGORA",
-            "link": "/products/ritmo-noturno-3-frascos"
+            "heading_size": "h1"
+          }
+        },
+        "price_tKyFHE": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_Yh6Knb": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_NA98HW": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_RX6wBU": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_V8eXYV": {
+          "type": "share",
+          "settings": {
+            "share_label": "Compartilhar"
           }
         }
       },
       "block_order": [
-        "option_1",
-        "option_2"
+        "text_WpDiwc",
+        "title_iGhGLU",
+        "price_tKyFHE",
+        "variant_picker_Yh6Knb",
+        "quantity_selector_NA98HW",
+        "buy_buttons_RX6wBU",
+        "share_V8eXYV"
       ],
+      "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "title": "Escolha o Seu Plano de Restauração e Comece Hoje",
-        "heading_size": "h1",
-        "image_width": "half",
-        "image_ratio": "circle",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "product": "ritmo-noturno™-1-frasco",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
         "padding_top": 36,
-        "padding_bottom": 20
+        "padding_bottom": 36
       }
     },
     "alma_testimonials_9bniPC": {
@@ -297,7 +322,7 @@
     "multirow_bz3R6a",
     "multicolumn_AFWPTc",
     "solution_section",
-    "pricing_offer",
+    "featured_product_U3TaCq",
     "alma_testimonials_9bniPC"
   ]
 }
