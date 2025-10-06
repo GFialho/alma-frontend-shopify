@@ -51,7 +51,7 @@
     <div class="alma-product__grid alma-product--media-{{ section.settings.media_size }} alma-product--media-{{ section.settings.media_position }}">
       <!-- Product Media -->
       <div class="alma-product__media">
-        {% render 'product-media-gallery', variant_images: variant_images %}
+        {% render 'product-media-gallery', product: current_product, variant_images: variant_images %}
       </div>
 
       <!-- Product Info -->
@@ -214,7 +214,7 @@
       </div>
     </div>
 
-    {% render 'product-media-modal', variant_images: variant_images %}
+    {% render 'product-media-modal', product: current_product, variant_images: variant_images %}
 
     {%- if current_product.media.size > 0 -%}
       <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
