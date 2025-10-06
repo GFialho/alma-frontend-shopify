@@ -20,9 +20,12 @@
     data-zoom-on-hover
   {% endif %}
 >
+  {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'section-alma-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+  {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+  {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -48,14 +51,22 @@
   {% assign variant_images = current_product.images | where: 'attached_to_variant?', true | map: 'src' %}
   
   <div class="page-width">
-    <div class="alma-product__grid alma-product--media-{{ section.settings.media_size }} alma-product--media-{{ section.settings.media_position }}">
+    <div class="alma-product__grid product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} grid grid--1-col {% if current_product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <!-- Product Media -->
-      <div class="alma-product__media">
-        {% render 'product-media-gallery', product: current_product, variant_images: variant_images %}
+      <div class="grid__item product__media-wrapper alma-product__media">
+        {%- if current_product != blank -%}
+          {% render 'product-media-gallery', product: current_product, variant_images: variant_images %}
+        {%- else -%}
+          <div class="product__media-item">
+            <div class="product-media-container" style="--ratio: 1.0; --preview-ratio: 1.0;">
+              {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            </div>
+          </div>
+        {%- endif -%}
       </div>
 
       <!-- Product Info -->
-      <div class="alma-product__info{% if section.settings.enable_sticky_info %} alma-product__info--sticky{% endif %}">
+      <div class="grid__item product__info-wrapper alma-product__info{% if section.settings.enable_sticky_info %} alma-product__info--sticky{% endif %}">
         {%- assign product_form_id = 'product-form-alma-' | append: section.id -%}
 
         {%- for block in section.blocks -%}

@@ -4,42 +4,6 @@
   background: white;
 }
 
-.alma-product__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-}
-
-@media screen and (min-width: 750px) {
-  .alma-product__grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-  }
-
-  /* Media Size - Small */
-  .alma-product--media-small {
-    grid-template-columns: 1fr 2fr;
-  }
-
-  /* Media Size - Large */
-  .alma-product--media-large {
-    grid-template-columns: 2fr 1fr;
-  }
-
-  /* Media Position - Right */
-  .alma-product--media-right .alma-product__media {
-    order: 2;
-  }
-
-  .alma-product--media-right .alma-product__info {
-    order: 1;
-  }
-}
-
-.alma-product__media {
-  position: relative;
-}
-
 .alma-product__info {
   display: flex;
   flex-direction: column;
@@ -325,10 +289,6 @@
 
 /* Mobile Adjustments */
 @media screen and (max-width: 749px) {
-  .alma-product__grid {
-    gap: 2rem;
-  }
-
   .alma-product__title h1 {
     font-size: 1.5rem;
   }
