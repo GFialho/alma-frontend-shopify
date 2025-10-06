@@ -202,10 +202,6 @@
     "alma_product_Ph6Kyq": {
       "type": "alma-product",
       "blocks": {
-        "vendor_aY9UiF": {
-          "type": "vendor",
-          "settings": {}
-        },
         "title_qenXPY": {
           "type": "title",
           "settings": {}
@@ -234,7 +230,6 @@
         }
       },
       "block_order": [
-        "vendor_aY9UiF",
         "title_qenXPY",
         "price_gV4bUm",
         "subscription_selector_apFzkG",
