@@ -30,7 +30,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Comece a Dormir Melhor Hoje",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify://products/ritmo-noturno™-1-frasco",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -44,7 +44,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/Gemini_Generated_Image_i2swvyi2swvyi2sw.png",
+        "image": "shopify://shop_images/Gemini_Generated_Image_yr5yz9yr5yz9yr5y.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "none",
@@ -53,7 +53,7 @@
         "show_text_box": false,
         "color_scheme": "scheme-5",
         "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "show_text_below": false
       }
     },
@@ -199,64 +199,50 @@
         "padding_bottom": 36
       }
     },
-    "alma_product_Ph6Kyq": {
-      "type": "alma-product",
+    "image_with_text_WtXURN": {
+      "type": "image-with-text",
       "blocks": {
-        "vendor_aY9UiF": {
-          "type": "vendor",
-          "settings": {}
-        },
-        "title_qenXPY": {
-          "type": "title",
-          "settings": {}
-        },
-        "price_gV4bUm": {
-          "type": "price",
-          "settings": {}
-        },
-        "subscription_selector_apFzkG": {
-          "type": "subscription_selector",
-          "settings": {}
-        },
-        "quantity_selector_G9D9Yh": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_rdx48E": {
-          "type": "buy_buttons",
-          "settings": {}
-        },
-        "share_PriXa7": {
-          "type": "share",
+        "heading_xkbyik": {
+          "type": "heading",
           "settings": {
-            "share_label": "Compartilhar"
+            "heading": "Restaure seu relógio biológico",
+            "heading_size": "h1"
+          }
+        },
+        "text_3Pdwfa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A luz azul e o estresse da vida moderna corromperam seu ciclo de sono natural, deixando você em uma batalha constante por descanso. Ritmo Noturno não é um sedativo. É a ciência da restauração: uma fórmula que ajuda a reafinar seu relógio biológico para que você possa ter um sono verdadeiramente reparador e acordar com clareza, energia e sem a temida \"ressaca matinal\"<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_Je37tX": {
+          "type": "button",
+          "settings": {
+            "button_label": "RECUPERE SUAS MANHÃS",
+            "button_link": "shopify://products/ritmo-noturno™-1-frasco",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "vendor_aY9UiF",
-        "title_qenXPY",
-        "price_gV4bUm",
-        "subscription_selector_apFzkG",
-        "quantity_selector_G9D9Yh",
-        "buy_buttons_rdx48E",
-        "share_PriXa7"
+        "heading_xkbyik",
+        "text_3Pdwfa",
+        "button_Je37tX"
       ],
-      "name": "Alma Product",
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "product": "ritmo-noturno™-1-frasco",
+        "image": "shopify://shop_images/socialsight-ai-b669925f-71d5-438c-8c65-14be19b662b0.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
         "color_scheme": "",
-        "secondary_background": false,
-        "enable_sticky_info": true,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "gallery_layout": "stacked",
-        "mobile_thumbnails": "hide",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -314,7 +300,7 @@
     "multirow_bz3R6a",
     "multicolumn_AFWPTc",
     "solution_section",
-    "alma_product_Ph6Kyq",
+    "image_with_text_WtXURN",
     "alma_testimonials_9bniPC"
   ]
 }
