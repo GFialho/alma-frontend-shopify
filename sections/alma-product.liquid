@@ -98,58 +98,6 @@
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: current_product, block: block, product_form_id: product_form_id %}
 
-            {%- when 'subscription_selector' -%}
-              {%- if current_product.selling_plan_groups.size > 0 -%}
-                <div class="alma-subscription-wrapper" {{ block.shopify_attributes }}>
-                  {%- assign first_selling_plan_group = current_product.selling_plan_groups.first -%}
-                  {%- assign first_selling_plan = first_selling_plan_group.selling_plans.first -%}
-                  
-                  <div class="alma-subscription-options">
-                    <label class="alma-subscription-option active" data-type="onetime">
-                      <input type="radio" 
-                             name="purchase_type_{{ section.id }}" 
-                             value="onetime" 
-                             checked 
-                             onchange="almaToggleSubscription('onetime', null, '{{ section.id }}')">
-                      <div class="alma-subscription-content">
-                        <span class="alma-subscription-title">Compra Única</span>
-                        <span class="alma-subscription-price" id="onetime-price-{{ section.id }}">
-                          {{ current_product.selected_or_first_available_variant.price | money }}
-                        </span>
-                      </div>
-                    </label>
-                    
-                    {%- for selling_plan in first_selling_plan_group.selling_plans limit: 1 -%}
-                      <label class="alma-subscription-option" data-type="subscription">
-                        <input type="radio" 
-                               name="purchase_type_{{ section.id }}" 
-                               value="subscription"
-                               data-selling-plan-id="{{ selling_plan.id }}"
-                               onchange="almaToggleSubscription('subscription', {{ selling_plan.id }}, '{{ section.id }}')">
-                        <div class="alma-subscription-content">
-                          <span class="alma-subscription-title">{{ selling_plan.name }}</span>
-                          <span class="alma-subscription-price" id="subscription-price-{{ section.id }}">
-                            {%- assign subscription_price = current_product.selected_or_first_available_variant.price | times: selling_plan.price_adjustments.first.value | divided_by: 100.0 -%}
-                            {{ subscription_price | money }}/{{ selling_plan.options.first.value }}
-                          </span>
-                          {%- if selling_plan.price_adjustments.first.value < 100 -%}
-                            {%- assign discount = 100 | minus: selling_plan.price_adjustments.first.value -%}
-                            <span class="alma-subscription-badge">Economize {{ discount }}%</span>
-                          {%- endif -%}
-                        </div>
-                      </label>
-                    {%- endfor -%}
-                  </div>
-                  
-                  <div class="alma-subscription-message" id="subscription-message-{{ section.id }}" style="display: none;">
-                    ✓ Você receberá automaticamente com desconto exclusivo
-                  </div>
-
-                  <input type="hidden" id="original-price-{{ section.id }}" value="{{ current_product.selected_or_first_available_variant.price }}">
-                  <input type="hidden" id="selling-plan-id-{{ section.id }}" value="">
-                </div>
-              {%- endif -%}
-
             {%- when 'quantity_selector' -%}
               <div class="alma-product__quantity" {{ block.shopify_attributes }} id="quantity-wrapper-{{ section.id }}">
                 <label for="Quantity-{{ section.id }}">Quantidade</label>
@@ -193,8 +141,6 @@
                         {% if current_product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                         class="product-variant-id"
                       >
-                      
-                      <input type="hidden" id="selling-plan-input-{{ section.id }}" name="selling_plan" value="">
 
                       <div class="product-form__buttons">
                         <button
@@ -261,83 +207,6 @@
     {%- endif -%}
   </div>
 
-  <script>
-    function almaToggleSubscription(type, sellingPlanId, sectionId) {
-      // Update active state
-      const wrapper = document.querySelector(`#AlmaProduct-${sectionId} .alma-subscription-wrapper`);
-      if (wrapper) {
-        wrapper.querySelectorAll('.alma-subscription-option').forEach(option => {
-          option.classList.remove('active');
-        });
-        wrapper.querySelector(`[data-type="${type}"]`).classList.add('active');
-      }
-      
-      // Show/hide subscription message and quantity
-      const message = document.getElementById(`subscription-message-${sectionId}`);
-      const quantityWrapper = document.getElementById(`quantity-wrapper-${sectionId}`);
-      
-      if (type === 'subscription') {
-        if (message) message.style.display = 'block';
-        if (quantityWrapper) {
-          quantityWrapper.style.display = 'none';
-          const qtyInput = quantityWrapper.querySelector('input');
-          if (qtyInput) qtyInput.value = 1;
-        }
-      } else {
-        if (message) message.style.display = 'none';
-        if (quantityWrapper) quantityWrapper.style.display = 'block';
-      }
-      
-      // Update selling plan in form
-      const sellingPlanInput = document.getElementById(`selling-plan-input-${sectionId}`);
-      if (sellingPlanInput) {
-        sellingPlanInput.value = sellingPlanId || '';
-      }
-      
-      // Store selling plan ID for later reference
-      const sellingPlanIdInput = document.getElementById(`selling-plan-id-${sectionId}`);
-      if (sellingPlanIdInput) {
-        sellingPlanIdInput.value = sellingPlanId || '';
-      }
-      
-      // Trigger variant change event to update price if needed
-      const variantId = document.querySelector('.product-variant-id')?.value;
-      if (variantId) {
-        const url = new URL(window.location.href);
-        url.searchParams.set('variant', variantId);
-        if (sellingPlanId) {
-          url.searchParams.set('selling_plan', sellingPlanId);
-        } else {
-          url.searchParams.delete('selling_plan');
-        }
-        
-        // Update URL without reload
-        window.history.replaceState({}, '', url);
-      }
-    }
-    
-    // Listen for variant changes to maintain subscription selection
-    document.addEventListener('DOMContentLoaded', function() {
-      const sectionId = '{{ section.id }}';
-      const productInfo = document.getElementById(`AlmaProduct-${sectionId}`);
-      
-      if (productInfo) {
-        productInfo.addEventListener('variant:change', function(event) {
-          // Maintain subscription selection when variant changes
-          const selectedOption = document.querySelector(`input[name="purchase_type_${sectionId}"]:checked`);
-          if (selectedOption && selectedOption.value === 'subscription') {
-            const sellingPlanId = selectedOption.dataset.sellingPlanId;
-            if (sellingPlanId) {
-              const sellingPlanInput = document.getElementById(`selling-plan-input-${sectionId}`);
-              if (sellingPlanInput) {
-                sellingPlanInput.value = sellingPlanId;
-              }
-            }
-          }
-        });
-      }
-    });
-  </script>
 </product-info>
 
 {% schema %}
@@ -367,11 +236,6 @@
     {
       "type": "variant_picker",
       "name": "Variant Picker",
-      "limit": 1
-    },
-    {
-      "type": "subscription_selector",
-      "name": "Subscription Options",
       "limit": 1
     },
     {
@@ -633,9 +497,6 @@
         },
         {
           "type": "variant_picker"
-        },
-        {
-          "type": "subscription_selector"
         },
         {
           "type": "quantity_selector"
