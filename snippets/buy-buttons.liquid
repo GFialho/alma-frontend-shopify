@@ -56,7 +56,7 @@
           class="product-variant-id"
         >
 
-        <input type="hidden" id="subscription-type" name="properties[_subscription_type]" value="onetime">
+        <input type="hidden" id="selling-plan-{{ section.id }}" name="selling_plan" value="">
 
         {%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
