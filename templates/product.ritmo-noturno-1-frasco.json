@@ -121,6 +121,29 @@
         "padding_bottom": 12
       }
     },
+    "1760629976335975fd": {
+      "type": "apps",
+      "blocks": {
+        "subscriptions_app_block_NGGDqx": {
+          "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
+          "settings": {
+            "color_text_body": "#6D7175",
+            "dividers_color": "#8F8D8D",
+            "bacgkround_color": "#FFFFFF",
+            "border_thickness": 1,
+            "border_radius": 0,
+            "subscription_policy_url": "",
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "subscriptions_app_block_NGGDqx"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "faq_section": {
       "type": "collapsible-content",
       "blocks": {
@@ -256,6 +279,7 @@
   },
   "order": [
     "main",
+    "1760629976335975fd",
     "faq_section",
     "alma_reviews"
   ]
