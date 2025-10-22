@@ -921,13 +921,11 @@ select,
   transition: all 0.3s ease;
 }
 
-/* Buttons */
+/* Buttons - Using theme color scheme variables */
 .customer button,
 .customer .btn {
   width: 100%;
-  background: linear-gradient(135deg, var(--alma-primary-green) 0%, var(--alma-dark-green) 100%);
-  color: white !important;
-  border: none;
+  /* Removed hardcoded background - now uses theme color scheme */
   border-radius: 8px;
   padding: 1.2rem 2rem;
   font-family: 'Lora', serif !important;
@@ -938,14 +936,12 @@ select,
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 2rem 0 1rem;
-  box-shadow: 0 4px 16px rgba(126, 146, 120, 0.3);
 }
 
 .customer button:hover,
 .customer .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(126, 146, 120, 0.4);
-  background: linear-gradient(135deg, var(--alma-dark-green) 0%, var(--alma-primary-green) 100%);
+  /* Removed hardcoded background - now uses theme color scheme */
 }
 
 .customer button:active {
@@ -1037,17 +1033,13 @@ select,
 }
 
 .customer div:has(#customer_login_guest) button {
-  background: linear-gradient(135deg, rgba(126, 146, 120, 0.1) 0%, rgba(126, 146, 120, 0.2) 100%);
-  color: var(--alma-dark-green) !important;
-  border: 2px solid var(--alma-primary-green);
-  box-shadow: 0 2px 8px rgba(126, 146, 120, 0.2);
+  /* Removed hardcoded background - now uses theme color scheme */
+  border: 2px solid rgba(var(--color-button), 0.5);
 }
 
 .customer div:has(#customer_login_guest) button:hover {
-  background: linear-gradient(135deg, var(--alma-primary-green) 0%, var(--alma-dark-green) 100%);
-  color: white !important;
+  /* Removed hardcoded background - now uses theme color scheme */
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(126, 146, 120, 0.3);
 }
 
 /* Shop login section styling */
@@ -1310,8 +1302,9 @@ select,
 }
 
 .guarantee-box {
-  background: linear-gradient(135deg, var(--alma-primary-green), var(--alma-dark-green));
-  color: white !important;
+  /* Removed hardcoded background - now uses theme color scheme */
+  background: rgba(var(--color-button), var(--alpha-button-background));
+  color: rgb(var(--color-button-text)) !important;
   padding: 1.5rem;
   border-radius: 12px;
   margin: 1rem 0;
@@ -1319,13 +1312,13 @@ select,
 }
 
 .guarantee-box h5 {
-  color: white !important;
+  color: rgb(var(--color-button-text)) !important;
   margin-bottom: 1rem;
   font-size: 1.2em;
 }
 
 .guarantee-box p {
-  color: white !important;
+  color: rgb(var(--color-button-text)) !important;
   margin: 0;
   line-height: 1.6;
 }
@@ -1370,13 +1363,11 @@ select,
   }
 }
 
-/* Enhanced Button Styling */
+/* Enhanced Button Styling - Using theme color scheme variables */
 .btn,
 .button,
 .product-form__cart-submit {
-  background: linear-gradient(135deg, var(--alma-primary-green), var(--alma-dark-green)) !important;
-  border: none !important;
-  color: white !important;
+  /* Removed hardcoded background - now uses theme color scheme */
   padding: 1rem 2rem !important;
   border-radius: 25px !important;
   font-weight: 600 !important;
@@ -1384,15 +1375,13 @@ select,
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
   transition: all 0.3s ease !important;
-  box-shadow: 0 4px 15px rgba(126, 146, 120, 0.3) !important;
 }
 
 .btn:hover,
 .button:hover,
 .product-form__cart-submit:hover {
   transform: translateY(-2px) !important;
-  box-shadow: 0 6px 20px rgba(126, 146, 120, 0.4) !important;
-  background: linear-gradient(135deg, var(--alma-dark-green), var(--alma-primary-green)) !important;
+  /* Removed hardcoded background - now uses theme color scheme */
 }
 
 /* FAQ Section Styling */
@@ -1427,14 +1416,15 @@ select,
   margin-bottom: 1rem !important;
 }
 
-/* Final CTA Section */
+/* Final CTA Section - Using theme color scheme */
 .rich-text.color-accent-1 {
-  background: linear-gradient(135deg, var(--alma-primary-green), var(--alma-dark-green)) !important;
+  /* Removed hardcoded background - now uses theme color scheme */
+  background: rgba(var(--color-button), var(--alpha-button-background)) !important;
 }
 
 .rich-text.color-accent-1 h2,
 .rich-text.color-accent-1 p {
-  color: white !important;
+  color: rgb(var(--color-button-text)) !important;
 }
 
 /* ==========================================================================

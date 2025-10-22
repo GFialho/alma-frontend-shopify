@@ -78,8 +78,8 @@
 }
 
 .alma-subscription-option.active {
-  border-color: #c5b8a5;
-  background: #fafaf8;
+  border-color: rgba(var(--color-button), 0.8);
+  background: rgba(var(--color-button), 0.05);
 }
 
 .alma-subscription-option input[type='radio'] {
@@ -110,8 +110,8 @@
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.25rem 0.75rem;
-  background: #7e9278;
-  color: white;
+  background: rgba(var(--color-button), var(--alpha-button-background));
+  color: rgb(var(--color-button-text));
   border-radius: 12px;
   font-size: 0.75rem;
   font-weight: 600;
@@ -121,11 +121,11 @@
   display: none;
   margin-top: 0.75rem;
   padding: 0.875rem 1rem;
-  background: #f0f8f0;
-  border-left: 3px solid #7e9278;
+  background: rgba(var(--color-button), 0.08);
+  border-left: 3px solid rgba(var(--color-button), 0.8);
   border-radius: 4px;
   font-size: 0.875rem;
-  color: #2c5f2d;
+  color: rgb(var(--color-button));
   line-height: 1.5;
 }
 
@@ -188,7 +188,7 @@
   margin: 0;
 }
 
-/* Buy Button */
+/* Buy Button - Using theme color scheme */
 .product-form__buttons .button {
   width: 100%;
   padding: 1rem 1.5rem;
@@ -197,15 +197,13 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-radius: 4px;
-  background: #c5b8a5;
-  color: white;
-  border: none;
+  /* Removed hardcoded background - now uses theme color scheme */
   cursor: pointer;
   transition: background 0.2s ease;
 }
 
 .product-form__buttons .button:not(:disabled):hover {
-  background: #b3a594;
+  /* Removed hardcoded background - now uses theme color scheme */
 }
 
 .product-form__buttons .button:disabled {
