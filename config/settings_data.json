@@ -21,7 +21,7 @@
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#c5a99c",
+          "button": "#ffd700",
           "button_label": "#ffffff",
           "secondary_button_label": "#8a5338",
           "shadow": "#121212"
@@ -32,7 +32,7 @@
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#c5a99c",
+          "button": "#ffd700",
           "button_label": "#ffffff",
           "secondary_button_label": "#7e9278",
           "shadow": "#121212"
