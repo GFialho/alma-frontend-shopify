@@ -455,7 +455,7 @@ blockquote {
 .btn:hover,
 .button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(126, 146, 120, 0.3);
+  box-shadow: 0 6px 20px rgba(var(--color-button), 0.3);
 }
 
 /* Primary button styling - removed hardcoded colors to allow Shopify theme customization */
@@ -925,7 +925,9 @@ select,
 .customer button,
 .customer .btn {
   width: 100%;
-  /* Removed hardcoded background - now uses theme color scheme */
+  background: rgba(var(--color-button), var(--alpha-button-background)) !important;
+  color: rgb(var(--color-button-text)) !important;
+  border: none !important;
   border-radius: 8px;
   padding: 1.2rem 2rem;
   font-family: 'Lora', serif !important;
@@ -936,17 +938,20 @@ select,
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 2rem 0 1rem;
+  box-shadow: 0 4px 16px rgba(var(--color-button), 0.3);
 }
 
 .customer button:hover,
 .customer .btn:hover {
   transform: translateY(-2px);
-  /* Removed hardcoded background - now uses theme color scheme */
+  background: rgba(var(--color-button), var(--alpha-button-background)) !important;
+  box-shadow: 0 8px 24px rgba(var(--color-button), 0.4);
+  filter: brightness(0.95);
 }
 
 .customer button:active {
   transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(126, 146, 120, 0.3);
+  box-shadow: 0 2px 8px rgba(var(--color-button), 0.3);
 }
 
 /* Links styling */
@@ -1033,13 +1038,17 @@ select,
 }
 
 .customer div:has(#customer_login_guest) button {
-  /* Removed hardcoded background - now uses theme color scheme */
+  background: rgba(var(--color-button), 0.1) !important;
+  color: rgb(var(--color-button)) !important;
   border: 2px solid rgba(var(--color-button), 0.5);
+  box-shadow: 0 2px 8px rgba(var(--color-button), 0.2);
 }
 
 .customer div:has(#customer_login_guest) button:hover {
-  /* Removed hardcoded background - now uses theme color scheme */
+  background: rgba(var(--color-button), var(--alpha-button-background)) !important;
+  color: rgb(var(--color-button-text)) !important;
   transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(var(--color-button), 0.3);
 }
 
 /* Shop login section styling */
@@ -1367,7 +1376,8 @@ select,
 .btn,
 .button,
 .product-form__cart-submit {
-  /* Removed hardcoded background - now uses theme color scheme */
+  background: rgba(var(--color-button), var(--alpha-button-background)) !important;
+  color: rgb(var(--color-button-text)) !important;
   padding: 1rem 2rem !important;
   border-radius: 25px !important;
   font-weight: 600 !important;
@@ -1375,13 +1385,15 @@ select,
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
   transition: all 0.3s ease !important;
+  border: none !important;
 }
 
 .btn:hover,
 .button:hover,
 .product-form__cart-submit:hover {
   transform: translateY(-2px) !important;
-  /* Removed hardcoded background - now uses theme color scheme */
+  background: rgba(var(--color-button), var(--alpha-button-background)) !important;
+  filter: brightness(0.95);
 }
 
 /* FAQ Section Styling */

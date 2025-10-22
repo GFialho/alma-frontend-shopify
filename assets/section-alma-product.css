@@ -197,13 +197,16 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border-radius: 4px;
-  /* Removed hardcoded background - now uses theme color scheme */
+  background: rgba(var(--color-button), var(--alpha-button-background)) !important;
+  color: rgb(var(--color-button-text)) !important;
+  border: none !important;
   cursor: pointer;
   transition: background 0.2s ease;
 }
 
 .product-form__buttons .button:not(:disabled):hover {
-  /* Removed hardcoded background - now uses theme color scheme */
+  background: rgba(var(--color-button), var(--alpha-button-background)) !important;
+  filter: brightness(0.95);
 }
 
 .product-form__buttons .button:disabled {
