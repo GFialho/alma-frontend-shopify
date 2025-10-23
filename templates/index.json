@@ -22,7 +22,7 @@
         "subheading": {
           "type": "text",
           "settings": {
-            "text": "O sono reparador não é um luxo, é uma necessidade. A nossa melatonina é o seu guia natural para noites de descanso profundo, revitalizando corpo e mente para um dia extraordinário.",
+            "text": "O sono reparador não é um luxo, é uma necessidade. A melatonina Alma é o seu guia natural para noites de descanso profundo, revitalizando corpo e mente para um dia extraordinário.",
             "text_style": "subtitle"
           }
         },
@@ -48,7 +48,7 @@
         "image_overlay_opacity": 0,
         "image_height": "large",
         "image_behavior": "none",
-        "desktop_content_position": "top-left",
+        "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
         "show_text_box": false,
         "color_scheme": "scheme-5",
