@@ -505,21 +505,20 @@ blockquote {
   }
 
   .banner__text {
-    font-size: 0.85rem !important; /* Smaller text on mobile */
+    font-size: 0.75rem !important; /* Even smaller text on mobile */
     line-height: 1.4;
     margin-bottom: 1rem;
   }
 
-  /* Position banner content to top-left on mobile */
+  /* Position banner content to middle-left on mobile (vertically centered) */
   .banner__box {
-    padding: 2rem 1.5rem 2rem 1.5rem !important; /* Reduced top padding */
+    padding: 2rem 1.5rem 2rem 1.5rem !important;
     max-width: 100% !important;
   }
 
   .banner__content {
-    align-items: flex-start !important; /* Align to top */
-    justify-content: flex-start !important; /* Align to left */
-    padding-top: 2rem !important;
+    align-items: center !important; /* Vertically center */
+    justify-content: flex-start !important; /* Align to left horizontally */
   }
 
   /* Make buttons smaller on mobile */
