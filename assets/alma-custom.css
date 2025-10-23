@@ -508,7 +508,7 @@ blockquote {
     font-size: 0.75rem !important; /* Even smaller text on mobile */
     line-height: 1.4;
     margin-bottom: 1rem;
-    max-width: 55% !important; /* Limit width to prevent overlap with product */
+    max-width: 65% !important; /* Limit width to prevent overlap with product */
   }
 
   /* Position banner content to middle-left on mobile (vertically centered) */
