@@ -496,6 +496,53 @@ blockquote {
   font-weight: 400;
 }
 
+/* Mobile-specific banner text improvements */
+@media screen and (max-width: 749px) {
+  /* Make heading slightly smaller on mobile */
+  .banner__heading {
+    font-size: 2rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .banner__text {
+    font-size: 0.85rem !important; /* Smaller text on mobile */
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  /* Position banner content to top-left on mobile */
+  .banner__box {
+    padding: 2rem 1.5rem 2rem 1.5rem !important; /* Reduced top padding */
+    max-width: 100% !important;
+  }
+
+  .banner__content {
+    align-items: flex-start !important; /* Align to top */
+    justify-content: flex-start !important; /* Align to left */
+    padding-top: 2rem !important;
+  }
+
+  /* Make buttons smaller on mobile */
+  .banner__buttons .button {
+    font-size: 0.8rem !important;
+    padding: 1rem 1.5rem !important;
+    min-height: auto !important;
+  }
+
+  /* Reduce spacing between elements */
+  .banner__box > * + * {
+    margin-top: 0.75rem !important;
+  }
+
+  .banner__box > * + .banner__text {
+    margin-top: 0.75rem !important;
+  }
+
+  .banner__box > * + .banner__buttons {
+    margin-top: 1rem !important;
+  }
+}
+
 /* ==========================================================================
    SECTION-SPECIFIC TYPOGRAPHY
    ========================================================================== */
