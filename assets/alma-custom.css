@@ -26,7 +26,7 @@
    TYPOGRAPHY ENHANCEMENTS
    ========================================================================== */
 
-/* Global Typography Override - Apply Lora font and green colors site-wide */
+/* Global Typography Override - Apply Lora font site-wide */
 body,
 .text-body,
 p,
@@ -35,10 +35,9 @@ p,
   font-family: 'Lora', serif !important;
   font-weight: 400;
   line-height: 1.7;
-  color: var(--alma-primary-green) !important;
 }
 
-/* All headings use Lora with appropriate weights and dark green color */
+/* All headings use Lora with appropriate weights */
 h1,
 h2,
 h3,
@@ -58,7 +57,6 @@ h6,
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: -0.02em;
-  color: var(--alma-dark-green) !important;
 }
 
 /* Banner text - keep original colors for readability against background */
@@ -92,7 +90,6 @@ h6,
   line-height: 1.7;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
-  color: var(--alma-primary-green) !important;
 }
 
 /* Override for banner RTE text - higher specificity */
@@ -108,7 +105,6 @@ h6,
 .rte ol {
   margin-bottom: 1.5rem;
   padding-left: 2rem;
-  color: var(--alma-primary-green) !important;
 }
 
 .rich-text__text li,
@@ -116,7 +112,6 @@ h6,
   margin-bottom: 0.5rem;
   line-height: 1.6;
   font-family: 'Lora', serif !important;
-  color: var(--alma-primary-green) !important;
 }
 
 /* Blockquote styling */
@@ -297,7 +292,6 @@ blockquote {
 }
 
 .guarantee-section h3 {
-  color: var(--alma-dark-green) !important;
   margin-bottom: 1rem;
   font-size: 24px;
 }
@@ -305,7 +299,6 @@ blockquote {
 .guarantee-section p {
   font-size: 16px;
   line-height: 1.6;
-  color: var(--alma-primary-green) !important;
 }
 
 /* ==========================================================================
@@ -335,7 +328,6 @@ blockquote {
   font-family: 'Lora', serif !important;
   font-size: 18px;
   font-weight: 700;
-  color: var(--alma-dark-green) !important;
   margin: 1rem 0;
 }
 
@@ -355,7 +347,6 @@ blockquote {
 
 /* Style savings text (last paragraph in pricing items) */
 .multicolumn .multicolumn__item p:last-child {
-  color: var(--alma-dark-green) !important;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -408,7 +399,6 @@ blockquote {
 .alma-testimonial-text {
   font-size: 1rem !important;
   line-height: 1.6 !important;
-  color: var(--alma-primary-green) !important;
   margin-bottom: 1.5rem !important;
   flex-grow: 1 !important;
   font-family: 'Lora', serif !important;
@@ -416,7 +406,6 @@ blockquote {
 }
 
 .alma-testimonial-text p {
-  color: var(--alma-primary-green) !important;
   font-family: 'Lora', serif !important;
   font-style: italic !important;
   margin-bottom: 0 !important;
@@ -424,7 +413,6 @@ blockquote {
 
 .alma-testimonial-author {
   font-weight: 600 !important;
-  color: var(--alma-dark-green) !important;
   font-size: 0.9rem !important;
   margin-top: auto !important;
   font-family: 'Lora', serif !important;
@@ -432,10 +420,10 @@ blockquote {
 
 .alma-testimonial-location {
   font-size: 0.8rem !important;
-  color: var(--alma-light-green) !important;
   font-style: normal !important;
   margin-top: 0.2rem !important;
   font-family: 'Lora', serif !important;
+  opacity: 0.7;
 }
 
 /* ==========================================================================
@@ -556,7 +544,6 @@ blockquote {
   font-size: 1.1rem;
   line-height: 1.7;
   font-weight: 400;
-  color: var(--alma-primary-green) !important;
 }
 
 /* Multicolumn section styling */
@@ -566,14 +553,12 @@ blockquote {
   font-size: 1rem;
   line-height: 1.6;
   font-weight: 400;
-  color: var(--alma-primary-green) !important;
 }
 
 .multicolumn__title {
   font-family: 'Lora', serif !important;
   font-weight: 600;
   line-height: 1.3;
-  color: var(--alma-dark-green) !important;
 }
 
 /* Rich text section styling */
@@ -581,7 +566,6 @@ blockquote {
 .rich-text__text p,
 .rich-text__heading {
   font-family: 'Lora', serif !important;
-  color: var(--alma-primary-green) !important;
 }
 
 /* Button text styling */
@@ -596,7 +580,6 @@ blockquote {
 .card__heading,
 .card__text {
   font-family: 'Lora', serif !important;
-  color: var(--alma-primary-green) !important;
 }
 
 /* Product information styling */
@@ -604,7 +587,6 @@ blockquote {
 .product__title,
 .product-form__text {
   font-family: 'Lora', serif !important;
-  color: var(--alma-primary-green) !important;
 }
 
 /* Testimonials specific styling */
@@ -612,14 +594,12 @@ blockquote {
   font-family: 'Lora', serif !important;
   font-style: italic;
   line-height: 1.6;
-  color: var(--alma-primary-green) !important;
 }
 
 .multicolumn .multicolumn__item .multicolumn__title {
   font-family: 'Lora', serif !important;
   font-weight: 600;
   font-style: normal;
-  color: var(--alma-dark-green) !important;
 }
 
 /* Additional typography coverage for edge cases */
@@ -643,7 +623,6 @@ blockquote {
 .price__regular,
 .price__sale {
   font-family: 'Lora', serif !important;
-  color: var(--alma-primary-green) !important;
 }
 
 /* Form elements */
@@ -653,7 +632,6 @@ select,
 .field__input,
 .field__label {
   font-family: 'Lora', serif !important;
-  color: var(--alma-primary-green) !important;
 }
 
 /* Navigation elements */
@@ -661,7 +639,6 @@ select,
 .navigation__link,
 .menu-drawer__menu-item {
   font-family: 'Lora', serif !important;
-  color: var(--alma-dark-green) !important;
 }
 
 /* ==========================================================================
@@ -693,13 +670,11 @@ select,
   font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: var(--alma-dark-green) !important;
 }
 
 .product__text {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: var(--alma-primary-green) !important;
   margin-bottom: 1.5rem;
 }
 
@@ -759,7 +734,6 @@ select,
   .text-body {
     font-size: 1rem;
     font-family: 'Lora', serif !important;
-    color: var(--alma-primary-green) !important;
   }
 }
 
@@ -802,7 +776,6 @@ select,
     font-size: 0.95rem;
     font-family: 'Lora', serif !important;
     line-height: 1.6;
-    color: var(--alma-primary-green) !important;
   }
 
   /* Ensure headings maintain proper hierarchy on mobile */
@@ -810,21 +783,18 @@ select,
   .h1 {
     font-size: 1.8rem;
     font-family: 'Lora', serif !important;
-    color: var(--alma-dark-green) !important;
   }
 
   h2,
   .h2 {
     font-size: 1.5rem;
     font-family: 'Lora', serif !important;
-    color: var(--alma-dark-green) !important;
   }
 
   h3,
   .h3 {
     font-size: 1.3rem;
     font-family: 'Lora', serif !important;
-    color: var(--alma-dark-green) !important;
   }
 }
 
@@ -872,9 +842,9 @@ select,
 /* Container styling for login and register pages */
 .customer.login,
 .customer.register {
-  background: linear-gradient(135deg, var(--alma-green-tint) 0%, #ffffff 50%, var(--alma-green-tint) 100%);
+  background: rgba(var(--color-background), var(--alpha-button-background));
   border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(126, 146, 120, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   margin: 2rem auto;
   padding: 3rem 2rem;
   position: relative;
@@ -889,7 +859,7 @@ select,
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--alma-primary-green), var(--alma-dark-green));
+  background: rgba(var(--color-button), var(--alpha-button-background));
   border-radius: 16px 16px 0 0;
 }
 
@@ -897,7 +867,6 @@ select,
 .customer.login h1,
 .customer.register h1 {
   font-family: 'Lora', serif !important;
-  color: var(--alma-dark-green) !important;
   font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
@@ -907,7 +876,6 @@ select,
 
 .customer.login #recover {
   font-size: 2rem;
-  color: var(--alma-dark-green) !important;
   margin-bottom: 1.5rem;
 }
 
@@ -930,11 +898,10 @@ select,
 .customer .field input {
   width: 100%;
   padding: 1.2rem 1.5rem;
-  border: 2px solid rgba(126, 146, 120, 0.2);
+  border: 2px solid rgba(var(--color-button), 0.2);
   border-radius: 8px;
   font-family: 'Lora', serif !important;
   font-size: 1rem;
-  color: var(--alma-primary-green) !important;
   background: rgba(255, 255, 255, 0.9);
   transition: all 0.3s ease;
   box-sizing: border-box;
@@ -942,14 +909,14 @@ select,
 
 .customer .field input:focus {
   outline: none;
-  border-color: var(--alma-primary-green);
-  box-shadow: 0 0 0 3px rgba(126, 146, 120, 0.1);
+  border-color: rgba(var(--color-button), 0.6);
+  box-shadow: 0 0 0 3px rgba(var(--color-button), 0.1);
   background: #ffffff;
   transform: translateY(-1px);
 }
 
 .customer .field input::placeholder {
-  color: rgba(126, 146, 120, 0.6);
+  opacity: 0.6;
   font-family: 'Lora', serif !important;
 }
 
@@ -963,7 +930,6 @@ select,
   font-family: 'Lora', serif !important;
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--alma-dark-green) !important;
   border-radius: 4px;
   pointer-events: none;
   transition: all 0.3s ease;
@@ -1005,7 +971,6 @@ select,
 
 /* Links styling */
 .customer a {
-  color: var(--alma-primary-green) !important;
   font-family: 'Lora', serif !important;
   font-weight: 500;
   text-decoration: none;
@@ -1015,7 +980,6 @@ select,
 }
 
 .customer a:hover {
-  color: var(--alma-dark-green) !important;
   transform: translateY(-1px);
   text-decoration: underline;
 }
@@ -1074,12 +1038,11 @@ select,
 .customer div:has(#customer_login_guest) {
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 2px solid rgba(126, 146, 120, 0.2);
+  border-top: 2px solid rgba(var(--color-button), 0.2);
 }
 
 .customer div:has(#customer_login_guest) h2 {
   font-family: 'Lora', serif !important;
-  color: var(--alma-dark-green) !important;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
@@ -1102,7 +1065,7 @@ select,
 
 /* Shop login section styling */
 .customer section[name='sign-in-with-shop-provider'] {
-  background: rgba(126, 146, 120, 0.05);
+  background: rgba(var(--color-button), 0.05);
   border-radius: 8px;
   padding: 1.5rem;
   margin: 1.5rem 0;
@@ -1111,7 +1074,6 @@ select,
 
 .customer section[name='sign-in-with-shop-provider'] p {
   font-family: 'Lora', serif !important;
-  color: var(--alma-primary-green) !important;
   font-size: 0.9rem;
   margin: 1rem 0;
 }
@@ -1148,13 +1110,13 @@ select,
 .customer .field input:focus,
 .customer button:focus,
 .customer a:focus {
-  outline: 2px solid var(--alma-primary-green);
+  outline: 2px solid rgba(var(--color-button), 0.6);
   outline-offset: 2px;
 }
 
 /* Password recovery section specific styling */
 .customer.login #recover + div {
-  background: rgba(126, 146, 120, 0.05);
+  background: rgba(var(--color-button), 0.05);
   border-radius: 12px;
   padding: 2rem;
   margin-top: 1rem;
@@ -1162,7 +1124,6 @@ select,
 
 .customer.login #recover + div p {
   font-family: 'Lora', serif !important;
-  color: var(--alma-primary-green) !important;
   font-size: 1rem;
   line-height: 1.6;
   text-align: center;
@@ -1175,12 +1136,12 @@ select,
 
 /* Reviews Summary Styling - for the product page rating */
 .product__text:contains('⭐⭐⭐⭐⭐') {
-  background: var(--alma-green-tint);
+  background: rgba(var(--color-button), 0.05);
   padding: 1rem;
   border-radius: 8px;
   margin: 1rem 0;
   text-align: center;
-  border-left: 4px solid var(--alma-primary-green);
+  border-left: 4px solid rgba(var(--color-button), var(--alpha-button-background));
   font-weight: 500;
   white-space: pre-line;
   line-height: 1.6;
@@ -1220,7 +1181,7 @@ select,
   border-radius: 12px;
   margin: 1.5rem 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 2px solid var(--alma-green-tint);
+  border: 2px solid rgba(var(--color-button), 0.1);
   text-align: center;
   font-weight: 500;
   line-height: 1.8;
@@ -1236,7 +1197,7 @@ select,
   display: block;
   width: 100%;
   height: 2px;
-  background: var(--alma-primary-green);
+  background: rgba(var(--color-button), var(--alpha-button-background));
   margin-bottom: 1rem;
   border-radius: 1px;
 }
@@ -1288,11 +1249,11 @@ select,
 /* Key Benefits Section - Applied to text containing benefits */
 .product__text:contains('✨ O que você vai conquistar'),
 .product__text:contains('O que você vai conquistar') {
-  background: var(--alma-green-tint);
+  background: rgba(var(--color-button), 0.05);
   padding: 2rem;
   border-radius: 12px;
   margin: 2rem 0;
-  border-left: 5px solid var(--alma-primary-green);
+  border-left: 5px solid rgba(var(--color-button), var(--alpha-button-background));
   line-height: 1.8;
   font-size: 1rem;
 }
@@ -1300,13 +1261,12 @@ select,
 .product__text:contains('✨ O que você vai conquistar')::before {
   content: '✨ Benefícios Principais';
   display: block;
-  color: var(--alma-dark-green);
   font-weight: 600;
   font-size: 1.2em;
   text-align: center;
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--alma-primary-green);
+  border-bottom: 2px solid rgba(var(--color-button), var(--alpha-button-background));
 }
 
 /* Collapsible Content Enhancements */
@@ -1321,7 +1281,6 @@ select,
 .usage-guide h4,
 .science-section h4,
 .guarantee-section h4 {
-  color: var(--alma-dark-green) !important;
   margin-bottom: 1rem;
   font-size: 1.1em;
 }
@@ -1335,7 +1294,7 @@ select,
 .ingredients-section li,
 .science-section li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(126, 146, 120, 0.1);
+  border-bottom: 1px solid rgba(var(--color-button), 0.1);
 }
 
 .ingredients-section li:last-child,
@@ -1353,7 +1312,7 @@ select,
 }
 
 .dosage-info {
-  background: var(--alma-green-tint);
+  background: rgba(var(--color-button), 0.05);
   padding: 1rem;
   border-radius: 8px;
   margin-top: 1rem;
@@ -1448,8 +1407,7 @@ select,
 
 /* FAQ Section Styling */
 .collapsible-content .collapsible-row__heading {
-  background: var(--alma-green-tint) !important;
-  color: var(--alma-dark-green) !important;
+  background: rgba(var(--color-button), 0.05) !important;
   font-weight: 600 !important;
   padding: 1rem 1.5rem !important;
   border-radius: 8px !important;
@@ -1460,7 +1418,7 @@ select,
   padding: 1rem 1.5rem !important;
   background: white !important;
   border-radius: 8px !important;
-  border-left: 4px solid var(--alma-primary-green) !important;
+  border-left: 4px solid rgba(var(--color-button), var(--alpha-button-background)) !important;
 }
 
 /* Testimonials Enhancement */
@@ -1470,11 +1428,10 @@ select,
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
   margin-bottom: 1rem !important;
-  border-top: 4px solid var(--alma-primary-green) !important;
+  border-top: 4px solid rgba(var(--color-button), var(--alpha-button-background)) !important;
 }
 
 .multicolumn .column h3 {
-  color: var(--alma-dark-green) !important;
   margin-bottom: 1rem !important;
 }
 
