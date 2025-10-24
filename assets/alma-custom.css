@@ -450,6 +450,7 @@ blockquote {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  text-shadow: none !important;
 }
 
 .btn:hover,
@@ -986,6 +987,7 @@ select,
   transition: all 0.3s ease;
   margin: 2rem 0 1rem;
   box-shadow: 0 4px 16px rgba(var(--color-button), 0.3);
+  text-shadow: none !important;
 }
 
 .customer button:hover,
@@ -1433,6 +1435,7 @@ select,
   letter-spacing: 0.5px !important;
   transition: all 0.3s ease !important;
   border: none !important;
+  text-shadow: none !important;
 }
 
 .btn:hover,
